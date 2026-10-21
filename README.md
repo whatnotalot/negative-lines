@@ -72,3 +72,7 @@ Join us on the hackathon Slack: [team channel](https://app.slack.com/client/T04T
 ## Disclaimer
 
 The compliance agent is a screening tool, not legal advice. Regulatory lists change; always check the current official sources.
+
+## License
+
+[MIT](LICENSE)
