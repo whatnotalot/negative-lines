@@ -3,11 +3,23 @@
 # the surrogate model features and the compliance agent.
 # Change process: one owner edits this file, bumps `version`, and tells the team.
 
-version: 2
-date: 2026-10-21
+version: 3
+date: 2026-10-22
 owner: TBD
 
 changelog:
+  - version: 3
+    source: "gaps found while labeling Gold Set Papers 01-06 (Issues sheet of the gold-set workbook)"
+    changes:
+      - "roles: added acid_amplifier"
+      - "amount_basis: added mass_g, parts_by_mass, ppm_unspecified, solvent_ratio_unspecified"
+      - "metrics: added film_thickness_measured, thickness_uniformity_pct, coating_defects, viscosity, film_forming, alkali_solubility, chemical_resistance, solvent_resistance, pencil_hardness, peeling, edge_roughness_cd_loss, thickness_loss"
+      - "exposure sources: added visible, mixed_lines"
+      - "new record fields: coating_only, source_conflict_note"
+      - "new component fields: amount_unit, nonvolatile_content_pct, mixture_id, mixture_ratio"
+      - "new process fields: coating_method, underlayer, exposure.wavelength_min_nm, developer.temp"
+      - "new result field: position"
+      - "reconciliation_causes: added source_conflict"
   - version: 2
     changes:
       - "roles: added product"
@@ -41,6 +53,9 @@ roles:
   pag:
     definition: Photoacid generator (ionic or non-ionic); record the whole salt name including the anion
     synonyms: ["photoacid generator", "acid generator", "photo-acid generator", "cationic photoinitiator"]
+  acid_amplifier:
+    definition: Compound decomposed by acid to release more acid (chain-like acid generation); not itself photoactive
+    synonyms: ["photoacid proliferating agent", "acid proliferator", "acid amplifier"]
   quencher:
     definition: Base that limits acid diffusion
     synonyms: ["base", "basic compound", "acid diffusion control agent", "acid scavenger", "photodecomposable base"]
@@ -108,6 +123,22 @@ amount_bases:
     definition: Mass ratio between solvents in a mixed-solvent system (e.g. PGMEA/PGME = 7/3)
     unit: ratio
     convertible_to_wt_pct_solids: false
+  solvent_ratio_unspecified:
+    definition: Ratio between solvents where the source does not say whether it is by mass or volume (e.g. "ratio% (I:II)", "PM/PE = 3/7")
+    unit: ratio
+    convertible_to_wt_pct_solids: false
+  mass_g:
+    definition: Absolute mass of the ingredient in the batch (e.g. "30 g of resin A"); sum over components gives the total
+    unit: g
+    convertible_to_wt_pct_solids: true
+  parts_by_mass:
+    definition: Mixing parts by mass of the whole composition, not normalized to 100 parts resin (e.g. resin 167 parts, PAG 1 part)
+    unit: parts
+    convertible_to_wt_pct_solids: true
+  ppm_unspecified:
+    definition: Parts per million where the basis (total or solids, mass or volume) is not stated
+    unit: ppm
+    convertible_to_wt_pct_solids: false
   unspecified:
     definition: '"%" or an amount with no stated basis; labeler_confidence must be low'
     unit: as_written
@@ -123,6 +154,8 @@ exposure_sources:
   EUV_13.5: {wavelength_nm: 13.5, dose_units: [mJ/cm2]}
   ebeam: {wavelength_nm: null, dose_units: [uC/cm2, pC/cm, fC], note: "ebeam_kv required if stated"}
   ion_beam: {wavelength_nm: null, dose_units: [ions/cm2], note: "record ion_species and ion_energy_kev"}
+  visible: {wavelength_nm: null, dose_units: [mJ/cm2], note: "visible light, e.g. a filtered lamp or 488/532 nm laser; record exposure.wavelength_min_nm for cut-off filters"}
+  mixed_lines: {wavelength_nm: null, dose_units: [mJ/cm2], note: "several mercury lines named together (e.g. i-line + g-line); list them in exposure.tool"}
   other: {wavelength_nm: null, dose_units: [as_written]}
 
 exposure_modes: [contact, proximity, projection, ebeam_direct_write, interference, other, unspecified]
@@ -198,6 +231,54 @@ metrics:
     definition: Sidewall profile shape
     unit: qualitative
     synonyms: ["profile", "T-top", "undercut", "footing", "sidewall angle"]
+  film_thickness_measured:
+    definition: Measured film thickness, optionally at a wafer position (record position)
+    unit: nm
+    synonyms: ["film thickness", "coating thickness"]
+  thickness_uniformity_pct:
+    definition: Thickness non-uniformity in percent as reported; copy the formula into definition_as_written if given
+    unit: "%"
+    synonyms: ["uniformity", "u %", "coating uniformity"]
+  coating_defects:
+    definition: Visual coating defects (pinholes, streaks, comets) after coating
+    unit: qualitative
+    synonyms: ["coating defects", "coating property"]
+  viscosity:
+    definition: Viscosity of the resist solution
+    unit: as_written
+    synonyms: ["viscosity", "cps", "cP", "mPa·s"]
+  film_forming:
+    definition: Ability to form a defect-free film (no cissing, unevenness)
+    unit: qualitative
+    synonyms: ["film forming ability", "film formability", "제막성"]
+  alkali_solubility:
+    definition: Dissolution of the unexposed film in alkaline developer (residue or not)
+    unit: qualitative
+    synonyms: ["alkali solubility", "developability", "알칼리 용해성"]
+  chemical_resistance:
+    definition: Resistance of the cured film to acids, bases or plating solutions (e.g. thickness change after immersion)
+    unit: qualitative
+    synonyms: ["chemical resistance", "내약품성"]
+  solvent_resistance:
+    definition: Resistance of the cured film to organic solvents
+    unit: qualitative
+    synonyms: ["solvent resistance"]
+  pencil_hardness:
+    definition: Pencil hardness of the cured film (e.g. F, H, 2H)
+    unit: qualitative
+    synonyms: ["pencil hardness", "pencil strength"]
+  peeling:
+    definition: Peeling or lift-off of patterns
+    unit: qualitative
+    synonyms: ["peeling", "pattern peeling"]
+  edge_roughness_cd_loss:
+    definition: Edge quality graded by CD loss or edge deformation, not a 3-sigma LER measurement
+    unit: qualitative
+    synonyms: ["edge roughness (CD loss)", "edge quality"]
+  thickness_loss:
+    definition: Loss of resist pattern thickness during development
+    unit: qualitative
+    synonyms: ["thickness loss", "film loss", "film reduction"]
   other:
     definition: Any other metric (etch resistance, Tg, outgassing); metric_as_written required
     unit: as_written
@@ -213,6 +294,7 @@ reconciliation_causes:
   missed: One labeler did not find the value
   typo: Transcription error
   guide_unclear: The labeling guide did not cover the case
+  source_conflict: The source itself contradicts itself (text vs table, or two passages)
 
 # ---------------------------------------------------------------------------
 # Units: values are entered as printed; code converts to the canonical unit
@@ -249,6 +331,8 @@ units:
 record:
   record_id: {type: string, format: "<doc_id>_<example label>", example: "JP2019123456A_cex1"}
   solids_content_wt_pct: {type: number, note: "solution solids content; not a component amount"}
+  coating_only: {type: boolean, note: "true when the source has no exposure or development (coating-quality data only)"}
+  source_conflict_note: {type: string, note: "where the source contradicts itself and which value was recorded"}
 
   provenance:
     source_type: {type: enum, values: source_types}
@@ -282,7 +366,11 @@ record:
         mw: {type: number}
         pdi: {type: number}
       amount_raw: {type: [number, string], note: "string only for ranges or unparseable text"}
+      amount_unit: {type: string, note: "unit as printed, e.g. wt%, parts, g, ppm"}
       amount_basis: {type: enum, values: amount_bases}
+      nonvolatile_content_pct: {type: number, note: "for resins supplied as solutions or varnishes; amount_raw is then the solution amount"}
+      mixture_id: {type: string, note: "same id on components given as one mixture, e.g. PAG3 + PAG4 at 10 parts total"}
+      mixture_ratio: {type: string, note: "ratio within the mixture as printed, e.g. 95:5"}
       amount_wt_pct_solids: {type: number, computed: true}
       labeler_confidence: {type: enum, values: labeler_confidence}
       labeler_note: {type: string}
@@ -290,6 +378,8 @@ record:
   process:
     substrate: {type: string}
     primer: {type: string, note: "e.g. HMDS, OmniCoat (process step, not a component)"}
+    underlayer: {type: string, note: "organic underlayer in two-layer methods, with material, bake and thickness"}
+    coating_method: {type: string, note: "as written, e.g. spin coater 315 rpm 15 s, roll coater, bar coater No. 02, spinless (slit) coater"}
     film_thickness: {type: number}
     film_thickness_unit: {type: enum, values: units.length}
     thickness_stage: {type: enum, values: thickness_stages}
@@ -310,6 +400,7 @@ record:
       dose_unit: {type: string, values: units.dose.families}
       dose_type: {type: enum, values: dose_types}
       dose_meter_wavelength_nm: {type: number}
+      wavelength_min_nm: {type: number, note: "cut-off filter, e.g. 480 for 'wavelength of 480 nm or more'"}
       intensity_mw_cm2: {type: number}
       exposure_time_s: {type: number}
       dose_computed: {type: number, computed: true, note: "intensity_mw_cm2 x exposure_time_s"}
@@ -324,6 +415,7 @@ record:
       concentration: {type: string, note: "copy as printed; 2.38 wt% and 0.26 N TMAH are both fine"}
       time: {type: number}
       time_unit: {type: enum, values: units.time}
+      temp: {type: [number, string], note: "developer temperature in C, e.g. 23"}
       method: {type: enum, values: developer_methods}
     rinse: {type: string}
     hardbake_temp: {type: [number, string]}
@@ -345,6 +437,7 @@ record:
       pitch_nm: {type: number}
       pattern_type: {type: enum, values: pattern_types}
       film_thickness: {type: number}
+      position: {type: string, note: "measurement position on the substrate, e.g. Center, At 1/2, Edges, Average"}
       condition: {type: string, example: "smallest tested"}
       method: {type: string}
       reference_record_id: {type: string, note: "for relative values, e.g. 1.2x Example 1"}
