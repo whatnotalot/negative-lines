@@ -1,0 +1,371 @@
+# Project Negative Lines controlled vocabulary and record schema
+# Single source of truth for the extraction agent, the dataset code,
+# the surrogate model features and the compliance agent.
+# Change process: one owner edits this file, bumps `version`, and tells the team.
+
+version: 2
+date: 2026-10-21
+owner: TBD
+
+changelog:
+  - version: 2
+    changes:
+      - "roles: added product"
+      - "amount_basis: added mol_eq_vs_pag, mmol_per_g_solids, w_v_pct, solvent_mass_ratio, unspecified"
+      - "metrics: added dose_sat, sensitivity_unspecified"
+      - "exposure sources: added g-line_436, h-line_405, broadband_uv, ion_beam"
+      - "new record field: solids_content_wt_pct"
+      - "new labeler fields: labeler_confidence, labeler_note, definition_location"
+      - "new result fields: metric_as_written, definition_as_written, scale, sigma, threshold_pct, reference_record_id, pattern_type"
+      - "new process fields: thickness_stage, softbake_steps, bake_method, exposure.mode, dose_meter_wavelength_nm, intensity_mw_cm2, exposure_time_s, dose_type, ion_species, ion_energy_kev, developer.method, rinse"
+      - "new enums: pattern_types, exposure_modes, developer_methods, bake_methods, thickness_stages, dose_types, labeler_confidence, reconciliation_causes"
+  - version: 1
+    changes:
+      - "initial roles, metrics, amount bases, exposure sources"
+
+# ---------------------------------------------------------------------------
+# Enumerations
+# ---------------------------------------------------------------------------
+
+source_types: [patent, paper, datasheet, thesis, other]
+
+labeler_confidence: [high, medium, low]
+
+roles:
+  resin:
+    definition: Film-forming polymer or oligomer (including self-crosslinking resins such as SU-8 epoxy novolac)
+    synonyms: ["polymer", "base resin", "binder", "matrix"]
+  crosslinker:
+    definition: Separate compound that forms crosslinks with the resin under acid or radical catalysis
+    synonyms: ["crosslinking agent", "curing agent", "hardener"]
+  pag:
+    definition: Photoacid generator (ionic or non-ionic); record the whole salt name including the anion
+    synonyms: ["photoacid generator", "acid generator", "photo-acid generator", "cationic photoinitiator"]
+  quencher:
+    definition: Base that limits acid diffusion
+    synonyms: ["base", "basic compound", "acid diffusion control agent", "acid scavenger", "photodecomposable base"]
+  sensitizer:
+    definition: Absorbs light and transfers energy or electrons to the PAG
+    synonyms: ["photosensitizer", "sensitizing dye"]
+  photoinitiator:
+    definition: Radical initiator in radical (e.g. acrylate) negative resists
+    synonyms: ["radical initiator", "photo-radical generator"]
+  monomer:
+    definition: Polymerizable small molecule in radical systems (e.g. multifunctional acrylates)
+    synonyms: ["reactive diluent", "multifunctional acrylate"]
+  metal_oxo_cluster:
+    definition: Metal-oxide cluster or organometallic resist core (e.g. Sn-oxo, Hf-oxo) in EUV metal-oxide resists
+    synonyms: ["MOR", "metal oxide resist", "tin-oxo cage"]
+  solvent:
+    definition: Casting solvent; mixed solvents = one component per solvent
+    synonyms: ["casting solvent"]
+  surfactant:
+    definition: Coating or leveling aid
+    synonyms: ["leveling agent", "wetting agent"]
+  adhesion_promoter:
+    definition: Formulation additive that improves adhesion (a separate primer step such as HMDS goes in process.primer)
+    synonyms: ["adhesion improver", "silane coupling agent"]
+  additive:
+    definition: Any other functional additive (dyes, plasticizers, stabilizers); use when unsure, with a note
+    synonyms: ["dye", "plasticizer", "stabilizer"]
+  product:
+    definition: Commercial resist product whose composition is not given in the source (e.g. "SU-8 2010", "ma-N 2403")
+    synonyms: ["commercial resist"]
+  other:
+    definition: Anything else; role_other_text is required
+    synonyms: []
+
+amount_bases:
+  parts_per_100_resin:
+    definition: Mass relative to 100 mass units of resin (phr). Also used for "wt% relative to / based on / per resin"
+    unit: parts
+    convertible_to_wt_pct_solids: true
+  wt_pct_solids:
+    definition: Mass fraction of all non-solvent ingredients
+    unit: wt%
+    convertible_to_wt_pct_solids: true
+  wt_pct_total:
+    definition: Mass fraction of the whole solution, solvent included
+    unit: wt%
+    convertible_to_wt_pct_solids: true
+  mol_pct_vs_pag:
+    definition: Moles relative to PAG moles, as a percentage (usually quencher)
+    unit: mol%
+    convertible_to_wt_pct_solids: needs_molar_masses
+  mol_eq_vs_pag:
+    definition: Molar equivalents relative to PAG (usually quencher)
+    unit: eq
+    convertible_to_wt_pct_solids: needs_molar_masses
+  mmol_per_g_solids:
+    definition: Millimoles per gram of solids (check the denominator in the source)
+    unit: mmol/g
+    convertible_to_wt_pct_solids: needs_molar_masses
+  w_v_pct:
+    definition: Grams per 100 mL of solution
+    unit: "% w/v"
+    convertible_to_wt_pct_solids: needs_density
+  solvent_mass_ratio:
+    definition: Mass ratio between solvents in a mixed-solvent system (e.g. PGMEA/PGME = 7/3)
+    unit: ratio
+    convertible_to_wt_pct_solids: false
+  unspecified:
+    definition: '"%" or an amount with no stated basis; labeler_confidence must be low'
+    unit: as_written
+    convertible_to_wt_pct_solids: false
+
+exposure_sources:
+  g-line_436: {wavelength_nm: 436, dose_units: [mJ/cm2]}
+  h-line_405: {wavelength_nm: 405, dose_units: [mJ/cm2]}
+  i-line_365: {wavelength_nm: 365, dose_units: [mJ/cm2]}
+  broadband_uv: {wavelength_nm: null, dose_units: [mJ/cm2], note: "record dose_meter_wavelength_nm if stated"}
+  KrF_248: {wavelength_nm: 248, dose_units: [mJ/cm2]}
+  ArF_193: {wavelength_nm: 193, dose_units: [mJ/cm2], note: "record immersion true/false"}
+  EUV_13.5: {wavelength_nm: 13.5, dose_units: [mJ/cm2]}
+  ebeam: {wavelength_nm: null, dose_units: [uC/cm2, pC/cm, fC], note: "ebeam_kv required if stated"}
+  ion_beam: {wavelength_nm: null, dose_units: [ions/cm2], note: "record ion_species and ion_energy_kev"}
+  other: {wavelength_nm: null, dose_units: [as_written]}
+
+exposure_modes: [contact, proximity, projection, ebeam_direct_write, interference, other, unspecified]
+
+dose_types: [nominal, measured, effective, unspecified]
+
+thickness_stages: [as_coated, after_development, unspecified]
+
+bake_methods: [hot_plate, oven, unspecified]
+
+developer_methods: [puddle, immersion, spray, unspecified]
+
+pattern_types: [line_space, isolated_line, isolated_space, dots, pillars, contact_holes, other]
+
+metrics:
+  dose_gel:
+    definition: Lowest dose at which an insoluble film remains (onset of the contrast curve)
+    unit: dose
+    synonyms: ["gel dose", "Dg", "Di", "onset dose", "threshold dose", "E0 (in some negative-tone papers)"]
+  d50:
+    definition: Dose giving 50% normalized remaining thickness
+    unit: dose
+    synonyms: ["D50", "D0.5", "half-thickness dose"]
+  dose_sat:
+    definition: Dose at which remaining thickness saturates; record threshold_pct (e.g. 90 or 100)
+    unit: dose
+    synonyms: ["D100", "D0.9", "saturation dose"]
+  sensitivity_esize:
+    definition: Dose that prints the target feature at nominal size; record target CD and pitch
+    unit: dose
+    synonyms: ["Eop", "Esize", "optimum dose", "sizing dose"]
+  sensitivity_unspecified:
+    definition: Source says "sensitivity" without a definition; labeler_confidence must be low
+    unit: dose
+    synonyms: ["sensitivity", "photosensitivity"]
+  contrast_gamma:
+    definition: Slope of the contrast curve; copy the formula into definition_as_written
+    unit: dimensionless
+    synonyms: ["gamma", "contrast", "γ"]
+  resolution_min_cd_nm:
+    definition: Smallest resolved feature; record pitch_nm and pattern_type, and whether the number is CD or half-pitch
+    unit: nm
+    synonyms: ["resolution", "minimum feature size", "limiting resolution", "half-pitch"]
+  ler_3sigma_nm:
+    definition: Line-edge roughness (one edge); if reported at 1 sigma, enter as printed and set sigma 1
+    unit: nm
+    synonyms: ["LER"]
+  lwr_3sigma_nm:
+    definition: Line-width roughness; if reported at 1 sigma, enter as printed and set sigma 1
+    unit: nm
+    synonyms: ["LWR"]
+  max_aspect_ratio:
+    definition: Highest stated height-to-width ratio; only if stated, never computed by the labeler
+    unit: dimensionless
+    synonyms: ["aspect ratio", "AR"]
+  swelling:
+    definition: Pattern swelling or deformation in developer
+    unit: qualitative
+    synonyms: ["swelling", "snaking", "bridging"]
+  scum_residue:
+    definition: Residue in unexposed areas after development
+    unit: qualitative
+    synonyms: ["scum", "residue", "footing residue"]
+  adhesion:
+    definition: Adhesion of patterns to the substrate
+    unit: qualitative
+    synonyms: ["adhesion", "lift-off", "peeling", "delamination"]
+  pattern_collapse:
+    definition: Collapse or toppling of patterns
+    unit: qualitative
+    synonyms: ["collapse", "toppling"]
+  profile:
+    definition: Sidewall profile shape
+    unit: qualitative
+    synonyms: ["profile", "T-top", "undercut", "footing", "sidewall angle"]
+  other:
+    definition: Any other metric (etch resistance, Tg, outgassing); metric_as_written required
+    unit: as_written
+    synonyms: []
+
+compliance_rules: [OECD_PFAS_definition, REACH_SVHC, REACH_annex_XVII, TSCA_PFAS, other]
+
+reconciliation_causes:
+  boundary: Records were split differently
+  basis: Amount basis disagreed
+  metric_def: Disagreed on which sensitivity or resolution metric
+  unit: Unit disagreed or was converted
+  missed: One labeler did not find the value
+  typo: Transcription error
+  guide_unclear: The labeling guide did not cover the case
+
+# ---------------------------------------------------------------------------
+# Units: values are entered as printed; code converts to the canonical unit
+# ---------------------------------------------------------------------------
+
+units:
+  length:
+    canonical: nm
+    accepted: {nm: 1, um: 1000, "µm": 1000, angstrom: 0.1, "Å": 0.1}
+  temperature:
+    canonical: C
+    accepted: [C, "°C"]
+    special_text: [RT]
+  time:
+    canonical: s
+    accepted: {s: 1, min: 60, h: 3600}
+  dose:
+    canonical: as_source_family
+    families:
+      optical: [mJ/cm2]
+      ebeam_area: [uC/cm2]
+      ebeam_line: [pC/cm]
+      ebeam_dot: [fC]
+      ion: [ions/cm2]
+    rule: Never convert between families
+  intensity:
+    canonical: mW/cm2
+
+# ---------------------------------------------------------------------------
+# Record schema (null = not stated; never use 0 for missing)
+# computed: true = filled by code, never by the labeler or the LLM
+# ---------------------------------------------------------------------------
+
+record:
+  record_id: {type: string, format: "<doc_id>_<example label>", example: "JP2019123456A_cex1"}
+  solids_content_wt_pct: {type: number, note: "solution solids content; not a component amount"}
+
+  provenance:
+    source_type: {type: enum, values: source_types}
+    doc_id: {type: string}
+    title: {type: string}
+    assignee_or_authors: {type: string}
+    year: {type: integer}
+    location: {type: string, example: "Table 2, Example 3, p.14"}
+    evidence_snippet: {type: string}
+    is_comparative: {type: boolean}
+    extraction_model: {type: string, note: "null for hand-labeled records"}
+    confidence: {type: number, range: [0, 1], note: "extraction agent's own score"}
+    human_verified: {type: boolean}
+    labeler_confidence: {type: enum, values: labeler_confidence}
+    labeler_note: {type: string}
+
+  components:
+    type: list
+    item:
+      role: {type: enum, values: roles}
+      role_other_text: {type: string, required_if: "role == other"}
+      name_as_written: {type: string, required: true}
+      definition_location: {type: string, note: "where a codename is defined"}
+      name_resolved: {type: string, computed: true}
+      smiles: {type: string, computed: true}
+      cas: {type: string, computed: true}
+      pubchem_cid: {type: integer, computed: true}
+      polymer:
+        repeat_units: {type: string, note: "as text, e.g. hydroxystyrene / styrene"}
+        monomer_ratio: {type: string, note: "as printed, e.g. 70/30 mol"}
+        mw: {type: number}
+        pdi: {type: number}
+      amount_raw: {type: [number, string], note: "string only for ranges or unparseable text"}
+      amount_basis: {type: enum, values: amount_bases}
+      amount_wt_pct_solids: {type: number, computed: true}
+      labeler_confidence: {type: enum, values: labeler_confidence}
+      labeler_note: {type: string}
+
+  process:
+    substrate: {type: string}
+    primer: {type: string, note: "e.g. HMDS, OmniCoat (process step, not a component)"}
+    film_thickness: {type: number}
+    film_thickness_unit: {type: enum, values: units.length}
+    thickness_stage: {type: enum, values: thickness_stages}
+    softbake_steps:
+      type: list
+      note: "in order; two-step bakes (e.g. 65 then 95 C) = two items"
+      item:
+        temp: {type: [number, string]}
+        time: {type: number}
+        time_unit: {type: enum, values: units.time}
+    bake_method: {type: enum, values: bake_methods}
+    exposure:
+      source: {type: enum, values: exposure_sources}
+      mode: {type: enum, values: exposure_modes}
+      tool: {type: string}
+      immersion: {type: boolean}
+      dose: {type: number, note: "null if only intensity x time given"}
+      dose_unit: {type: string, values: units.dose.families}
+      dose_type: {type: enum, values: dose_types}
+      dose_meter_wavelength_nm: {type: number}
+      intensity_mw_cm2: {type: number}
+      exposure_time_s: {type: number}
+      dose_computed: {type: number, computed: true, note: "intensity_mw_cm2 x exposure_time_s"}
+      ebeam_kv: {type: number}
+      ion_species: {type: string}
+      ion_energy_kev: {type: number}
+    peb_temp: {type: [number, string]}
+    peb_time: {type: number}
+    peb_time_unit: {type: enum, values: units.time}
+    developer:
+      name: {type: string}
+      concentration: {type: string, note: "copy as printed; 2.38 wt% and 0.26 N TMAH are both fine"}
+      time: {type: number}
+      time_unit: {type: enum, values: units.time}
+      method: {type: enum, values: developer_methods}
+    rinse: {type: string}
+    hardbake_temp: {type: [number, string]}
+    hardbake_time: {type: number}
+    hardbake_time_unit: {type: enum, values: units.time}
+
+  results:
+    type: list
+    item:
+      metric: {type: enum, values: metrics}
+      metric_as_written: {type: string, required: true}
+      definition_as_written: {type: string, note: "e.g. the contrast formula"}
+      value: {type: number, note: "null for figure-only evidence"}
+      value_qualitative: {type: string, note: "grade symbol, e.g. A, ○, ×"}
+      scale: {type: string, note: "the source's grade definitions"}
+      unit: {type: string}
+      sigma: {type: integer, values: [1, 3], note: "for LER/LWR"}
+      threshold_pct: {type: number, note: "for dose_sat"}
+      pitch_nm: {type: number}
+      pattern_type: {type: enum, values: pattern_types}
+      film_thickness: {type: number}
+      condition: {type: string, example: "smallest tested"}
+      method: {type: string}
+      reference_record_id: {type: string, note: "for relative values, e.g. 1.2x Example 1"}
+      labeler_confidence: {type: enum, values: labeler_confidence}
+      labeler_note: {type: string}
+
+  compliance:
+    flags:
+      type: list
+      item:
+        component_ref: {type: string}
+        rule: {type: enum, values: compliance_rules}
+        list_version_date: {type: date}
+        rationale: {type: string}
+
+# Reconciliation log row (one per disagreement)
+reconciliation_log:
+  record_id: {type: string}
+  field: {type: string}
+  labeler_a: {type: string}
+  labeler_b: {type: string}
+  agreed_value: {type: string}
+  cause: {type: enum, values: reconciliation_causes}
+  note: {type: string}

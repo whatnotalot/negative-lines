@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# Secrets and local config
+.env
+.env.*
+*.key
+
+# Source documents (patents, papers) may be copyrighted; keep them out of the repo
+data/raw/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Unrelated local files
+*.jpg

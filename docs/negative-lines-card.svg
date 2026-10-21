@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1060" viewBox="0 0 1600 1060" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#A8A49A"/></marker>
+    <marker id="warn-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#E8A317"/></marker>
+  </defs>
+
+  <!-- Card background -->
+  <rect x="0" y="0" width="1600" height="1060" rx="24" fill="#FFFFFF" stroke="#D3D1C7" stroke-width="2"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1600" height="150" rx="24" fill="#26215C"/>
+  <rect x="0" y="120" width="1600" height="30" fill="#26215C"/>
+  <text x="40" y="66" font-size="40" font-weight="700" fill="#FFFFFF">Project Negative Lines</text>
+  <text x="40" y="110" font-size="20" fill="#CECBF6">AI agents that mine patents and papers to build the first open dataset of negative photoresist formulations,</text>
+  <text x="40" y="136" font-size="20" fill="#CECBF6">then design new formulations that hit your performance target and stay PFAS-free and regulation-ready.</text>
+  <rect x="1250" y="34" width="310" height="40" rx="20" fill="#7F77DD"/>
+  <text x="1405" y="60" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">Molecular and Material Design</text>
+
+  <!-- Left column: sections -->
+  <g font-size="17" fill="#2C2C2A">
+    <text x="40" y="196" font-size="21" font-weight="700" fill="#3C3489">Team members</text>
+    <text x="40" y="224">Prem (organizer) · looking for 5–8 more — join us!</text>
+
+    <text x="40" y="274" font-size="21" font-weight="700" fill="#3C3489">Motivation</text>
+    <text x="40" y="302">Negative photoresists pattern chips, MEMS and nanostructures, yet their</text>
+    <text x="40" y="326">formulation is still trial and error, and the know-how is scattered across</text>
+    <text x="40" y="350">patents and papers in inconsistent units.</text>
+
+    <text x="40" y="400" font-size="21" font-weight="700" fill="#3C3489">Problem definition</text>
+    <text x="40" y="428">No open dataset links resist composition and process to performance</text>
+    <text x="40" y="452">(dose, resolution, line-edge roughness). New formulations must also avoid</text>
+    <text x="40" y="476">PFAS photoacid generators and restricted solvents.</text>
+
+    <text x="40" y="526" font-size="21" font-weight="700" fill="#3C3489">Hackathon target</text>
+    <text x="40" y="554">1. Extraction agent → open, validated formulation dataset (with gold set)</text>
+    <text x="40" y="578">2. Surrogate model + Bayesian optimization agent proposing formulations</text>
+    <text x="40" y="602">3. Compliance agent screening PFAS, REACH and TSCA, suggesting substitutes</text>
+
+    <text x="40" y="644" font-size="21" font-weight="700" fill="#3C3489">Contacts</text>
+    <text x="40" y="670">Message Prem on the hackathon Slack, or join the team channel:</text>
+    <text x="40" y="692" font-weight="700" fill="#185FA5">app.slack.com/client/T04T81QB7RQ/C04TLL1RSGH</text>
+  </g>
+
+  <!-- Right column: agent diagram -->
+  <rect x="790" y="170" width="780" height="510" rx="16" fill="#F7F6F2" stroke="#E4E2DA"/>
+  <g transform="translate(800,180)" font-size="13">
+    <text x="24" y="32" font-size="15" font-weight="700" fill="#1F1F1F">Every proposed formulation passes a compliance check</text>
+    <g fill="none" stroke="#A8A49A" stroke-width="1.25">
+      <path d="M132 112V144" marker-end="url(#arrow)"/>
+      <path d="M628 112V144" marker-end="url(#arrow)"/>
+      <path d="M240 172H520" marker-end="url(#arrow)"/>
+      <path d="M628 200V232" marker-end="url(#arrow)"/>
+      <path d="M132 200V232" marker-end="url(#arrow)"/>
+      <path d="M520 260H488" marker-end="url(#arrow)"/>
+      <path d="M240 260H272" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+      <path d="M96 288V348H272" marker-end="url(#arrow)"/>
+      <path d="M520 348H488" marker-end="url(#arrow)"/>
+      <path d="M380 376V408" marker-end="url(#arrow)"/>
+    </g>
+    <path d="M290 320V304H200V290" fill="none" stroke="#E8A317" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#warn-arrow)"/>
+    <text x="245" y="300" text-anchor="middle" font-size="11.5" fill="#5F5E5A">flagged</text>
+
+    <g fill="#FFFFFF" stroke="#A8A49A" stroke-width="1.25">
+      <rect x="24" y="56" width="216" height="56" rx="8"/>
+      <rect x="520" y="56" width="216" height="56" rx="8"/>
+      <rect x="24" y="144" width="216" height="56" rx="8"/>
+      <rect x="520" y="144" width="216" height="56" rx="8"/>
+      <rect x="24" y="232" width="216" height="56" rx="8"/>
+      <rect x="272" y="232" width="216" height="56" rx="8"/>
+      <rect x="520" y="232" width="216" height="56" rx="8"/>
+      <rect x="520" y="320" width="216" height="56" rx="8"/>
+      <rect x="272" y="408" width="216" height="56" rx="8"/>
+    </g>
+    <rect x="272" y="320" width="216" height="56" rx="8" fill="#E6EFFB" stroke="#2F6FD6" stroke-width="2"/>
+
+    <g text-anchor="middle">
+      <text x="132" y="80" font-weight="700" fill="#1F1F1F">Target spec</text>
+      <text x="132" y="98" font-size="11.5" fill="#5F5E5A">Dose, resolution, LER</text>
+      <text x="628" y="80" font-weight="700" fill="#1F1F1F">Patents and papers</text>
+      <text x="628" y="98" font-size="11.5" fill="#5F5E5A">Tables and datasheets</text>
+      <text x="132" y="168" font-weight="700" fill="#1F1F1F">Orchestrator agent</text>
+      <text x="132" y="186" font-size="11.5" fill="#5F5E5A">Plans and routes tasks</text>
+      <text x="628" y="168" font-weight="700" fill="#1F1F1F">Extraction agent</text>
+      <text x="628" y="186" font-size="11.5" fill="#5F5E5A">Reads formulation tables</text>
+      <text x="132" y="256" font-weight="700" fill="#1F1F1F">Design agent</text>
+      <text x="132" y="274" font-size="11.5" fill="#5F5E5A">Bayesian optimization</text>
+      <text x="380" y="256" font-weight="700" fill="#1F1F1F">Surrogate model</text>
+      <text x="380" y="274" font-size="11.5" fill="#5F5E5A">Predicts performance</text>
+      <text x="628" y="256" font-weight="700" fill="#1F1F1F">Open dataset</text>
+      <text x="628" y="274" font-size="11.5" fill="#5F5E5A">Recipes and performance</text>
+      <text x="380" y="344" font-weight="700" fill="#1F1F1F">Compliance agent</text>
+      <text x="380" y="362" font-size="11.5" fill="#1F1F1F">Rules + LLM rationale</text>
+      <text x="628" y="344" font-weight="700" fill="#1F1F1F">Regulatory lists</text>
+      <text x="628" y="362" font-size="11.5" fill="#5F5E5A">PFAS, REACH, TSCA</text>
+      <text x="380" y="432" font-weight="700" fill="#1F1F1F">Ranked formulations</text>
+      <text x="380" y="450" font-size="11.5" fill="#5F5E5A">With compliance report</text>
+    </g>
+  </g>
+
+  <!-- Member requirements table -->
+  <text x="40" y="738" font-size="21" font-weight="700" fill="#3C3489">Who we need</text>
+  <g font-size="15" fill="#2C2C2A">
+    <rect x="40" y="756" width="1520" height="40" fill="#EEEDFE"/>
+    <g font-weight="700" fill="#26215C">
+      <text x="56" y="782">Role</text>
+      <text x="316" y="782">People</text>
+      <text x="416" y="782">Owns</text>
+      <text x="836" y="782">Helpful skills</text>
+    </g>
+    <g stroke="#E4E2DA" stroke-width="1">
+      <line x1="40" y1="840" x2="1560" y2="840"/>
+      <line x1="40" y1="884" x2="1560" y2="884"/>
+      <line x1="40" y1="928" x2="1560" y2="928"/>
+      <line x1="40" y1="972" x2="1560" y2="972"/>
+      <line x1="40" y1="1016" x2="1560" y2="1016"/>
+    </g>
+    <text x="56" y="824" font-weight="700">Data and extraction</text>
+    <text x="316" y="824">2</text>
+    <text x="416" y="824">Extraction agent, dataset, gold set</text>
+    <text x="836" y="824">LLM structured output, PDF and patent parsing, careful reading</text>
+
+    <text x="56" y="868" font-weight="700">Domain experts</text>
+    <text x="316" y="868">1–2</text>
+    <text x="416" y="868">Labeling guide, gold labels, sanity checks</text>
+    <text x="836" y="868">Polymer chemistry, photochemistry, lithography or cleanroom work</text>
+
+    <text x="56" y="912" font-weight="700">Modeling</text>
+    <text x="316" y="912">1–2</text>
+    <text x="416" y="912">Surrogate model, Bayesian optimization agent</text>
+    <text x="836" y="912">scikit-learn, Gaussian processes, BoTorch or similar</text>
+
+    <text x="56" y="956" font-weight="700">Compliance</text>
+    <text x="316" y="956">1</text>
+    <text x="416" y="956">Compliance agent, regulatory list lookups</text>
+    <text x="836" y="956">RDKit SMARTS, PubChem, interest in chemical regulation</text>
+
+    <text x="56" y="1000" font-weight="700">Integration and demo</text>
+    <text x="316" y="1000">1</text>
+    <text x="416" y="1000">Orchestrator, UI, video, slides</text>
+    <text x="836" y="1000">Python, Streamlit or similar, storytelling</text>
+  </g>
+  <text x="1560" y="1042" font-size="14" fill="#5F5E5A" text-anchor="end">Domain experts are our scarcest role. Know resists? Join even for a few hours of labeling.</text>
+</svg>
