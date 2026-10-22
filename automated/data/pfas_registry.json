@@ -1,0 +1,73 @@
+{
+  "pfas_anions": [
+    {
+      "name": "nonaflate",
+      "formula": "C4F9SO3-",
+      "smiles": "C(C(C(F)(F)S(=O)(=O)[O-])(F)(F))(C(F)(F)F)(F)F",
+      "regulatory_lists": ["OECD PFAS List", "EU REACH Restriction Proposal", "US EPA PFAS Action Plan"],
+      "restriction_level": "banned_or_phasing_out",
+      "concern": "Perfluoroalkyl chain (>=4 fully fluorinated carbons). Highly persistent environmental pollutant and bioaccumulative 'forever chemical'.",
+      "recommended_substitutes": [
+        {"name": "camphorsulfonate", "class": "alicyclic non-fluorinated sulfonate", "compliance": "REACH & TSCA compliant"},
+        {"name": "p-toluenesulfonate (tosylate)", "class": "arylsulfonate", "compliance": "PFAS-free, global inventory approved"},
+        {"name": "adamantane carboxylate", "class": "bulky alicyclic carboxylate", "compliance": "PFAS-free, low acid diffusion"}
+      ]
+    },
+    {
+      "name": "triflate",
+      "formula": "CF3SO3-",
+      "smiles": "C(F)(F)(F)S(=O)(=O)[O-]",
+      "regulatory_lists": ["OECD Short-Chain PFAS Monitoring", "EU REACH Candidate List"],
+      "restriction_level": "monitored_short_chain",
+      "concern": "Perfluoromethyl sulfonate. High water mobility and environmental persistence.",
+      "recommended_substitutes": [
+        {"name": "methanesulfonate (mesylate)", "class": "alkylsulfonate", "compliance": "PFAS-free"},
+        {"name": "benzenesulfonate", "class": "arylsulfonate", "compliance": "PFAS-free"}
+      ]
+    },
+    {
+      "name": "perfluorobutanesulfonate (PFBS)",
+      "formula": "C4F9SO3-",
+      "smiles": "C(C(C(F)(F)S(=O)(=O)[O-])(F)(F))(C(F)(F)F)(F)F",
+      "regulatory_lists": ["OECD PFAS List", "EU REACH SVHC"],
+      "restriction_level": "banned_or_phasing_out",
+      "concern": "Target of active EU REACH restriction. High aquatic mobility.",
+      "recommended_substitutes": [
+        {"name": "camphorsulfonate", "class": "alicyclic non-fluorinated sulfonate", "compliance": "PFAS-free"}
+      ]
+    },
+    {
+      "name": "perfluorooctanesulfonate (PFOS)",
+      "formula": "C8F17SO3-",
+      "smiles": "C(C(C(C(C(F)(F)F)(F)F)(F)(F))(F)(F))(C(C(C(F)(F)S(=O)(=O)[O-])(F)(F))(F)(F))(F)F",
+      "regulatory_lists": ["Stockholm Convention POP", "EU REACH Annex XVII", "US TSCA Section 5 SNUR"],
+      "restriction_level": "strictly_prohibited",
+      "concern": "Persistent Organic Pollutant (POP). Strict global bans across semiconductor manufacturing.",
+      "recommended_substitutes": [
+        {"name": "dinonylnaphthalenesulfonate", "class": "bulky organic sulfonate", "compliance": "PFAS-free"}
+      ]
+    }
+  ],
+  "restricted_solvents": [
+    {
+      "name": "N-methyl-2-pyrrolidone (NMP)",
+      "cas": "872-50-4",
+      "regulatory_lists": ["EU REACH Annex XVII", "US TSCA Section 6 Rule"],
+      "concern": "Reproductive toxicity (toxic to reproduction Category 1B). Restricted exposure limits.",
+      "recommended_substitutes": ["gamma-butyrolactone (GBL)", "cyclopentanone", "PGMEA"]
+    },
+    {
+      "name": "2-methoxyethanol (ethylene glycol monomethyl ether)",
+      "cas": "109-86-4",
+      "regulatory_lists": ["EU REACH Annex XIV (Authorisation)", "OSHA Carcinogen/Reprotoxic"],
+      "concern": "Teratogen and reproductive hazard.",
+      "recommended_substitutes": ["propylene glycol monomethyl ether acetate (PGMEA)", "ethyl lactate"]
+    }
+  ],
+  "approved_green_solvents": [
+    {"name": "propylene glycol monomethyl ether acetate (PGMEA)", "cas": "108-65-6", "status": "Semiconductor industry standard, compliant"},
+    {"name": "propylene glycol monomethyl ether (PGME)", "cas": "107-98-2", "status": "Compliant low-toxicity co-solvent"},
+    {"name": "ethyl lactate", "cas": "97-64-3", "status": "Bio-based renewable solvent, fully compliant"},
+    {"name": "cyclopentanone", "cas": "120-92-3", "status": "Compliant high-solvency ketone"}
+  ]
+}

@@ -1,0 +1,2 @@
+example_id,resin_name,resin_mass_g,primary_crosslinker_name,primary_crosslinker_mass_g,secondary_crosslinker_name,secondary_crosslinker_mass_g,pag_name,pag_mass_g,quencher_name,quencher_mass_g,solvent_1_name,solvent_1_mass_g,solvent_2_name,solvent_2_mass_g,surfactant_mass_g,exposure_source,target_film_nm,peb_temp_c,peb_time_s,observed_lwr_nm,observed_dose_uc_cm2
+MANUAL-01,P-1 (Poly(PHS-co-HPS)),0.700,MM-1 (Melamine Cymel),0.200,CL-1 (Glycoluril),0.100,Triphenylsulfonium Camphorsulfonate,0.060,Trioctylamine,0.005,PGMEA,7.50,PGME,1.50,0.001,ebeam_50keV,300,110,90,,

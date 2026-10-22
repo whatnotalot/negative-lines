@@ -1,0 +1,550 @@
+{
+  "document": {
+    "source_type": "patent",
+    "doc_id": "US20080241753A1",
+    "title": "Negative Resist Composition",
+    "assignee_or_authors": "Tokyo Ohka Kogyo Co Ltd",
+    "year": 2008,
+    "language": "en"
+  },
+  "examples": [
+    {
+      "label": "Example 1",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-4-6",
+        "t-2-r-3-4"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-2-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 2",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-4-6",
+        "t-2-r-5-6"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-2-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 3",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-7-9",
+        "t-2-r-7-8"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-2-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 4",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-7-9",
+        "t-2-r-9-10"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-2-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 5",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-10-12",
+        "t-2-r-11-12"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-2-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 6",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-10-12",
+        "t-2-r-13-14"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-2-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 7",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-13-15",
+        "t-2-r-15-16"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-2-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 8",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-13-15",
+        "t-2-r-17-18"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-2-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 9",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-16-18",
+        "t-2-r-19-20"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-2-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 10",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-16-18",
+        "t-2-r-21-22"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-2-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 11",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-19-21",
+        "t-2-r-23-24"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-2-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 12",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-19-21",
+        "t-2-r-25-26"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-2-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 13",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-22-24",
+        "t-2-r-27-28"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-2-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 14",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-22-24",
+        "t-3-r-1-2"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-3-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 15",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-25-27",
+        "t-3-r-5-6"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-3-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 16",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-25-27",
+        "t-3-r-7-8"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-3-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 17",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-28-30",
+        "t-3-r-9-10"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-3-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 18",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-28-30",
+        "t-3-r-11-12"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-3-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 19",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-31-33",
+        "t-3-r-13-14"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-3-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 20",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-31-33",
+        "t-3-r-15-16"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-3-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 21",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-34-36",
+        "t-3-r-17-18"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-3-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 22",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-34-36",
+        "t-3-r-19-20"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-3-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 23",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-37-39",
+        "t-3-r-21-22"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-3-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Example 24",
+      "is_comparative": false,
+      "block_ids": [
+        "t-1-r-37-39",
+        "t-3-r-23-24"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-3-cap"
+      ],
+      "has_results": true,
+      "note": null
+    },
+    {
+      "label": "Comparative Example 1",
+      "is_comparative": true,
+      "block_ids": [
+        "t-1-r-40-42",
+        "t-3-r-25-27"
+      ],
+      "table_ids": [
+        "t-1-cap",
+        "t-3-cap"
+      ],
+      "has_results": true,
+      "note": null
+    }
+  ],
+  "tables": [
+    {
+      "table_id": "t-1",
+      "caption": "Formulation Components",
+      "content": "composition",
+      "examples_covered": [
+        "Example 1",
+        "Example 2",
+        "Example 3",
+        "Example 4",
+        "Example 5",
+        "Example 6",
+        "Example 7",
+        "Example 8",
+        "Example 9",
+        "Example 10",
+        "Example 11",
+        "Example 12",
+        "Example 13",
+        "Example 14",
+        "Example 15",
+        "Example 16",
+        "Example 17",
+        "Example 18",
+        "Example 19",
+        "Example 20",
+        "Example 21",
+        "Example 22",
+        "Example 23",
+        "Example 24",
+        "Comparative Example 1"
+      ]
+    },
+    {
+      "table_id": "t-2",
+      "caption": "Results",
+      "content": "results",
+      "examples_covered": [
+        "Example 1",
+        "Example 2",
+        "Example 3",
+        "Example 4",
+        "Example 5",
+        "Example 6",
+        "Example 7",
+        "Example 8",
+        "Example 9",
+        "Example 10",
+        "Example 11",
+        "Example 12",
+        "Example 13",
+        "Example 14",
+        "Example 15",
+        "Example 16",
+        "Example 17",
+        "Example 18",
+        "Example 19",
+        "Example 20",
+        "Example 21",
+        "Example 22",
+        "Example 23",
+        "Example 24"
+      ]
+    },
+    {
+      "table_id": "t-3",
+      "caption": "Results Continued",
+      "content": "results",
+      "examples_covered": [
+        "Example 14",
+        "Example 15",
+        "Example 16",
+        "Example 17",
+        "Example 18",
+        "Example 19",
+        "Example 20",
+        "Example 21",
+        "Example 22",
+        "Example 23",
+        "Example 24",
+        "Comparative Example 1"
+      ]
+    }
+  ],
+  "codename_definitions": [
+    {
+      "codename": "PAG1",
+      "definition_text": "triphenylsulfonium trifluoromethanesulfonate",
+      "refs": [
+        {
+          "block_id": "p-0170",
+          "location": "Table 1, row Example 1",
+          "quote": "PAG1 denotes triphenylsulfonium trifluoromethanesulfonate.",
+          "purpose": "codename_definition"
+        }
+      ]
+    },
+    {
+      "codename": "PAG2",
+      "definition_text": "triphenylsulfonium nonafluorobutanesulfonate",
+      "refs": [
+        {
+          "block_id": "p-0170",
+          "location": "Table 1, row Example 1",
+          "quote": "PAG2 denotes triphenylsulfonium nonafluorobutanesulfonate.",
+          "purpose": "codename_definition"
+        }
+      ]
+    },
+    {
+      "codename": "PAG3",
+      "definition_text": "bis-O-(n-butylsulfonyl)-α-dimethylglyoxime",
+      "refs": [
+        {
+          "block_id": "p-0170",
+          "location": "Table 1, row Example 1",
+          "quote": "PAG3 denotes bis-O-(n-butylsulfonyl)-α-dimethylglyoxime.",
+          "purpose": "codename_definition"
+        }
+      ]
+    },
+    {
+      "codename": "PAG4",
+      "definition_text": "bis(cyclohexylsulfonyl)diazomethane",
+      "refs": [
+        {
+          "block_id": "p-0170",
+          "location": "Table 1, row Example 1",
+          "quote": "PAG4 denotes bis(cyclohexylsulfonyl)diazomethane.",
+          "purpose": "codename_definition"
+        }
+      ]
+    }
+  ],
+  "shared_conditions": [
+    {
+      "description": "PAB treatment at 90° C. for 90 seconds; PEB treatment at 110° C. for 90 seconds for all examples.",
+      "applies_to": [
+        "Example 1",
+        "Example 2",
+        "Example 3",
+        "Example 4",
+        "Example 5",
+        "Example 6",
+        "Example 7",
+        "Example 8",
+        "Example 9",
+        "Example 10",
+        "Example 11",
+        "Example 12",
+        "Example 13",
+        "Example 14",
+        "Example 15",
+        "Example 16",
+        "Example 17",
+        "Example 18",
+        "Example 19",
+        "Example 20",
+        "Example 21",
+        "Example 22",
+        "Example 23",
+        "Example 24"
+      ],
+      "refs": [
+        {
+          "block_id": "p-0158",
+          "location": "Example 1",
+          "quote": "PAB treatment at 90° C. for 90 seconds; PEB treatment at 110° C. for 90 seconds.",
+          "purpose": "shared_condition"
+        }
+      ]
+    }
+  ],
+  "grade_scales": [
+    {
+      "scale_id": "resolution",
+      "scale_text": "L/S: 50 nm; Iso-Line: 70 nm.",
+      "refs": [
+        {
+          "block_id": "p-0170",
+          "location": "Table 2, row Example 1",
+          "quote": "L/S: 50 nm; Iso-Line: 70 nm.",
+          "purpose": "grade_scale"
+        }
+      ]
+    }
+  ],
+  "note": null
+}

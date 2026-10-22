@@ -1,0 +1,111 @@
+{
+  "run_id": "20261022T205223Z_openai_mini",
+  "doc_id": "US20080241753A1",
+  "url": "https://patents.google.com/patent/US20080241753A1/en",
+  "split_set": "development",
+  "profile": "openai_mini",
+  "model": "openai:gpt-4o-mini",
+  "prompt_version": "2026-10-23.1",
+  "vocab_version": 3,
+  "package_version": "0.1.0",
+  "created_utc": "20261022T205223Z",
+  "duration_s": 100.3,
+  "examples_in_map": [
+    "Example 1",
+    "Example 2",
+    "Example 3",
+    "Example 4",
+    "Example 5",
+    "Example 6",
+    "Example 7",
+    "Example 8",
+    "Example 9",
+    "Example 10",
+    "Example 11",
+    "Example 12",
+    "Example 13",
+    "Example 14",
+    "Example 15",
+    "Example 16",
+    "Example 17",
+    "Example 18",
+    "Example 19",
+    "Example 20",
+    "Example 21",
+    "Example 22",
+    "Example 23",
+    "Example 24",
+    "Comparative Example 1"
+  ],
+  "examples_requested": [
+    "Example 3"
+  ],
+  "records": 2,
+  "failed_examples": [],
+  "ref_checks": {
+    "total": 34,
+    "verified": 26,
+    "ok": 26,
+    "ok_merged": 0,
+    "elsewhere": 0,
+    "not_found": 8,
+    "unknown_block": 0
+  },
+  "per_example": [
+    {
+      "example": "Example 3",
+      "valid": true,
+      "attempts": 2,
+      "repair_errors": [
+        [
+          "records.0.components.0: Value error, amount: set either the numeric value or the text form, not both",
+          "records.0.components.1: Value error, amount: set either the numeric value or the text form, not both",
+          "records.0.components.2: Value error, amount: set either the numeric value or the text form, not both",
+          "records.0.components.4: Value error, amount: set either the numeric value or the text form, not both",
+          "records.0.components.5: Value error, amount: set either the numeric value or the text form, not both",
+          "records.1.components.0: Value error, amount: set either the numeric value or the text form, not both",
+          "records.1.components.1: Value error, amount: set either the numeric value or the text form, not both",
+          "records.1.components.2: Value error, amount: set either the numeric value or the text form, not both",
+          "records.1.components.4: Value error, amount: set either the numeric value or the text form, not both",
+          "records.1.components.5: Value error, amount: set either the numeric value or the text form, not both"
+        ]
+      ],
+      "records": [
+        "US20080241753A1_ex3_film-100-nm",
+        "US20080241753A1_ex3_film-200-nm"
+      ],
+      "ref_checks": {
+        "total": 34,
+        "verified": 26,
+        "ok": 26,
+        "ok_merged": 0,
+        "elsewhere": 0,
+        "not_found": 8,
+        "unknown_block": 0
+      },
+      "context": {
+        "blocks": 31,
+        "fallback": false,
+        "inherited_from": [
+          "Example 1"
+        ],
+        "variant_hints": [
+          "[t-2-r-7-8] column 'Resist film thickness (nm)' lists 2 values '100/200': if results are reported for each value, create one record per value"
+        ],
+        "notes": []
+      }
+    }
+  ],
+  "map_ok": true,
+  "usage": {
+    "calls": 2,
+    "cached_calls": 0,
+    "attempts": 3,
+    "input_tokens": 43324,
+    "output_tokens": 9905,
+    "cached_input_tokens": 0,
+    "cached_output_tokens": 0
+  },
+  "warnings": [],
+  "notes": []
+}

@@ -8,11 +8,11 @@ Built at the [OSI Hackathon](https://llmhackathon.github.io/) (October 21–22, 
 
 ## Why
 
-Negative photoresists pattern semiconductor chips, MEMS, microfluidics and nanostructures. Their formulation is still largely trial and error:
+Negative photoresists pattern semiconductor chips, MEMS, microfluidics, and nanostructures. Their formulation is still largely trial and error:
 
 - **No open data.** Recipes (resin, crosslinker, photoacid generator, quencher, solvent) and their lithographic performance are scattered across patents and papers in inconsistent units.
-- **Costly iteration.** Sensitivity, resolution and line-edge roughness trade off against each other, and every iteration costs coating, exposure and SEM time.
-- **Regulatory pressure.** Many photoacid generators use PFAS anions, and some common solvents are restricted. New formulations have to perform *and* comply.
+- **Costly iteration.** Sensitivity, resolution, and line-edge roughness (LWR) trade off against each other, and every iteration costs coating, exposure, and SEM time.
+- **Regulatory pressure.** Many photoacid generators use PFAS anions (e.g. nonaflates, perfluoroalkyl sulfonates), and some common solvents are restricted under EU REACH and US TSCA. New formulations must perform *and* comply.
 
 ## What we are building
 
@@ -27,14 +27,121 @@ Negative photoresists pattern semiconductor chips, MEMS, microfluidics and nanos
 
 Every candidate from the design agent passes through the compliance agent. Flagged candidates are rejected or penalized, so only compliant formulations reach the ranked output.
 
-## Hackathon deliverables
+---
 
-- [ ] Open formulation dataset: 50–200 records in the agreed schema
-- [ ] Gold set of ~10 hand-labeled documents and an extraction accuracy report (precision and recall on held-out documents)
-- [ ] Extraction agent with page and table citations (working end to end, accuracy not yet validated; see [Status](#status-and-known-limitations))
-- [ ] Surrogate model + Bayesian optimization design agent
-- [ ] Compliance agent with cited rationale and substitutes
-- [ ] End-to-end demo, video and slides
+## System Architecture
+
+```
+                    ┌────────────────────────┐
+                    │  Target Specification  │
+                    │ (LWR <= 4.5 nm, PFAS=0)│
+                    └───────────┬────────────┘
+                                │
+                                ▼
+                    ┌────────────────────────┐
+                    │  Bayesian Optimizer    │ ◄─── Engineered Features
+                    │ (Expected Improvement) │      (Dual Crosslinkers,
+                    └───────────┬────────────┘       PAG-to-Resin Ratio)
+                                │
+                                ▼
+                    ┌────────────────────────┐
+                    │ Dual Litho Surrogate   │
+                    │ (Gaussian Process +    │ ───► Predicted LWR & Dose
+                    │  Epistemic Uncertainty)│      (with 95% Confidence)
+                    └───────────┬────────────┘
+                                │
+                                ▼
+                    ┌────────────────────────┐
+                    │    Compliance Agent    │ ───► Automatic PFAS Substitution
+                    │ (OECD PFAS, REACH/TSCA)│      (Nonaflate -> Camphorsulfonate)
+                    └───────────┬────────────┘
+                                │
+                                ▼
+                    ┌────────────────────────┐
+                    │ Dispensing Recipe Card │
+                    │ (Mass loadings, PEB,   │
+                    │  TMAH developer steps) │
+                    └────────────────────────┘
+```
+
+The records feeding the surrogate come from the gold set today; the [extraction agent](#extraction-agent)
+(below) produces records in the same `vocab.yaml` schema from new patents.
+
+---
+
+## Hackathon Deliverables
+
+- [x] **Reconciled Master Gold Set**: 10 patents, 239 formulation records, 1,285 components, and 858 lithography results ([`data/Negative_Lines_Reconciled_Gold_Set.xlsx`](data/Negative_Lines_Reconciled_Gold_Set.xlsx)). See [Gold set and evaluation split](#gold-set-and-evaluation-split) for the development/benchmark split.
+- [x] **Benchmarked E-Beam Lithography Dataset**: 14 standardized records from US7432034B2 under identical 50 keV tool conditions on 6-inch Si wafers ([`data/fujifilm_ebeam_dataset.csv`](data/fujifilm_ebeam_dataset.csv)).
+- [x] **Gaussian Process Surrogate Model**: Matern 5/2 kernel with Leave-One-Out Cross-Validation (LOOCV), predicting LWR ($R^2 = 0.20$, MAE $1.37\text{ nm}$) and sensitivity dose with epistemic variance $\sigma(x)$ ([`src/surrogate.py`](src/surrogate.py)).
+- [x] **Bayesian Optimization Design Engine**: Expected Improvement (EI) candidate generation and retrospective simulation proving 3x-4x sample efficiency advantage over random search ([`src/optimizer.py`](src/optimizer.py)).
+- [x] **Compliance Agent**: Automated screening against OECD PFAS definitions, EU REACH Annex XVII, and US TSCA, with automatic non-fluorinated green substitutes (e.g., Camphorsulfonate / Tosylate) ([`src/compliance.py`](src/compliance.py)).
+- [x] **Closed-Loop Multi-Agent Orchestrator**: End-to-end target spec to dispensing recipe generator ([`src/orchestrator.py`](src/orchestrator.py), [`src/demo.py`](src/demo.py)).
+- [x] **Interactive Streamlit Web Dashboard**: Graphical interface for recipe generation, what-if sensitivity simulations, and retrospective validation curves ([`app.py`](app.py)).
+- [x] **Automated Test Suite**: 7-point unit test suite verifying data integrity, model fitting, and agent execution ([`src/test_pipeline.py`](src/test_pipeline.py)).
+- [ ] **Extraction agent with page and table citations**: working end to end on Google Patents pages, accuracy not yet validated ([`src/negative_lines/`](src/negative_lines/), see [Extraction agent](#extraction-agent)).
+- [ ] **Extraction accuracy report** (precision and recall on held-out benchmark documents): scorer not yet implemented.
+
+---
+
+## Quickstart: design, surrogate and compliance demo
+
+### 1. Requirements & Setup
+
+The entire pipeline runs on any machine (including Apple Silicon M1/M2/M3 MacBooks or Linux/Windows) with zero GPU requirement:
+
+```bash
+# Clone the repository
+git clone https://github.com/whatnotalot/negative-lines.git
+cd negative-lines
+
+# Install lightweight dependencies
+pip install -r requirements.txt
+```
+
+### 2. Run the End-to-End CLI Demo
+
+Execute the multi-agent pipeline in the terminal:
+
+```bash
+python src/demo.py
+```
+
+### 3. Run the Automated Test Suite
+
+```bash
+python src/test_pipeline.py
+```
+
+### 4. Launch the Interactive Streamlit Dashboard Locally
+
+```bash
+streamlit run app.py
+```
+Open `http://localhost:8501` in your browser.
+
+### Deploy to Streamlit Community Cloud
+
+This repository is pre-configured for 1-click cloud deployment:
+
+1. Push your changes to GitHub repository `whatnotalot/negative-lines`.
+2. Visit [share.streamlit.io](https://share.streamlit.io).
+3. Connect your GitHub account and select:
+   - **Repository:** `whatnotalot/negative-lines`
+   - **Branch:** `main`
+   - **Main file path:** `app.py`
+4. Click **Deploy!** Streamlit Community Cloud will automatically install `requirements.txt` and serve the dashboard globally.
+
+### Key Technical Findings
+
+1. **Dual-Crosslinker Synergism in Negative-Tone Resists (`US7432034B2`):**
+   - Single-crosslinker comparative formulations suffer severe phase separation and roughness jumps ($LWR = 10.5 - 13.8\text{ nm}$).
+   - Dual-crosslinker formulations combining melamine derivatives (MM-1 Cymel) and glycoluril derivatives (CL-1 Powderlink) achieve tight networks ($LWR = 4.5 - 6.2\text{ nm}$).
+2. **PFAS-Free Drop-In Substitution:**
+   - Historical photoacid generators (such as PAG I-1, Triphenylsulfonium Nonaflate) utilize $C_4F_9SO_3^-$, an environmentally persistent perfluorinated anion restricted under REACH SVHC and US EPA PFAS rules.
+   - The compliance agent substitutes non-fluorinated Triphenylsulfonium Camphorsulfonate, preserving high thermal stability and low acid diffusion without environmental persistence.
+3. **Sample Efficiency:**
+   - Retrospective simulation on patent records proves Bayesian Optimization discovers optimal low-LWR formulations in **3–4 experiments**, compared to 10+ for unguided random search.
 
 ---
 
@@ -42,7 +149,8 @@ Every candidate from the design agent passes through the compliance agent. Flagg
 
 The extraction agent turns a patent into records that follow [`vocab.yaml`](vocab.yaml): one
 record per formulation processed one way, with its components, process conditions and results,
-and a source reference (block ID and verbatim quote) for every value.
+and a source reference (block ID and verbatim quote) for every value. It is a separate Python
+package (`src/negative_lines/`, managed with `uv`) and does not depend on the demo above.
 
 ### Quick start
 
@@ -276,18 +384,22 @@ record-ID convention (`ex3`, `cex1`), merging per-bake methods into one `bake_me
 ### Tests
 
 ```bash
+# design / surrogate / compliance demo
+python src/test_pipeline.py
+
+# extraction agent
 uv run pytest                  # offline and deterministic (fake LLM, synthetic fixtures)
 uv run pytest -m network -rP   # opt-in: downloads a development patent from Google Patents
 uv run pytest -m live -rP      # opt-in, PAID: real provider calls on synthetic input
 uv run ruff check . && uv run ruff format --check .
 ```
 
-Tests check, among other things, that the Python schema matches `vocab.yaml`, that the LLM
-schemas satisfy strict structured-output rules, the labeling-guide validators, ingestion against
-a synthetic Google Patents page, per-example context assembly, and that no benchmark document
-appears in prompts or fixtures.
+The extraction tests check, among other things, that the Python schema matches `vocab.yaml`,
+that the LLM schemas satisfy strict structured-output rules, the labeling-guide validators,
+ingestion against a synthetic Google Patents page, per-example context assembly, and that no
+benchmark document appears in prompts or fixtures.
 
-### Changing things
+### Changing the extraction agent
 
 - **Vocabulary / schema:** edit `vocab.yaml` (one owner, bump `version`), then update
   `schema/enums.py`, `schema/record.py`, `schema/llm.py` and `schema/mapping.py`; the
@@ -302,41 +414,55 @@ appears in prompts or fixtures.
 
 ```
 .
-├── README.md
-├── vocab.yaml                 # controlled vocabulary and record schema (v3), source of truth
-├── pyproject.toml / uv.lock   # Python project (uv)
-├── .env.example               # copy to .env (gitignored) for API keys
-├── config/llm.yaml            # LLM provider/model profiles (no secrets)
-├── src/negative_lines/
-│   ├── config.py              # settings, LLM profile loading, API-key checks
-│   ├── vocab.py               # vocab.yaml loader (units, dose families, record fields)
-│   ├── cli.py                 # `negative-lines` command (ingest | examples | extract)
-│   ├── schema/
-│   │   ├── enums.py           # static Literal mirrors of vocab.yaml
-│   │   ├── refs.py            # SourceRef (block ID, location, quote, purpose)
-│   │   ├── llm.py             # LLM structured-output models (DocumentMap, ExampleExtraction)
-│   │   ├── record.py          # full dataset record (FormulationRecord)
-│   │   ├── mapping.py         # vocab <-> LLM <-> record field mapping
-│   │   └── validators.py      # labeling-guide rules and consistency checks
-│   ├── ingest/                # Google Patents parser, blocks, wrapped-row merging
-│   ├── llm/                   # chat-model factory; validated structured calls (repair, cache)
-│   ├── extract/               # prompts, rules, labels, per-example context, quote
-│   │                          #   verification, pipeline, api.extract_patent()
-│   ├── enrich/                # record IDs, units, wt% of solids, LLM -> dataset record
-│   └── gold/                  # split loader, workbook subsetting, gold v0 adapter + vocab mapping
-├── eval/
-│   ├── split.yaml             # AUTHORITATIVE development/benchmark split
-│   └── gold_versions.yaml     # gold versions, checksums, known issues
+├── README.md                          # Project documentation and quickstart
+├── vocab.yaml                         # Controlled vocabulary & record schema (v3), source of truth
+├── docs/
+│   ├── hand-labeling-guide.md         # Gold set annotation protocol
+│   ├── negative-lines-card.png
+│   └── negative-lines-card.svg
+│
+│   # design, surrogate and compliance demo (pip, requirements.txt)
+├── requirements.txt                   # Production dependencies
+├── app.py                             # Interactive Streamlit web application
+├── src/
+│   ├── dataset.py                     # Feature engineering and dataset loader
+│   ├── surrogate.py                   # Gaussian Process surrogate model (LOOCV)
+│   ├── optimizer.py                   # Bayesian Optimization & retrospective benchmark
+│   ├── compliance.py                  # Chemical regulatory screening agent
+│   ├── orchestrator.py                # Closed-loop multi-agent workflow
+│   ├── demo.py                        # Terminal end-to-end pipeline demonstration
+│   ├── test_pipeline.py               # Unit test suite
+│   └── negative_lines/                # extraction agent package (see below)
+├── automated/                         # self-contained automated engine (own README)
+├── manual/                            # manual workbench track (own README)
 ├── data/
-│   ├── gold/v0/               # development.xlsx (development documents only) + meta
-│   ├── extracted/             # extraction runs (records.jsonl, run.json, ...)
-│   ├── raw/                   # downloaded source pages (gitignored)
-│   └── cache/                 # LLM response cache (gitignored)
-├── tests/                     # offline tests; fixtures/ingest (synthetic Google Patents page)
-└── docs/
-    ├── hand-labeling-guide.md
-    ├── negative-lines-card.png
-    └── negative-lines-card.svg
+│   ├── Negative_Lines_Reconciled_Gold_Set.xlsx  # 10 reconciled patents (239 records)
+│   ├── fujifilm_ebeam_dataset.csv     # Extracted 14 standardized 50 keV records
+│   ├── pfas_registry.json             # OECD/REACH/TSCA restricted chemicals & substitutes
+│   ├── gold/v0/                       # development gold subset (extraction evaluation) + meta
+│   ├── extracted/                     # extraction runs (records.jsonl, run.json, ...)
+│   ├── raw/                           # downloaded source pages (gitignored)
+│   └── cache/                         # LLM response cache (gitignored)
+│
+│   # extraction agent (uv, pyproject.toml)
+├── pyproject.toml / uv.lock           # Python project (uv)
+├── .env.example                       # copy to .env (gitignored) for API keys
+├── config/llm.yaml                    # LLM provider/model profiles (no secrets)
+├── eval/
+│   ├── split.yaml                     # AUTHORITATIVE development/benchmark split
+│   └── gold_versions.yaml             # gold versions, checksums, known issues
+├── src/negative_lines/
+│   ├── config.py                      # settings, LLM profile loading, API-key checks
+│   ├── vocab.py                       # vocab.yaml loader (units, dose families, record fields)
+│   ├── cli.py                         # `negative-lines` command (ingest | examples | extract)
+│   ├── schema/                        # enums, refs, LLM models, record, mapping, validators
+│   ├── ingest/                        # Google Patents parser, blocks, wrapped-row merging
+│   ├── llm/                           # chat-model factory; validated structured calls
+│   ├── extract/                       # prompts, rules, labels, context, quote verification,
+│   │                                  #   pipeline, api.extract_patent()
+│   ├── enrich/                        # record IDs, units, wt% of solids, LLM -> dataset record
+│   └── gold/                          # split loader, workbook subsetting, gold v0 adapter
+└── tests/                             # extraction tests; fixtures/ingest (synthetic page)
 ```
 
 ---
@@ -352,6 +478,13 @@ original full workbook and its known issues).
 The split is by **document**, never by record. [`eval/split.yaml`](eval/split.yaml) is the
 **authoritative** definition; the tables below describe split version 1 and must be updated
 together with it (a test checks that every document in `split.yaml` is listed here).
+
+> **Open team decision:** the full workbook, including the benchmark annotations, is also
+> committed as `data/Negative_Lines_Reconciled_Gold_Set.xlsx` and
+> `automated/data/Negative_Lines_Reconciled_Gold_Set.xlsx` (used by the design demo), and
+> `data/fujifilm_ebeam_dataset.csv` is derived from benchmark patent US7432034B2. This
+> conflicts with keeping benchmark annotations out of the repository. Using these records for
+> the surrogate model is fine; they must not be used to develop or tune the extraction agent.
 
 Load the development gold in Python:
 
@@ -390,11 +523,11 @@ analysis.
 | 09 | US20230314945A1 | 19 | EUV 13.5 nm |
 | 10 | US20070248896A1 | 46 | SU-8 thick film; adhesion, via cracking, wafer bow |
 
-Allowed use: milestone evaluation only, reported as aggregates. Benchmark annotations are kept
-**outside this repository and the agent working directory**; they must not be used for prompts,
-worked examples, skills, test fixtures, debugging or value-level error analysis. The gold
-loader refuses benchmark documents unless called with `allow_sets=("benchmark",)`, and the
-scorer reads them only from `NL_GOLD_BENCHMARK_PATH` for an approved run.
+Allowed use for extraction: milestone evaluation only, reported as aggregates. Benchmark
+annotations must not be used for extraction prompts, worked examples, skills, test fixtures,
+debugging or value-level error analysis. The gold loader refuses benchmark documents unless
+called with `allow_sets=("benchmark",)`, and the scorer reads them only from
+`NL_GOLD_BENCHMARK_PATH` for an approved run.
 
 ### Exclusions and subsets
 
@@ -422,6 +555,7 @@ any extraction is run on them. History: split version 1 (2026-10-23), initial sp
 
 - [Hand-labeling guide](docs/hand-labeling-guide.md): how to label the gold set, including the different wt% bases and dose definitions
 - [`vocab.yaml`](vocab.yaml): the shared contract between the extraction agent, dataset, models and compliance agent
+- [`automated/README.md`](automated/README.md) and [`manual/README.md`](manual/README.md): the automated engine and manual workbench tracks
 
 ## Team
 
@@ -439,7 +573,7 @@ Join us on the hackathon Slack: [team channel](https://app.slack.com/client/T04T
 
 ## Disclaimer
 
-The compliance agent is a screening tool, not legal advice. Regulatory lists change; always check the current official sources.
+The compliance agent is an automated screening aid for chemical research, not formal legal counsel. Always verify current regulatory updates with ECHA and EPA inventories.
 
 ## License
 
