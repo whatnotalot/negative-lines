@@ -41,14 +41,37 @@ Every candidate from the design agent passes through the compliance agent. Flagg
 ```
 .
 ├── README.md
-├── vocab.yaml          # controlled vocabulary and record schema (v2)
+├── vocab.yaml                 # controlled vocabulary and record schema (v3), source of truth
+├── pyproject.toml / uv.lock   # Python project (uv)
+├── .env.example               # copy to .env (gitignored) for API keys
+├── config/llm.yaml            # LLM provider/model profiles (no secrets)
+├── src/negative_lines/
+│   ├── config.py              # settings, LLM profile loading, API-key checks
+│   ├── vocab.py               # vocab.yaml loader (units, dose families, record fields)
+│   └── schema/
+│       ├── enums.py           # static Literal mirrors of vocab.yaml
+│       ├── refs.py            # SourceRef (paragraph / table-row citations)
+│       ├── llm.py             # LLM structured-output models (DocumentMap, ExampleExtraction)
+│       ├── record.py          # full dataset record (FormulationRecord)
+│       ├── mapping.py         # vocab <-> LLM <-> record field mapping
+│       └── validators.py      # labeling-guide rules
+├── tests/                     # vocab consistency, strict-schema and validator tests
 └── docs/
     ├── hand-labeling-guide.md
     ├── negative-lines-card.png
     └── negative-lines-card.svg
 ```
 
-Code for the agents, data and models will be added during the hackathon.
+## Development
+
+```
+pip install uv            # if needed
+uv sync                   # create .venv and install
+cp .env.example .env      # then set GOOGLE_API_KEY (never commit it)
+uv run pytest
+```
+
+Select the LLM with `NL_LLM_PROFILE` (profiles in `config/llm.yaml`). Switching provider or model does not change the schema or pipeline.
 
 ## Documentation
 
