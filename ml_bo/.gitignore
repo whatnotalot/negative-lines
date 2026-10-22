@@ -1,0 +1,4 @@
+# derived or per-user files (regenerate with scripts/build_dataset.py; uploads come from the app)
+data/processed/
+data/uploads/
+data/raw/

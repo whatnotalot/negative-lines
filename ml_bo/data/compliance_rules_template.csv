@@ -1,0 +1,14 @@
+doc_id,role,name_pattern,rule,severity,rationale,source,confidence,substitutes
+US20080241753A1,pag,^PAG1$,OECD_PFAS,block,Triflate (CF3SO3-) anion per QC sheet.,extraction_qc,high,camphorsulfonate onium salt; arenesulfonate (e.g. tosylate) onium salt; non-fluorinated bulky alkylsulfonate; metal-oxo (e.g. tin-oxo) resist platform
+US20080241753A1,pag,^PAG2$,OECD_PFAS,block,Nonaflate (C4F9SO3-) anion per QC sheet.,extraction_qc,high,camphorsulfonate onium salt; arenesulfonate (e.g. tosylate) onium salt; non-fluorinated bulky alkylsulfonate; metal-oxo (e.g. tin-oxo) resist platform
+US7432034B2,pag,^(I-1|PAG4-36)$,OECD_PFAS,block,Perfluorobutanesulfonate (C4F9SO3-) anion per QC sheet.,extraction_qc,high,camphorsulfonate onium salt; arenesulfonate (e.g. tosylate) onium salt; non-fluorinated bulky alkylsulfonate; metal-oxo (e.g. tin-oxo) resist platform
+US20230314945A1,pag,^\(B-[1-7]\)$,OECD_PFAS,block,All EUV PAGs B-1..B-7 carry fluorinated anions per QC sheet.,extraction_qc,high,camphorsulfonate onium salt; arenesulfonate (e.g. tosylate) onium salt; non-fluorinated bulky alkylsulfonate; metal-oxo (e.g. tin-oxo) resist platform
+,pag,cyracure\s*(uvi-)?6974,metal,watch,Triarylsulfonium SbF6- salt: not PFAS (no CF2/CF3) but an antimony compound; check hazard classification.,product_family,medium,triarylsulfonium PF6- salt
+,pag,cyracure\s*uvi-6990,none,clear,"Triarylsulfonium PF6- salt: inorganic fluoroanion, not PFAS under OECD 2021.",product_family,medium,
+,sensitizer,hexafluoroantimonate,metal,watch,Contains SbF6- (antimony); not PFAS under OECD 2021.,name_rule,high,
+,surfactant,(megaf|^f-?\d{3}|^r-?08|\br08\b),OECD_PFAS,block,Megaface F-/R-series are fluorinated surfactants (perfluoroalkyl groups); verify on SDS.,product_family,medium,BYK-3xx polyether-modified PDMS
+,surfactant,^fc-\d+,OECD_PFAS,block,Fluorad FC-series are fluorochemical surfactants; verify on SDS.,product_family,medium,BYK-3xx polyether-modified PDMS
+,surfactant,^byk,none,clear,BYK-3xx are polyether-modified polydimethylsiloxanes (no fluorine).,product_family,medium,
+,surfactant,polydimethylsiloxane,none,clear,Silicone leveling agent (no fluorine).,name_rule,high,
+,additive,dioctyl phthalate|\bdop\b,REACH_SVHC,penalize,"'DOP' usually denotes DEHP (REACH SVHC, Annex XIV); if di-n-octyl phthalate, still a restricted phthalate. Confirm CAS.",name_rule,medium,DINCH; acetyl tributyl citrate (ATBC); DEHT/DOTP
+WO2004107052A1,solvent,^MCA$,REACH_SVHC,watch,Abbreviation undefined in source; if 2-methoxyethyl acetate it is a REACH SVHC (reprotoxic). Confirm identity.,name_rule,low,PGMEA
