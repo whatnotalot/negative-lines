@@ -28,14 +28,15 @@ profiles:
     max_retries: 3
     timeout_s: 120
 
-  # Examples for later; require the matching langchain-<provider> package.
-  # openai:
-  #   provider: openai
-  #   model: <model id>
-  #   api_key_env: OPENAI_API_KEY
-  #   temperature: 0.0
-  #   structured_method: json_schema
-  #   strict: true
-  #   rpm: null
-  #   max_retries: 3
-  #   timeout_s: 120
+  openai_mini:
+    provider: openai
+    model: gpt-4o-mini
+    api_key_env: OPENAI_API_KEY
+    temperature: 0.0
+    structured_method: json_schema
+    strict: true          # OpenAI strict structured outputs
+    rpm: null
+    max_retries: 3
+    timeout_s: 120
+
+  # Other providers need their LangChain package, e.g. `uv add langchain-anthropic`.
