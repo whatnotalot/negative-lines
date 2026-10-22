@@ -19,22 +19,9 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom Styling
-st.markdown("""
-<style>
-    .main-title {
-        font-size: 2.1rem;
-        font-weight: 700;
-        color: #1E3A8A;
-        margin-bottom: 0.2rem;
-    }
-    .sub-title {
-        font-size: 1.05rem;
-        color: #4B5563;
-        margin-bottom: 1.2rem;
-    }
-</style>
-""", unsafe_allow_html=True)
+# Apply unified design system with permanently dark left sidebar
+from dashboard import CSS
+st.markdown(CSS, unsafe_allow_html=True)
 
 # Sidebar Track Selector
 st.sidebar.title("🔬 Project Negative Lines")

@@ -44,89 +44,423 @@ CSS = f"""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-html, body, [class*="css"], .stApp, .stMarkdown, p, li, label, button, input, textarea, select {{
+html, body, [class*="css"], .stApp {{
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #F8FAFC !important;
 }}
-.stApp {{ background: #F6F8FB; }}
+
 #MainMenu, footer {{ visibility: hidden; }}
 [data-testid="stDecoration"] {{ display: none; }}
 .block-container {{ padding-top: 1.6rem; padding-bottom: 3rem; max-width: 1320px; }}
 
-/* Sidebar */
-[data-testid="stSidebar"] {{ background: #FFFFFF; border-right: 1px solid {SLATE_200}; }}
-[data-testid="stSidebar"] .block-container {{ padding-top: 1.2rem; }}
-.nl-side-brand {{ font-weight: 700; font-size: 1.02rem; color: {SLATE_900}; letter-spacing: -0.01em; }}
-.nl-side-sub {{ font-size: 0.78rem; color: {SLATE_500}; margin-bottom: 0.6rem; }}
-.nl-side-h {{ font-size: 0.68rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase;
-             color: {SLATE_500}; margin: 1.1rem 0 0.35rem 0; }}
-.nl-kv {{ display: flex; justify-content: space-between; font-size: 0.8rem; padding: 0.28rem 0;
-          border-bottom: 1px dashed {SLATE_200}; color: {SLATE_900}; }}
-.nl-kv span:first-child {{ color: {SLATE_500}; }}
+/* ========================================================================= */
+/* Permanently Dark Left Sidebar                                             */
+/* ========================================================================= */
+[data-testid="stSidebar"], 
+[data-testid="stSidebar"] > div:first-child,
+[data-testid="stSidebarContent"],
+section[data-testid="stSidebar"] {{
+    background: #0B132B !important;
+    background-color: #0B132B !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+}}
 
-/* Hero */
-.nl-hero {{ background: linear-gradient(120deg, {NAVY} 0%, #12305C 55%, #1E3A8A 100%);
-            border-radius: 14px; padding: 1.6rem 1.9rem; color: #F8FAFC; margin-bottom: 1.1rem;
-            box-shadow: 0 6px 24px rgba(11,31,58,0.18); }}
-.nl-eyebrow {{ font-size: 0.7rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
-               color: #93C5FD; }}
-.nl-hero-title {{ font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; margin: 0.25rem 0 0.3rem 0; }}
-.nl-hero-sub {{ font-size: 0.95rem; color: #CBD5E1; max-width: 860px; }}
-.nl-tags {{ margin-top: 0.9rem; display: flex; flex-wrap: wrap; gap: 0.45rem; }}
-.nl-tag {{ font-size: 0.72rem; font-weight: 500; padding: 0.22rem 0.65rem; border-radius: 999px;
-           background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); color: #E2E8F0; }}
+[data-testid="stSidebar"] .block-container {{
+    padding-top: 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}}
 
-/* KPI strip */
-.nl-kpis {{ display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.85rem; margin-bottom: 1.2rem; }}
-.nl-kpi {{ background: #FFFFFF; border: 1px solid {SLATE_200}; border-radius: 12px; padding: 0.95rem 1.1rem; }}
-.nl-kpi-label {{ font-size: 0.68rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: {SLATE_500}; }}
-.nl-kpi-value {{ font-family: 'JetBrains Mono', monospace; font-size: 1.55rem; font-weight: 500; color: {SLATE_900};
-                 margin-top: 0.2rem; letter-spacing: -0.02em; }}
-.nl-kpi-unit {{ font-size: 0.85rem; color: {SLATE_500}; margin-left: 0.2rem; }}
-.nl-kpi-sub {{ font-size: 0.76rem; color: {SLATE_500}; margin-top: 0.1rem; }}
+/* Sidebar Headings & Brand */
+.nl-side-brand {{
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #FFFFFF !important;
+    letter-spacing: -0.01em;
+}}
+.nl-side-sub {{
+    font-size: 0.78rem;
+    color: #94A3B8 !important;
+    margin-bottom: 0.8rem;
+}}
+.nl-side-h {{
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #38BDF8 !important;
+    margin: 1.2rem 0 0.45rem 0;
+}}
 
-/* Sections & cards */
-.nl-h2 {{ font-size: 1.08rem; font-weight: 650; color: {SLATE_900}; letter-spacing: -0.01em; margin: 0.4rem 0 0.1rem 0; }}
-.nl-h2-sub {{ font-size: 0.85rem; color: {SLATE_500}; margin-bottom: 0.9rem; }}
-.nl-card {{ background: #FFFFFF; border: 1px solid {SLATE_200}; border-radius: 12px; padding: 1.15rem 1.35rem;
-            margin-bottom: 1rem; box-shadow: 0 1px 2px rgba(15,23,42,0.04); }}
-.nl-card-head {{ display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.8rem; }}
-.nl-card-title {{ font-weight: 650; font-size: 1rem; color: {SLATE_900}; }}
-.nl-card-title small {{ font-weight: 500; color: {SLATE_500}; margin-left: 0.5rem; font-size: 0.8rem; }}
-.nl-metrics {{ display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.7rem; margin-bottom: 0.9rem; }}
-.nl-metric {{ background: #F8FAFC; border: 1px solid #EEF2F7; border-radius: 10px; padding: 0.65rem 0.8rem; }}
-.nl-metric-label {{ font-size: 0.66rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: {SLATE_500}; }}
-.nl-metric-value {{ font-family: 'JetBrains Mono', monospace; font-size: 1.15rem; color: {SLATE_900}; margin-top: 0.15rem; }}
-.nl-metric-sub {{ font-family: 'JetBrains Mono', monospace; font-size: 0.74rem; color: {SLATE_500}; }}
+/* Sidebar Text & Labels */
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] span,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] .stMarkdown,
+[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p {{
+    color: #E2E8F0 !important;
+}}
 
-.nl-pill {{ display: inline-block; padding: 0.18rem 0.65rem; border-radius: 999px; font-size: 0.7rem;
-            font-weight: 700; letter-spacing: 0.04em; }}
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {{
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+}}
+
+/* Sidebar Radio Buttons */
+[data-testid="stSidebar"] [data-testid="stRadio"] label {{
+    color: #F8FAFC !important;
+    font-size: 0.88rem !important;
+    font-weight: 500 !important;
+}}
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] label:hover {{
+    background: rgba(255, 255, 255, 0.06) !important;
+    border-radius: 6px !important;
+}}
+
+/* Sidebar Sliders */
+[data-testid="stSidebar"] .stSlider label p {{
+    color: #CBD5E1 !important;
+    font-size: 0.82rem !important;
+    font-weight: 500 !important;
+}}
+[data-testid="stSidebar"] .stSlider [data-testid="stThumbValue"] {{
+    color: #38BDF8 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-weight: 600 !important;
+}}
+[data-testid="stSidebar"] .stSlider [data-testid="stTickBarMin"],
+[data-testid="stSidebar"] .stSlider [data-testid="stTickBarMax"] {{
+    color: #64748B !important;
+    font-size: 0.72rem !important;
+}}
+
+/* Sidebar Toggle & Checkbox */
+[data-testid="stSidebar"] .stCheckbox label p,
+[data-testid="stSidebar"] .stToggle label p {{
+    color: #F1F5F9 !important;
+    font-size: 0.85rem !important;
+}}
+
+/* Sidebar Process Window Key-Value Pairs */
+.nl-kv {{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    padding: 0.35rem 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.12) !important;
+    color: #F8FAFC !important;
+}}
+.nl-kv span:first-child {{
+    color: #94A3B8 !important;
+    font-weight: 400;
+}}
+.nl-kv span:last-child {{
+    color: #F8FAFC !important;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+}}
+
+/* Sidebar Action Button */
+[data-testid="stSidebar"] .stButton > button,
+[data-testid="stSidebar"] [data-testid="stFormSubmitButton"] > button {{
+    background: #2563EB !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 0.88rem !important;
+    padding: 0.6rem 1rem !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35) !important;
+    transition: all 0.15s ease !important;
+}}
+[data-testid="stSidebar"] .stButton > button:hover,
+[data-testid="stSidebar"] [data-testid="stFormSubmitButton"] > button:hover {{
+    background: #1D4ED8 !important;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5) !important;
+    transform: translateY(-1px) !important;
+}}
+
+/* Sidebar Caption & Notes */
+[data-testid="stSidebar"] .stCaption p,
+[data-testid="stSidebar"] small {{
+    color: #94A3B8 !important;
+    font-size: 0.75rem !important;
+}}
+
+/* ========================================================================= */
+/* Hero Header Container                                                     */
+/* ========================================================================= */
+.nl-hero {{
+    background: linear-gradient(120deg, {NAVY} 0%, #12305C 55%, #1E3A8A 100%);
+    border-radius: 14px;
+    padding: 1.6rem 1.9rem;
+    color: #F8FAFC;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 6px 24px rgba(11,31,58,0.18);
+}}
+.nl-eyebrow {{
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #93C5FD;
+}}
+.nl-hero-title {{
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0.25rem 0 0.3rem 0;
+    color: #FFFFFF !important;
+}}
+.nl-hero-sub {{
+    font-size: 0.95rem;
+    color: #CBD5E1 !important;
+    max-width: 860px;
+}}
+.nl-tags {{
+    margin-top: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}}
+.nl-tag {{
+    font-size: 0.72rem;
+    font-weight: 500;
+    padding: 0.22rem 0.65rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: #E2E8F0;
+}}
+
+/* ========================================================================= */
+/* KPI Cards Strip                                                           */
+/* ========================================================================= */
+.nl-kpis {{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.85rem;
+    margin-bottom: 1.3rem;
+}}
+.nl-kpi {{
+    background: #FFFFFF !important;
+    border: 1px solid {SLATE_200} !important;
+    border-radius: 12px;
+    padding: 0.95rem 1.1rem;
+    box-shadow: 0 1px 3px rgba(15,23,42,0.04);
+}}
+.nl-kpi-label {{
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: {SLATE_500} !important;
+}}
+.nl-kpi-value {{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.55rem;
+    font-weight: 600;
+    color: {SLATE_900} !important;
+    margin-top: 0.2rem;
+    letter-spacing: -0.02em;
+}}
+.nl-kpi-unit {{
+    font-size: 0.85rem;
+    color: {SLATE_500} !important;
+    margin-left: 0.2rem;
+}}
+.nl-kpi-sub {{
+    font-size: 0.76rem;
+    color: {SLATE_500} !important;
+    margin-top: 0.1rem;
+}}
+
+/* ========================================================================= */
+/* Tabs & Sections                                                           */
+/* ========================================================================= */
+.nl-h2 {{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: {SLATE_900} !important;
+    letter-spacing: -0.01em;
+    margin: 0.6rem 0 0.15rem 0;
+}}
+.nl-h2-sub {{
+    font-size: 0.85rem;
+    color: {SLATE_500} !important;
+    margin-bottom: 1rem;
+}}
+
+.stTabs [data-baseweb="tab-list"] {{
+    gap: 0.5rem !important;
+    border-bottom: 2px solid #E2E8F0 !important;
+    background: transparent !important;
+    padding-bottom: 2px !important;
+}}
+.stTabs [data-baseweb="tab"] {{
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 0.92rem !important;
+    padding: 0.65rem 1.1rem !important;
+    color: #475569 !important;
+    background: transparent !important;
+    border-radius: 6px 6px 0 0 !important;
+    transition: all 0.15s ease !important;
+}}
+.stTabs [data-baseweb="tab"]:hover {{
+    color: #1D4ED8 !important;
+    background: rgba(29, 78, 216, 0.04) !important;
+}}
+.stTabs [aria-selected="true"] {{
+    color: #1D4ED8 !important;
+    font-weight: 700 !important;
+    border-bottom: 2px solid #1D4ED8 !important;
+}}
+.stTabs [aria-selected="true"] p {{
+    color: #1D4ED8 !important;
+}}
+.stTabs [data-baseweb="tab"] p {{
+    color: inherit !important;
+}}
+
+/* ========================================================================= */
+/* Cards & Data Tables                                                       */
+/* ========================================================================= */
+.nl-card {{
+    background: #FFFFFF !important;
+    border: 1px solid {SLATE_200} !important;
+    border-radius: 12px;
+    padding: 1.25rem 1.45rem;
+    margin-bottom: 1.1rem;
+    box-shadow: 0 1px 3px rgba(15,23,42,0.04);
+}}
+.nl-card-head {{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.9rem;
+}}
+.nl-card-title {{
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: {SLATE_900} !important;
+}}
+.nl-card-title small {{
+    font-weight: 500;
+    color: {SLATE_500} !important;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}}
+.nl-metrics {{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}}
+.nl-metric {{
+    background: #F8FAFC !important;
+    border: 1px solid #EEF2F7 !important;
+    border-radius: 10px;
+    padding: 0.7rem 0.85rem;
+}}
+.nl-metric-label {{
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: {SLATE_500} !important;
+}}
+.nl-metric-value {{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.18rem;
+    font-weight: 600;
+    color: {SLATE_900} !important;
+    margin-top: 0.15rem;
+}}
+.nl-metric-sub {{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.74rem;
+    color: {SLATE_500} !important;
+}}
+
+.nl-pill {{
+    display: inline-block;
+    padding: 0.2rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}}
 .nl-pill-pass {{ background: #DCFCE7; color: {GREEN}; border: 1px solid #BBF7D0; }}
 .nl-pill-flag {{ background: #FEE2E2; color: {RED}; border: 1px solid #FECACA; }}
 .nl-pill-warn {{ background: #FEF3C7; color: {AMBER}; border: 1px solid #FDE68A; }}
 
-.nl-note {{ font-size: 0.8rem; color: #334155; background: #F1F5F9; border-left: 3px solid {PRIMARY};
-            padding: 0.55rem 0.8rem; border-radius: 0 8px 8px 0; margin: 0.4rem 0 0.8rem 0; }}
-.nl-note-warn {{ border-left-color: {AMBER}; background: #FFFBEB; }}
+.nl-note {{
+    font-size: 0.82rem;
+    color: #334155 !important;
+    background: #F1F5F9;
+    border-left: 3px solid {PRIMARY};
+    padding: 0.6rem 0.85rem;
+    border-radius: 0 8px 8px 0;
+    margin: 0.5rem 0 0.85rem 0;
+}}
+.nl-note-warn {{
+    border-left-color: {AMBER};
+    background: #FFFBEB;
+}}
 
-table.nl-table {{ width: 100%; border-collapse: collapse; font-size: 0.84rem; }}
-table.nl-table th {{ text-align: left; color: {SLATE_500}; font-weight: 700; font-size: 0.66rem; text-transform: uppercase;
-                     letter-spacing: 0.07em; border-bottom: 1px solid {SLATE_200}; padding: 0.45rem 0.5rem; }}
-table.nl-table td {{ border-bottom: 1px solid #F1F5F9; padding: 0.5rem 0.5rem; color: {SLATE_900}; vertical-align: top; }}
-table.nl-table td.num {{ font-family: 'JetBrains Mono', monospace; text-align: right; white-space: nowrap; }}
+table.nl-table {{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}}
+table.nl-table th {{
+    text-align: left;
+    color: {SLATE_500} !important;
+    font-weight: 700;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    border-bottom: 1px solid {SLATE_200};
+    padding: 0.5rem 0.6rem;
+}}
+table.nl-table td {{
+    border-bottom: 1px solid #F1F5F9;
+    padding: 0.55rem 0.6rem;
+    color: {SLATE_900} !important;
+    vertical-align: top;
+}}
+table.nl-table td.num {{
+    font-family: 'JetBrains Mono', monospace;
+    text-align: right;
+    white-space: nowrap;
+}}
 table.nl-table th.num {{ text-align: right; }}
-table.nl-table td.role {{ color: {SLATE_500}; white-space: nowrap; }}
+table.nl-table td.role {{ color: {SLATE_500} !important; white-space: nowrap; }}
 
-/* Tabs */
-.stTabs [data-baseweb="tab-list"] {{ gap: 0.25rem; border-bottom: 1px solid {SLATE_200}; }}
-.stTabs [data-baseweb="tab"] {{ font-weight: 500; font-size: 0.9rem; padding: 0.6rem 0.9rem; color: {SLATE_500}; }}
-.stTabs [aria-selected="true"] {{ color: {PRIMARY}; }}
+/* Native DataFrames */
+[data-testid="stDataFrame"] {{
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 10px !important;
+    background: #FFFFFF !important;
+}}
 
 /* Native widgets */
-[data-testid="stMetricValue"] {{ font-family: 'JetBrains Mono', monospace; }}
+[data-testid="stMetricValue"] {{ font-family: 'JetBrains Mono', monospace; color: {SLATE_900} !important; }}
 .stButton > button, .stDownloadButton > button, [data-testid="stFormSubmitButton"] > button {{
-    border-radius: 8px; font-weight: 600; }}
-.nl-footer {{ font-size: 0.75rem; color: {SLATE_500}; text-align: center; margin-top: 2rem;
-              padding-top: 1rem; border-top: 1px solid {SLATE_200}; }}
+    border-radius: 8px; font-weight: 600;
+}}
+.nl-footer {{
+    font-size: 0.75rem;
+    color: {SLATE_500} !important;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid {SLATE_200};
+}}
 
 @media (max-width: 900px) {{
   .nl-kpis, .nl-metrics {{ grid-template-columns: repeat(2, minmax(0, 1fr)); }}
