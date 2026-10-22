@@ -28,6 +28,12 @@ class Settings(BaseSettings):
     llm_profile: str | None = None
     llm_config_path: Path = REPO_ROOT / "config" / "llm.yaml"
     vocab_path: Path = REPO_ROOT / "vocab.yaml"
+    cache_dir: Path = REPO_ROOT / "data" / "cache"
+    raw_dir: Path = REPO_ROOT / "data" / "raw"
+    extracted_dir: Path = REPO_ROOT / "data" / "extracted"  # committed extraction runs
+    # gold set (see eval/split.yaml): development is committed, benchmark stays external
+    gold_dev_path: Path = REPO_ROOT / "data" / "gold" / "v0" / "development.xlsx"
+    gold_benchmark_path: Path | None = None  # NL_GOLD_BENCHMARK_PATH, milestone runs only
 
 
 class LLMProfile(BaseModel):

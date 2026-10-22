@@ -14,7 +14,13 @@ dependencies = [
     "langchain-core>=1.0",
     "langchain-google-genai>=4.0",
     "langchain-openai>=1.7.2",
+    "openpyxl>=3.1.5",
+    "beautifulsoup4>=4.15.0",
+    "httpx>=0.28.1",
 ]
+
+[project.scripts]
+negative-lines = "negative_lines.cli:main"
 
 [dependency-groups]
 dev = [
@@ -31,7 +37,13 @@ packages = ["src/negative_lines"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-ra"
+# Live tests call paid APIs and network tests fetch real patents: both excluded by default.
+# Run them explicitly with `pytest -m live` / `pytest -m network`.
+addopts = "-ra -m \"not live and not network\""
+markers = [
+    "live: calls a real LLM provider (paid, needs an API key); opt-in with -m live",
+    "network: downloads real documents (e.g. Google Patents); opt-in with -m network",
+]
 
 [tool.ruff]
 line-length = 100

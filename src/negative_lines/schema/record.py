@@ -91,16 +91,10 @@ class Component(_Model):
 
     @model_validator(mode="after")
     def _rules(self) -> Component:
-        v.raise_if(
-            [
-                v.check_other_text("role", self.role, self.role_other_text),
-                v.check_low_confidence(
-                    self.amount_basis == "unspecified" and self.labeler_confidence is not None,
-                    "amount_basis 'unspecified'",
-                    self.labeler_confidence,
-                ),
-            ]
-        )
+        # Only structural rules here. Guide rules about labeler judgement (e.g.
+        # 'unspecified' basis -> low confidence) are enforced on LLM output and
+        # flagged, not rejected, for human/gold records (see negative_lines.gold).
+        v.raise_if([v.check_other_text("role", self.role, self.role_other_text)])
         return self
 
 

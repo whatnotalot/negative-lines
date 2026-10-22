@@ -1,0 +1,34 @@
+# Gold-set versions. Every score must name the gold version it was computed against.
+# Gold annotations do not change within a version; corrections create a new version.
+
+versions:
+  v0:
+    status: provisional
+    date_reconciled: 2026-10-23
+    description: >
+      Human annotations (Kathe: patents 01-08, Akhila: 09-10) machine-aligned with a
+      single-pass AI extraction (Claude). Team reconciliation continues; treat as provisional.
+      Scores against v0 measure agreement with this provisional gold, not final ground truth.
+    vocab_version_claimed: 3
+    source_workbook:
+      filename: Negative_Lines_Machine_Reconciled_Gold_Set.xlsx
+      sha256: 4eaa7bc7799c116ab6b150f2e9a7a3a37ec77714eff4207d5a49a2e52c46a29f
+      bytes: 205769
+      location: external (team share); never committed
+    derived:
+      development:
+        path: data/gold/v0/development.xlsx
+        built_with: python -m negative_lines.gold.subset
+        sha256: 15bed81759c2d9f4780480077b497221ed04f32a1de57d78163467ba1474190f
+        meta: data/gold/v0/development.meta.yaml
+        doc_ids: [US20210018838A1, WO2004107052A1, CN120370628A, US20080241753A1]
+        rows: {Documents: 4, Records: 127, Components: 752, Results: 469, Reconciliation: 31, QC_and_Issues: 3, Summary: 4}
+      benchmark:
+        path: external   # set NL_GOLD_BENCHMARK_PATH for approved milestone runs
+        doc_ids: [US20020068237A1, KR20240036456A, US7432034B2, US9017923B2, US20230314945A1, US20070248896A1]
+    known_issues:
+      - "Summary/README totals disagree with the sheets (sheets: 239 records, 1284 components, 857 results, 78 reconciliation rows)"
+      - "many results use metric 'other' where vocab v3 has a named metric; exposure 'other' for mixed lines / visible"
+      - "dose_unit 'mJ' and dose '30-70' in CN120370628A"
+      - "56 components with amount_basis 'unspecified' but labeler_confidence not 'low'"
+      - "fields not annotated: refs/quotes, softbake steps, bake_method, figure_only, threshold_pct, position, mixture fields"

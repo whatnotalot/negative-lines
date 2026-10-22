@@ -9,6 +9,7 @@ do not block it.
 
 from __future__ import annotations
 
+import re
 from collections.abc import Iterable, Sequence
 from typing import Any
 
@@ -201,4 +202,85 @@ def collect_warnings(record: Any) -> list[str]:
         if r.metric == "sensitivity_esize" and r.condition is None:
             w.append(f"{tag}: Esize without target CD/pitch in condition")
 
+    w += consistency_warnings(record)
+    return w
+
+
+# ----- consistency checks (warnings only; values are never changed) -------
+
+TOOL_SOURCES: tuple[tuple[re.Pattern[str], str], ...] = (
+    (re.compile(r"electron[\s-]*beam|\be-?beam\b|\bEB\b", re.I), "ebeam"),
+    (re.compile(r"\bEUV\b|13\.5\s*nm|extreme ultraviolet", re.I), "EUV_13.5"),
+    (re.compile(r"\bKrF\b|248\s*nm", re.I), "KrF_248"),
+    (re.compile(r"\bArF\b|193\s*nm", re.I), "ArF_193"),
+    (re.compile(r"\bi-?line\b|365\s*nm", re.I), "i-line_365"),
+    (re.compile(r"\bg-?line\b|436\s*nm", re.I), "g-line_436"),
+    (re.compile(r"\bh-?line\b|405\s*nm", re.I), "h-line_405"),
+    (re.compile(r"x-?ray", re.I), "other"),
+    (re.compile(r"\bion[\s-]*beam\b", re.I), "ion_beam"),
+)
+_MERCURY_LINES = {"i-line_365", "g-line_436", "h-line_405"}
+PAG_HINT = re.compile(
+    r"\bPAG\s*-?\d*\b|acid[\s-]*generator|sulfonium|iodonium|oxime\s+sulfonate", re.I
+)
+AMINE_HINT = re.compile(r"amine\b|\bpyridine\b|\bimidazole\b", re.I)
+_LENGTH = re.compile(r"(\d+(?:\.\d+)?)\s*(nm|µm|um|Å)\b")
+
+
+def expected_source(tool: str | None) -> str | None:
+    """Exposure source implied by a tool description, or None if unclear."""
+    if not tool:
+        return None
+    found = {src for pat, src in TOOL_SOURCES if pat.search(tool)}
+    if len(found) > 1 and found <= _MERCURY_LINES:
+        return "mixed_lines"
+    return found.pop() if len(found) == 1 else None
+
+
+def consistency_warnings(record: Any) -> list[str]:
+    w: list[str] = []
+    exp = record.process.exposure
+    if exp is not None:
+        implied = expected_source(exp.tool)
+        if implied and exp.source != implied:
+            w.append(f"consistency: exposure tool {exp.tool!r} implies source {implied!r}, "
+                     f"but source is {exp.source!r}")  # fmt: skip
+        if exp.ebeam_kv is not None and exp.source != "ebeam":
+            w.append(f"consistency: ebeam_kv given but source is {exp.source!r}")
+        if (exp.ion_species or exp.ion_energy_kev is not None) and exp.source != "ion_beam":
+            w.append(f"consistency: ion fields given but source is {exp.source!r}")
+
+    resin_100 = any(c.role == "resin" and c.amount_value == 100 for c in record.components)
+    for i, c in enumerate(record.components):
+        tag = f"components[{i}] ({c.name_as_written})"
+        text = " ".join(x for x in (c.name_as_written, c.definition_location, c.note) if x)
+        if PAG_HINT.search(text) and c.role not in ("pag", "other"):
+            w.append(f"consistency: {tag} looks like a photoacid generator but role is {c.role!r}")
+        if AMINE_HINT.search(c.name_as_written) and c.role not in ("quencher", "solvent", "other"):
+            w.append(f"consistency: {tag} is an amine (usually 'quencher') but role is {c.role!r}")
+        if c.amount_basis == "parts_by_mass" and resin_100:
+            w.append(f"consistency: {tag} basis 'parts_by_mass' although the resin is 100 parts: "
+                     "probably 'parts_per_100_resin'")  # fmt: skip
+        if c.role == "solvent" and re.search(r"[/=]|\band\b", c.name_as_written):
+            w.append(
+                f"consistency: {tag} looks like a mixed solvent; give one component per solvent"
+            )
+
+    coat = record.process.coating
+    if coat is not None and coat.film_thickness is not None and coat.underlayer:
+        for m in _LENGTH.finditer(coat.underlayer):
+            if float(m.group(1)) == coat.film_thickness and (
+                coat.film_thickness_unit is None or m.group(2).replace("um", "µm") ==
+                (coat.film_thickness_unit or "").replace("um", "µm")
+            ):  # fmt: skip
+                w.append(f"consistency: resist film_thickness {coat.film_thickness:g} equals the "
+                         "underlayer thickness: check that it is the resist film")  # fmt: skip
+                break
+    sb = record.process.softbake
+    if sb is not None:
+        for i, s in enumerate(sb.steps):
+            if s.time is None and (s.temp_text or "").strip().upper() == "RT":
+                w.append(
+                    f"consistency: softbake step {i + 1} at RT without time: probably not a bake"
+                )
     return w

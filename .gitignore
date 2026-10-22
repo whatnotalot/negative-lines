@@ -20,6 +20,9 @@ node_modules/
 
 # Source documents (patents, papers) may be copyrighted; keep them out of the repo
 data/raw/
+# LLM response cache and intermediate outputs (regenerable)
+data/cache/
+data/interim/
 
 # OS and editor files
 .DS_Store

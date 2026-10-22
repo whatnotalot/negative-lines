@@ -12,6 +12,7 @@ RefPurpose = Literal[
     "value",
     "codename_definition",
     "shared_condition",
+    "inherited_condition",
     "grade_scale",
     "other",
 ]
@@ -40,6 +41,8 @@ class SourceRef(StrictLLMModel):
             "Why this block is cited: 'value' for the amounts/conditions/results themselves, "
             "'codename_definition' where a codename such as 'PAG-2' is defined, "
             "'shared_condition' for conditions stated once for several examples, "
+            "'inherited_condition' for conditions taken from another example's procedure that "
+            "the target example refers to ('same method as Example 1'), "
             "'grade_scale' for the legend of qualitative grades."
         )
     )

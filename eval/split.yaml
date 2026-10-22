@@ -1,0 +1,61 @@
+# AUTHORITATIVE gold-set split for Project Negative Lines.
+# README.md and the code (negative_lines.gold.split) read from this file; change the split here
+# only, bump split_version and add a `changes` entry.
+#
+# The split is by DOCUMENT, never by record: records of one patent share text, tables and
+# conditions, so splitting records would leak benchmark content into development.
+
+split_version: 1
+gold_version: v0          # see eval/gold_versions.yaml
+date: 2026-10-23
+status: provisional       # human annotations, machine-aligned; team reconciliation continues
+
+sets:
+  development:
+    # May be used for: prompt development, at most 2 worked examples in prompts (choose from
+    # these documents only), debugging, integration tests, development evaluation and
+    # error analysis with full record-level diffs.
+    storage: data/gold/v0/development.xlsx      # committed, derived from the full workbook
+    allowed_uses: [prompt_development, worked_examples, debugging, integration_testing, dev_evaluation]
+    documents:
+      - {num: "01", doc_id: US20210018838A1, records: 6,  extraction: html,
+         note: "coating only (thickness, uniformity); no exposure"}
+      - {num: "02", doc_id: WO2004107052A1,  records: 51, extraction: postponed_pdf,
+         note: "coating-quality results only; HTML tables are images -> wait for PDF ingestion"}
+      - {num: "03", doc_id: CN120370628A,    records: 21, extraction: postponed_pdf,
+         note: "Tables 1-2 missing from the source copy; only Example 21 (W1) verified; rest low confidence"}
+      - {num: "06", doc_id: US20080241753A1, records: 49, extraction: html,
+         note: "e-beam 70 kV; two thicknesses per example; FIRST real extraction test"}
+
+  benchmark:
+    # Reserved. Used only for milestone evaluation with aggregate reporting. Never used for
+    # prompts, worked examples, skills, fixtures, debugging or error analysis with values.
+    # Annotations are kept OUTSIDE the repository and the agent working directory; point
+    # the scorer at them with NL_GOLD_BENCHMARK_PATH when a milestone run is approved.
+    storage: external
+    allowed_uses: [milestone_evaluation]
+    documents:
+      - {num: "04", doc_id: US20020068237A1, records: 6,  note: "visible light (>=480 nm)"}
+      - {num: "05", doc_id: KR20240036456A,  records: 8,  note: "Korean, Google Patents translation"}
+      - {num: "07", doc_id: US7432034B2,     records: 17, note: "e-beam 50 kV and X-ray; granted patent"}
+      - {num: "08", doc_id: US9017923B2,     records: 16, note: "e-beam 50 kV; dry-etch tests"}
+      - {num: "09", doc_id: US20230314945A1, records: 19, note: "EUV 13.5 nm"}
+      - {num: "10", doc_id: US20070248896A1, records: 46, note: "SU-8, thick film; adhesion, via cracking, wafer bow"}
+
+# Subsets that are scored separately or excluded from headline numbers.
+subsets:
+  low_confidence:
+    rule: "Records sheet labeler_confidence == low"
+    scoring: separate tier, excluded from headline scores
+  postponed_extraction:
+    doc_ids: [WO2004107052A1, CN120370628A]
+    reason: "need PDF ingestion (image tables / missing tables)"
+
+# How documents added later (team plans up to ~15) are assigned. Assign on arrival, BEFORE any
+# extraction is run on them, and record the assignment in `changes`.
+new_documents_rule: >
+  Alternate assignment in arrival order, keeping the benchmark at >= 50% of documents and
+  covering every exposure family (UV/visible, e-beam, EUV, X-ray, thick film, coating only).
+
+changes:
+  - {split_version: 1, date: 2026-10-23, change: "initial split A: dev 01,02,03,06; benchmark 04,05,07,08,09,10"}
