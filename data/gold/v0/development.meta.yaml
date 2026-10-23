@@ -1,0 +1,20 @@
+set: development
+gold_version: v0
+split_version: 1
+source_filename: Negative_Lines_Machine_Reconciled_Gold_Set.xlsx
+source_sha256: 4eaa7bc7799c116ab6b150f2e9a7a3a37ec77714eff4207d5a49a2e52c46a29f
+subset_sha256: 15bed81759c2d9f4780480077b497221ed04f32a1de57d78163467ba1474190f
+doc_ids:
+- CN120370628A
+- US20080241753A1
+- US20210018838A1
+- WO2004107052A1
+rows_kept:
+  Documents: 4
+  Records: 127
+  Components: 752
+  Results: 469
+  Reconciliation: 31
+  QC_and_Issues: 3
+  Summary: 4
+verification_problems: []

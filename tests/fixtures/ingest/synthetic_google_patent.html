@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--
+  SYNTHETIC test document written for Project Negative Lines. Not a real patent.
+  Markup imitates patents.google.com (checked against US4882245A and US20170291984A1):
+  - <li><para-num num="[0041]"/><div id="p-0042" num="0041" class="description-line">:
+    the id is off by one from the printed paragraph number; block IDs use `num`.
+  - old-style unnumbered <div class="description-paragraph">.
+  - <tables> split into several <table> pieces, examples as columns, a wrapped row label
+    ("Photoacid" / "generator"), em dashes for absent ingredients, blank spacer rows,
+    a "TABLE n" caption row and a unit row.
+  - Table 3: header and data rows wrapped over two physical rows (incl. a shorter row with
+    omitted trailing cells) -> merged rows; the last row (empty label, values in both rows)
+    must NOT be merged.
+  - grade legend as <ul><li num="...">, inline <sub>/<sup>/<figref>, HTML entities.
+  - cross-references: Synthesis Example, paragraph [0042], "same manner as in Example 1",
+    Table 1/2, FIG. 3, dependent claim with <claim-ref>.
+  Expected parse: expected_blocks.json (same folder).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SYNTH20260001A1 - Negative-tone photosensitive resin composition and pattern forming method - Google Patents</title>
+<meta name="DC.title" content="Negative-tone photosensitive resin composition and pattern forming method
+       ">
+<meta name="DC.contributor" content="Jane Doe" scheme="inventor">
+<meta name="DC.contributor" content="Example Chemical Co., Ltd." scheme="assignee">
+<meta name="DC.date" content="2024-03-01" scheme="dateSubmitted">
+<meta name="citation_patent_publication_number" content="SYNTH:20260001:A1">
+<meta name="DC.date" content="2026-01-15">
+</head>
+<body>
+<article class="result" itemscope itemtype="http://schema.org/ScholarlyArticle">
+<h1 itemprop="pageTitle">SYNTH20260001A1 - Negative-tone photosensitive resin composition and pattern forming method - Google Patents</h1>
+<span itemprop="title">Negative-tone photosensitive resin composition and pattern forming method
+       </span>
+<dl>
+  <dt>Publication number</dt>
+  <dd itemprop="publicationNumber">SYNTH20260001A1</dd>
+  <dt>Inventor</dt>
+  <dd itemprop="inventor" repeat>Jane Doe</dd>
+  <dt>Current Assignee</dt>
+  <dd itemprop="assigneeCurrent" repeat>
+    Example Chemical Co., Ltd.
+  </dd>
+  <dt>Original Assignee</dt>
+  <dd itemprop="assigneeOriginal" repeat>Example Chemical Co., Ltd.</dd>
+</dl>
+
+<section itemprop="abstract" itemscope>
+  <h2>Abstract</h2>
+  <div itemprop="content" html><abstract mxw-id="PA000001" lang="EN" load-source="patent-office">
+    <div class="abstract">A negative-tone photosensitive resin composition comprising a phenolic resin, a crosslinker and a photoacid generator gives high resolution at a low exposure dose.</div>
+  </abstract></div>
+</section>
+
+<section itemprop="description" itemscope>
+  <h2>Description</h2>
+  <div itemprop="content" html><div mxw-id="PDES000001" lang="EN" load-source="patent-office" class="description">
+    <heading id="h-0001">TECHNICAL FIELD</heading>
+    <div class="description-paragraph">This application claims priority to a synthetic application filed in 2024.</div>
+    <li> <para-num num="[0001]"> </para-num> <div id="p-0002" num="0001" class="description-line">The present invention relates to a negative-tone photosensitive resin composition for i-line lithography.</div>
+    </li>
+    <heading id="h-0002">EXAMPLES</heading>
+    <li> <para-num num="[0040]"> </para-num> <div id="p-0041" num="0040" class="description-line">The present invention is described in more detail by way of Examples. In the Examples, &#34;parts&#34; means parts by mass unless otherwise stated.</div>
+    </li>
+    <heading id="h-0003">Synthesis Example 1</heading>
+    <li> <para-num num="[0041]"> </para-num> <div id="p-0042" num="0041" class="description-line">Resin A: a copolymer of p-hydroxystyrene and styrene (molar ratio 80/20) having M<sub>w</sub> of 8,000 and M<sub>w</sub>/M<sub>n</sub> of 1.6 was obtained.</div>
+    </li>
+    <li> <para-num num="[0042]"> </para-num> <div id="p-0043" num="0042" class="description-line">PAG-1: triphenylsulfonium nonafluorobutanesulfonate. PAG-2: N-(trifluoromethylsulfonyloxy)-1,8-naphthalimide.</div>
+    </li>
+    <heading id="h-0004">Example 1</heading>
+    <li> <para-num num="[0050]"> </para-num> <div id="p-0051" num="0050" class="description-line">100 parts of Resin A obtained in Synthesis Example 1, 10 parts of hexamethoxymethylmelamine (crosslinker C-1), 3.0 parts of PAG-1 and 0.3 parts of trioctylamine (Q-1) were dissolved in a mixed solvent of PGMEA/PGME (mass ratio 7/3) to a solids content of 30 wt%, and filtered through a 0.2 µm filter.</div>
+    </li>
+    <li> <para-num num="[0051]"> </para-num> <div id="p-0052" num="0051" class="description-line">The composition was spin-coated on a silicon wafer treated with HMDS to a film thickness of 1.0 µm, pre-baked on a hot plate at 65° C. for 1 min and then at 95° C. for 3 min, exposed through a mask with an i-line (365 nm) contact aligner, post-exposure baked at 95° C. for 2 min, and developed by immersion in a 2.38 wt% TMAH aqueous solution at room temperature for 60 s.</div>
+    </li>
+    <heading id="h-0005">Example 2</heading>
+    <li> <para-num num="[0052]"> </para-num> <div id="p-0053" num="0052" class="description-line">A composition was prepared and evaluated in the same manner as in Example 1 except that PAG-2 described in paragraph [0042] was used instead of PAG-1, and the crosslinker was used in an amount of 15 parts.</div>
+    </li>
+    <heading id="h-0006">Comparative Example 1</heading>
+    <li> <para-num num="[0053]"> </para-num> <div id="p-0054" num="0053" class="description-line">A composition was prepared in the same manner as in Example 1 except that no crosslinker was used. The compositions are shown in Table 1.</div>
+    </li>
+    <li> <div id="p-0055" num="0000" class="description-line">
+      <tables id="TABLE-US-00001" num="00001">
+        <patent-tables frame="none" colsep="0" rowsep="0" pgwide="1">
+          <table align="left" colsep="0" rowsep="0" cols="1" class="description-table" width="100%">
+            <thead>
+              <tr class="description-tr">
+                <td namest="1" nameend="1" rowsep="1" class="description-td" colspan="1">TABLE 1</td>
+              </tr>
+            </thead>
+            <tbody><tr class="description-tr">
+                <td namest="1" nameend="1" align="center" rowsep="1" class="description-td" colspan="1">&nbsp;</td>
+              </tr>
+              <tr class="description-tr">
+                <td class="description-td">(parts by mass)</td>
+              </tr>
+          </tbody></table>
+          <table align="left" colsep="0" rowsep="0" cols="5" class="description-table" width="100%">
+            <tbody><tr class="description-tr">
+                <td class="description-td"> </td>
+                <td class="description-td"> </td>
+                <td class="description-td">Example 1</td>
+                <td class="description-td">Example 2</td>
+                <td class="description-td">Comparative Example 1</td>
+              </tr>
+              <tr class="description-tr">
+                <td namest="1" nameend="5" align="center" rowsep="1" class="description-td" colspan="5"> </td>
+              </tr>
+          </tbody></table>
+          <table align="left" colsep="0" rowsep="0" cols="5" class="description-table" width="100%">
+            <tbody><tr class="description-tr">
+                <td class="description-td">Resin</td>
+                <td class="description-td">Resin A</td>
+                <td class="description-td">100</td>
+                <td class="description-td">100</td>
+                <td class="description-td">100</td>
+              </tr>
+              <tr class="description-tr">
+                <td class="description-td">Photoacid</td>
+                <td class="description-td">PAG-1</td>
+                <td class="description-td">3.0</td>
+                <td class="description-td">—</td>
+                <td class="description-td">3.0</td>
+              </tr>
+              <tr class="description-tr">
+                <td class="description-td">generator</td>
+                <td class="description-td">PAG-2</td>
+                <td class="description-td">—</td>
+                <td class="description-td">5.0</td>
+                <td class="description-td">—</td>
+              </tr>
+              <tr class="description-tr">
+                <td class="description-td">Crosslinker</td>
+                <td class="description-td">C-1</td>
+                <td class="description-td">10</td>
+                <td class="description-td">15</td>
+                <td class="description-td">—</td>
+              </tr>
+              <tr class="description-tr">
+                <td class="description-td">Quencher</td>
+                <td class="description-td">Q-1</td>
+                <td class="description-td">0.3</td>
+                <td class="description-td">0.3</td>
+                <td class="description-td">0.3</td>
+              </tr>
+          </tbody></table>
+        </patent-tables>
+      </tables>
+    </div>
+    </li>
+    <heading id="h-0007">Evaluation</heading>
+    <li> <para-num num="[0054]"> </para-num> <div id="p-0056" num="0054" class="description-line">Sensitivity (E<sub>op</sub>) is the exposure dose (mJ/cm<sup>2</sup>) at which a 2 µm line-and-space pattern (1:1) is formed with the designed size. Resolution is the smallest line width resolved at E<sub>op</sub>. The residue in unexposed areas was evaluated by SEM according to the following criteria.</div>
+    </li>
+    <ul> <li id="ul0001-0001" num="0055">A: no residue in unexposed areas.</li> <li id="ul0001-0002" num="0056">B: slight residue.</li> <li id="ul0001-0003" num="0057">C: residue observed.</li> </ul>
+    <li> <div id="p-0060" num="0000" class="description-line">
+      <tables id="TABLE-US-00002" num="00002">
+        <patent-tables frame="none" colsep="0" rowsep="0" pgwide="1">
+          <table align="left" colsep="0" rowsep="0" cols="4" class="description-table" width="100%">
+            <thead>
+              <tr class="description-tr">
+                <td namest="1" nameend="4" rowsep="1" class="description-td" colspan="4">TABLE 2</td>
+              </tr>
+            </thead>
+            <tbody><tr class="description-tr">
+                <td class="description-td"> </td>
+                <td class="description-td">E<sub>op</sub> (mJ/cm<sup>2</sup>)</td>
+                <td class="description-td">Resolution (µm)</td>
+                <td class="description-td">Residue</td>
+              </tr>
+              <tr class="description-tr">
+                <td class="description-td">Example 1</td>
+                <td class="description-td">120</td>
+                <td class="description-td">1.5</td>
+                <td class="description-td">A</td>
+              </tr>
+              <tr class="description-tr">
+                <td class="description-td">Example 2</td>
+                <td class="description-td">95</td>
+                <td class="description-td">1.2</td>
+                <td class="description-td">A</td>
+              </tr>
+              <tr class="description-tr">
+                <td class="description-td">Comparative Example 1</td>
+                <td class="description-td">no pattern</td>
+                <td class="description-td">—</td>
+                <td class="description-td">C</td>
+              </tr>
+          </tbody></table>
+        </patent-tables>
+      </tables>
+    </div>
+    </li>
+    <li> <div id="p-0061" num="0000" class="description-line">
+      <tables id="TABLE-US-00003" num="00003">
+        <patent-tables frame="none" colsep="0" rowsep="0" pgwide="1">
+          <table align="left" colsep="0" rowsep="0" cols="4" class="description-table" width="100%">
+            <thead>
+              <tr class="description-tr">
+                <td class="description-td"> </td>
+                <td namest="offset" nameend="3" rowsep="1" class="description-td" colspan="3">TABLE 3</td>
+              </tr>
+              <tr class="description-tr">
+                <td class="description-td"> </td>
+                <td class="description-td">Resist</td>
+                <td class="description-td">PAB</td>
+                <td class="description-td">Sensitivity</td>
+              </tr>
+              <tr class="description-tr">
+                <td class="description-td"> </td>
+                <td class="description-td">thickness (nm)</td>
+                <td class="description-td"> </td>
+                <td class="description-td">(mJ/cm<sup>2</sup>)</td>
+              </tr>
+            </thead>
+            <tbody><tr class="description-tr">
+                <td class="description-td">Examples</td>
+                <td class="description-td">PAG-1 (3.0 parts</td>
+                <td class="description-td">90° C./</td>
+                <td class="description-td">120</td>
+              </tr>
+              <tr class="description-tr">
+                <td class="description-td">1 to 2</td>
+                <td class="description-td">by mass)</td>
+                <td class="description-td">90 sec</td>
+              </tr>
+              <tr class="description-tr">
+                <td class="description-td">Comparative</td>
+                <td class="description-td">PAG-1 (3.0</td>
+                <td class="description-td">100° C./</td>
+                <td class="description-td">—</td>
+              </tr>
+              <tr class="description-tr">
+                <td class="description-td">Example 1</td>
+                <td class="description-td">parts by mass)</td>
+                <td class="description-td">90 sec</td>
+                <td class="description-td"> </td>
+              </tr>
+              <tr class="description-tr">
+                <td class="description-td"> </td>
+                <td class="description-td">200</td>
+                <td class="description-td">90° C./90 sec</td>
+                <td class="description-td">95</td>
+              </tr>
+          </tbody></table>
+        </patent-tables>
+      </tables>
+    </div>
+    </li>
+    <li> <para-num num="[0058]"> </para-num> <div id="p-0062" num="0058" class="description-line">As shown in Table 2 and <figref idref="DRAWINGS">FIG. 3</figref>, the compositions of Examples 1 and 2 gave high sensitivity; the contrast curve of Example 1 in FIG. 3 shows the gel dose near the onset.</div>
+    </li>
+  </div></div>
+</section>
+
+<section itemprop="claims" itemscope>
+  <h2>Claims (<span itemprop="count">2</span>)</h2>
+  <div itemprop="content" html><div mxw-id="PCLM000001" lang="EN" load-source="patent-office" class="claims">
+    <claim-statement>What is claimed is:</claim-statement>
+    <div class="claim"> <div id="CLM-00001" num="00001" class="claim">
+      <div class="claim-text">1. A negative-tone photosensitive resin composition comprising:<div class="claim-text">(A) 100 parts by mass of a phenolic resin;</div> <div class="claim-text">(B) 1 to 20 parts by mass of a crosslinker; and</div> <div class="claim-text">(C) 0.5 to 10 parts by mass of a photoacid generator.</div></div>
+    </div>
+    </div>
+    <div class="claim-dependent"> <div id="CLM-00002" num="00002" class="claim">
+      <div class="claim-text">2. The composition according to <claim-ref idref="CLM-00001">claim 1</claim-ref>, wherein the photoacid generator is a sulfonium salt.</div>
+    </div>
+    </div>
+  </div></div>
+</section>
+</article>
+</body>
+</html>

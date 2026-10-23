@@ -1,0 +1,42 @@
+# LLM profiles. Select one with the env var NL_LLM_PROFILE.
+# No secrets here: each profile names the env var that holds its API key.
+#
+# provider:          LangChain init_chat_model provider id
+# structured_method: with_structured_output method; prefer provider-native "json_schema"
+# rpm:               client-side rate limit (requests per minute); null = unlimited
+
+default_profile: gemini_flash
+
+profiles:
+  gemini_flash:
+    provider: google_genai
+    model: gemini-3.8-flash
+    api_key_env: GOOGLE_API_KEY
+    temperature: 0.0
+    structured_method: json_schema
+    rpm: 10
+    max_retries: 3
+    timeout_s: 120
+
+  gemini_flash_lite:
+    provider: google_genai
+    model: gemini-3.5-flash-lite
+    api_key_env: GOOGLE_API_KEY
+    temperature: 0.0
+    structured_method: json_schema
+    rpm: 15
+    max_retries: 3
+    timeout_s: 120
+
+  openai_mini:
+    provider: openai
+    model: gpt-4o-mini
+    api_key_env: OPENAI_API_KEY
+    temperature: 0.0
+    structured_method: json_schema
+    strict: true          # OpenAI strict structured outputs
+    rpm: null
+    max_retries: 3
+    timeout_s: 120
+
+  # Other providers need their LangChain package, e.g. `uv add langchain-anthropic`.

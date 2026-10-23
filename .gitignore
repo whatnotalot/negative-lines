@@ -11,10 +11,18 @@ node_modules/
 # Secrets and local config
 .env
 .env.*
+!.env.example
 *.key
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
 
 # Source documents (patents, papers) may be copyrighted; keep them out of the repo
 data/raw/
+# LLM response cache and intermediate outputs (regenerable)
+data/cache/
+data/interim/
 
 # OS and editor files
 .DS_Store
