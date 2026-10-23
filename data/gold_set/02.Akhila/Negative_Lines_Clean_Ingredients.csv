@@ -1,0 +1,763 @@
+Patent ID,Example ID,Ingredient,Role,Original quantity,Numeric quantity,Standard unit,Conversion / QC flag,Conditions (source text),Results (source text),Source section,Annotator,Validation status,Notes,Source row
+CN120370628A,Example 9 W1,Branched acrylic resin A,resin,30,30.0,g,OK,Under nitrogen atmosphere; dissolved until clear in a 250 mL three-necked flask. Spin-coated on clean glass at 315 rpm for 15 s; prebaked at 90 °C for 180 s; exposed for 15 s; baked and photocured at 120 °C for 60 s; developer: 2.38% TMAH.,,Example 9; Example 21,,Pending independent validation,G1 results in Table 2 not extracted; needs verification.,2
+CN120370628A,Example 9 W1,Branched acrylic resin B,resin,1,1.0,g,OK,,,,,Pending independent validation,,3
+CN120370628A,Example 9 W1,Diphenyl sulfonium salt,pag,5,5.0,g,OK,,,,,Pending independent validation,,4
+CN120370628A,Example 9 W1,Cyclopentanone,solvent,55,55.0,g,OK,,,,,Pending independent validation,,5
+KR20240036456A,Example 1,Novolac A-1,resin,10,10.0,g,OK,Bar coat ~5 µm; dry 100°C 60s. UV 200 mJ/cm²; bake 130°C 180s (chemical resistance test),Film forming ability: Good; Alkali solubility: Good; Adhesion: Good; Chemical resistance: Good,Example 1; Evaluation (1)–(4); Table 1,,Pending independent validation,Results translated from Table 1 evaluation symbols (Good = pass),6
+KR20240036456A,Example 1,Dipentaerythritol hexaacrylate,crosslinker,6,6.0,g,OK,,,,,Pending independent validation,,7
+KR20240036456A,Example 1,Irgacure 369,photoinitiator,46054,1.2,g,Recovered from previously documented example; source recheck required,,,,,Needs source verification,,8
+KR20240036456A,Example 1,PGMEA,solvent,46259,25.8,g,Recovered from previously documented example; source recheck required,,,,,Needs source verification,,9
+KR20240036456A,Example 2,Novolac A-2,resin,10,10.0,g,OK,Bar coat ~5 µm; dry 100°C 60s. UV 200 mJ/cm²; bake 130°C 180s (chemical resistance test),Film forming ability: Good; Alkali solubility: Good; Adhesion: Good; Chemical resistance: Good,Example 1; Examples 2–5; Evaluation (1)–(4); Table 1,,Pending independent validation,E-2 uses resin A-2 instead of A-1; otherwise prepared as E-1,10
+KR20240036456A,Example 2,Dipentaerythritol hexaacrylate,crosslinker,6,6.0,g,OK,,,,,Pending independent validation,,11
+KR20240036456A,Example 2,Irgacure 369,photoinitiator,46054,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,12
+KR20240036456A,Example 2,PGMEA,solvent,46259,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,13
+KR20240036456A,Example 3,Novolac A-3,resin,10,10.0,g,OK,Bar coat ~5 µm; dry 100°C 60s. UV 200 mJ/cm²; bake 130°C 180s (chemical resistance test),Film forming ability: Good; Alkali solubility: Good; Adhesion: Good; Chemical resistance: Good,Example 1; Examples 2–5; Evaluation (1)–(4); Table 1,,Pending independent validation,E-3 uses resin A-3 instead of A-1; otherwise prepared as E-1,14
+KR20240036456A,Example 3,Dipentaerythritol hexaacrylate,crosslinker,6,6.0,g,OK,,,,,Pending independent validation,,15
+KR20240036456A,Example 3,Irgacure 369,photoinitiator,46054,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,16
+KR20240036456A,Example 3,PGMEA,solvent,46259,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,17
+KR20240036456A,Example 4,Novolac A-4,resin,10,10.0,g,OK,Bar coat ~5 µm; dry 100°C 60s. UV 200 mJ/cm²; bake 130°C 180s (chemical resistance test),Film forming ability: Good; Alkali solubility: Good; Adhesion: Good; Chemical resistance: Good,Example 1; Examples 2–5; Evaluation (1)–(4); Table 1,,Pending independent validation,E-4 uses resin A-4 instead of A-1; otherwise prepared as E-1,18
+KR20240036456A,Example 4,Dipentaerythritol hexaacrylate,crosslinker,6,6.0,g,OK,,,,,Pending independent validation,,19
+KR20240036456A,Example 4,Irgacure 369,photoinitiator,46054,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,20
+KR20240036456A,Example 4,PGMEA,solvent,46259,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,21
+KR20240036456A,Example 5,Novolac A-5,resin,10,10.0,g,OK,Bar coat ~5 µm; dry 100°C 60s. UV 200 mJ/cm²; bake 130°C 180s (chemical resistance test),Film forming ability: Good; Alkali solubility: Good; Adhesion: Good; Chemical resistance: Good,Example 1; Examples 2–5; Evaluation (1)–(4); Table 1,,Pending independent validation,E-5 uses resin A-5 instead of A-1; otherwise prepared as E-1,22
+KR20240036456A,Example 5,Dipentaerythritol hexaacrylate,crosslinker,6,6.0,g,OK,,,,,Pending independent validation,,23
+KR20240036456A,Example 5,Irgacure 369,photoinitiator,46054,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,24
+KR20240036456A,Example 5,PGMEA,solvent,46259,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,25
+KR20240036456A,Comparative Example 1,Novolac A-6,resin,10,10.0,g,OK,Bar coat ~5 µm; dry 100°C 60s. UV 200 mJ/cm²; bake 130°C 180s (chemical resistance test),Film forming ability: Poor; Alkali solubility: Poor; Adhesion: Poor; Chemical resistance: Good,Example 1; Comparative Example 1; Evaluation (1)–(4); Table 1,,Pending independent validation,E-6 uses resin A-6 instead of A-1; otherwise prepared as E-1.,26
+KR20240036456A,Comparative Example 1,Dipentaerythritol hexaacrylate,crosslinker,6,6.0,g,OK,,,,,Pending independent validation,,27
+KR20240036456A,Comparative Example 1,Irgacure 369,photoinitiator,46054,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,28
+KR20240036456A,Comparative Example 1,PGMEA,solvent,46259,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,29
+KR20240036456A,Comparative Example 2,Resin A-7,resin,10,10.0,g,OK,Bar coat ~5 µm; dry 100°C 60s. UV 200 mJ/cm²; bake 130°C 180s (chemical resistance test),Film forming ability: Good; Alkali solubility: Poor; Adhesion: Good; Chemical resistance: Poor,Example 1; Comparative Example 2; Evaluation (1)–(4); Table 1,,Pending independent validation,E-7 uses resin A-7 instead of A-1; otherwise prepared as E-1.,30
+KR20240036456A,Comparative Example 2,Dipentaerythritol hexaacrylate,crosslinker,6,6.0,g,OK,,,,,Pending independent validation,,31
+KR20240036456A,Comparative Example 2,Irgacure 369,photoinitiator,46054,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,32
+KR20240036456A,Comparative Example 2,PGMEA,solvent,46259,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,33
+KR20240036456A,Comparative Example 3,Dipentaerythritol hexaacrylate,crosslinker,6,6.0,g,OK,Bar coat ~5 µm; dry 100°C 60s. UV 200 mJ/cm²; bake 130°C 180s (chemical resistance test),Film forming ability: Good; Alkali solubility: Poor; Adhesion: Good; Chemical resistance: Good,Example 1; Comparative Example 3; Evaluation (1)–(4); Table 1,,Pending independent validation,E-8 contains no resin component A.,34
+KR20240036456A,Comparative Example 3,Irgacure 369,photoinitiator,46054,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,35
+KR20240036456A,Comparative Example 3,PGMEA,solvent,46259,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,36
+US20210018838A1,Example 1,Modified epoxy acrylate,resin,40,40.0,wt%,OK,Spin coat; bake 110°C 5 min,Average film thickness: 60.26 µm; Coating uniformity: 9.0%,Examples 1–6; Table 1; [0025]–[0026]; Table 2,,Pending independent validation,Photosensitizer mixture ratio 3:7; leveling agent mixture ratio 7:3.,37
+US20210018838A1,Example 1,Photosensitizer,photosensitizer,3,3.0,wt%,OK,,,,,Pending independent validation,,38
+US20210018838A1,Example 1,Leveling agent,additive,100,100.0,ppm,OK,,,,,Pending independent validation,,39
+US20210018838A1,Example 1,200# solvent oil,solvent,57,57.0,wt%,OK,,,,,Pending independent validation,,40
+US20210018838A1,Example 2,Modified epoxy acrylate,resin,65,65.0,wt%,OK,Spin coat; bake 110°C 5 min,Average film thickness: 54.8 µm; Coating uniformity: 4.9%,Examples 1–6; Table 1; [0025]–[0026]; Table 2,,Pending independent validation,Photosensitizer mixture ratio 3:7; leveling agent mixture ratio 7:3.,41
+US20210018838A1,Example 2,Photosensitizer,photosensitizer,6,6.0,wt%,OK,,,,,Pending independent validation,,42
+US20210018838A1,Example 2,Leveling agent,additive,1000,1000.0,ppm,OK,,,,,Pending independent validation,,43
+US20210018838A1,Example 2,100# solvent oil,solvent,29,29.0,wt%,OK,,,,,Pending independent validation,,44
+US20210018838A1,Example 3,Modified epoxy acrylate,resin,50,50.0,wt%,OK,Spin coat; bake 110°C 5 min,Average film thickness: 52.3 µm; Coating uniformity: 4.2%,Examples 1–6; Table 1; [0025]–[0026]; Table 2,,Pending independent validation,Photosensitizer mixture ratio 3:7; leveling agent mixture ratio 7:3.,45
+US20210018838A1,Example 3,Photosensitizer,photosensitizer,4,4.0,wt%,OK,,,,,Pending independent validation,,46
+US20210018838A1,Example 3,Leveling agent,additive,300,300.0,ppm,OK,,,,,Pending independent validation,,47
+US20210018838A1,Example 3,200# solvent oil,solvent,46,46.0,wt%,OK,,,,,Pending independent validation,,48
+US20210018838A1,Example 4,Modified epoxy acrylate,resin,55,55.0,wt%,OK,Spin coat; bake 110°C 5 min,Average film thickness: 50.56 µm; Coating uniformity: 2.5%,Examples 1–6; Table 1; [0025]–[0026]; Table 2,,Pending independent validation,Photosensitizer mixture ratio 3:7; leveling agent mixture ratio 7:3.,49
+US20210018838A1,Example 4,Photosensitizer,photosensitizer,5,5.0,wt%,OK,,,,,Pending independent validation,,50
+US20210018838A1,Example 4,Leveling agent,additive,400,400.0,ppm,OK,,,,,Pending independent validation,,51
+US20210018838A1,Example 4,S-100 solvent oil,solvent,40,40.0,wt%,OK,,,,,Pending independent validation,,52
+US20210018838A1,Example 5,Modified epoxy acrylate,resin,46.5,46.5,wt%,OK,Spin coat; bake 110°C 5 min,Average film thickness: 51.9 µm; Coating uniformity: 2.9%,Examples 1–6; Table 1; [0025]–[0026]; Table 2,,Pending independent validation,Photosensitizer mixture ratio 3:7; leveling agent mixture ratio 7:3.,53
+US20210018838A1,Example 5,Photosensitizer,photosensitizer,46145,,wt%,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,54
+US20210018838A1,Example 5,Leveling agent,additive,500,500.0,ppm,OK,,,,,Pending independent validation,,55
+US20210018838A1,Example 5,100# solvent oil,solvent,50,50.0,wt%,OK,,,,,Pending independent validation,,56
+US20210018838A1,Example 6,Modified epoxy acrylate,resin,53,53.0,wt%,OK,Spin coat; bake 110°C 5 min,Average film thickness: 52.5 µm; Coating uniformity: 5.0%,Examples 1–6; Table 1; [0025]–[0026]; Table 2,,Pending independent validation,Photosensitizer mixture ratio 3:7; leveling agent mixture ratio 7:3.,57
+US20210018838A1,Example 6,Photosensitizer,photosensitizer,4,4.0,wt%,OK,,,,,Pending independent validation,,58
+US20210018838A1,Example 6,Leveling agent,additive,800,800.0,ppm,OK,,,,,Pending independent validation,,59
+US20210018838A1,Example 6,S-100 solvent oil,solvent,43,43.0,wt%,OK,,,,,Pending independent validation,,60
+WO2004107052A1,Embodiment 1,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent: DMC only (I:II = 100:0); solvent quantity stated as residual.,61
+WO2004107052A1,Embodiment 1,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,62
+WO2004107052A1,Embodiment 1,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,63
+WO2004107052A1,Embodiment 1,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,64
+WO2004107052A1,Embodiment 1,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,65
+WO2004107052A1,Embodiment 1,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,66
+WO2004107052A1,Embodiment 2,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:NBA = 90:10; total solvent quantity stated as residual.,67
+WO2004107052A1,Embodiment 2,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,68
+WO2004107052A1,Embodiment 2,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,69
+WO2004107052A1,Embodiment 2,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,70
+WO2004107052A1,Embodiment 2,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,71
+WO2004107052A1,Embodiment 2,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,72
+WO2004107052A1,Embodiment 2,NBA,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,73
+WO2004107052A1,Embodiment 3,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:NBA = 80:20; total solvent quantity stated as residual.,74
+WO2004107052A1,Embodiment 3,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,75
+WO2004107052A1,Embodiment 3,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,76
+WO2004107052A1,Embodiment 3,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,77
+WO2004107052A1,Embodiment 3,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,78
+WO2004107052A1,Embodiment 3,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,79
+WO2004107052A1,Embodiment 3,NBA,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,80
+WO2004107052A1,Embodiment 4,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:NBA = 70:30; total solvent quantity stated as residual.,81
+WO2004107052A1,Embodiment 4,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,82
+WO2004107052A1,Embodiment 4,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,83
+WO2004107052A1,Embodiment 4,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,84
+WO2004107052A1,Embodiment 4,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,85
+WO2004107052A1,Embodiment 4,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,86
+WO2004107052A1,Embodiment 4,NBA,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,87
+WO2004107052A1,Embodiment 5,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:MCA = 90:10; total solvent quantity stated as residual.,88
+WO2004107052A1,Embodiment 5,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,89
+WO2004107052A1,Embodiment 5,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,90
+WO2004107052A1,Embodiment 5,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,91
+WO2004107052A1,Embodiment 5,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,92
+WO2004107052A1,Embodiment 5,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,93
+WO2004107052A1,Embodiment 5,MCA,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,94
+WO2004107052A1,Embodiment 6,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:MCA = 80:20; total solvent quantity stated as residual.,95
+WO2004107052A1,Embodiment 6,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,96
+WO2004107052A1,Embodiment 6,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,97
+WO2004107052A1,Embodiment 6,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,98
+WO2004107052A1,Embodiment 6,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,99
+WO2004107052A1,Embodiment 6,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,100
+WO2004107052A1,Embodiment 6,MCA,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,101
+WO2004107052A1,Embodiment 7,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:MCA = 70:30; total solvent quantity stated as residual.,102
+WO2004107052A1,Embodiment 7,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,103
+WO2004107052A1,Embodiment 7,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,104
+WO2004107052A1,Embodiment 7,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,105
+WO2004107052A1,Embodiment 7,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,106
+WO2004107052A1,Embodiment 7,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,107
+WO2004107052A1,Embodiment 7,MCA,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,108
+WO2004107052A1,Embodiment 8,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:CHX = 90:10; total solvent quantity stated as residual.,109
+WO2004107052A1,Embodiment 8,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,110
+WO2004107052A1,Embodiment 8,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,111
+WO2004107052A1,Embodiment 8,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,112
+WO2004107052A1,Embodiment 8,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,113
+WO2004107052A1,Embodiment 8,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,114
+WO2004107052A1,Embodiment 8,CHX,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,115
+WO2004107052A1,Embodiment 9,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:CHX = 80:20; total solvent quantity stated as residual.,116
+WO2004107052A1,Embodiment 9,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,117
+WO2004107052A1,Embodiment 9,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,118
+WO2004107052A1,Embodiment 9,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,119
+WO2004107052A1,Embodiment 9,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,120
+WO2004107052A1,Embodiment 9,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,121
+WO2004107052A1,Embodiment 9,CHX,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,122
+WO2004107052A1,Embodiment 10,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:CHX = 70:30; total solvent quantity stated as residual.,123
+WO2004107052A1,Embodiment 10,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,124
+WO2004107052A1,Embodiment 10,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,125
+WO2004107052A1,Embodiment 10,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,126
+WO2004107052A1,Embodiment 10,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,127
+WO2004107052A1,Embodiment 10,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,128
+WO2004107052A1,Embodiment 10,CHX,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,129
+WO2004107052A1,Embodiment 11,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:PGMEA = 90:10; total solvent quantity stated as residual.,130
+WO2004107052A1,Embodiment 11,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,131
+WO2004107052A1,Embodiment 11,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,132
+WO2004107052A1,Embodiment 11,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,133
+WO2004107052A1,Embodiment 11,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,134
+WO2004107052A1,Embodiment 11,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,135
+WO2004107052A1,Embodiment 11,PGMEA,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,136
+WO2004107052A1,Embodiment 12,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:PGMEA = 80:20; total solvent quantity stated as residual.,137
+WO2004107052A1,Embodiment 12,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,138
+WO2004107052A1,Embodiment 12,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,139
+WO2004107052A1,Embodiment 12,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,140
+WO2004107052A1,Embodiment 12,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,141
+WO2004107052A1,Embodiment 12,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,142
+WO2004107052A1,Embodiment 12,PGMEA,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,143
+WO2004107052A1,Embodiment 13,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:PGMEA = 70:30; total solvent quantity stated as residual.,144
+WO2004107052A1,Embodiment 13,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,145
+WO2004107052A1,Embodiment 13,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,146
+WO2004107052A1,Embodiment 13,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,147
+WO2004107052A1,Embodiment 13,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,148
+WO2004107052A1,Embodiment 13,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,149
+WO2004107052A1,Embodiment 13,PGMEA,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,150
+WO2004107052A1,Embodiment 14,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:EEP = 90:10; total solvent quantity stated as residual.,151
+WO2004107052A1,Embodiment 14,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,152
+WO2004107052A1,Embodiment 14,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,153
+WO2004107052A1,Embodiment 14,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,154
+WO2004107052A1,Embodiment 14,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,155
+WO2004107052A1,Embodiment 14,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,156
+WO2004107052A1,Embodiment 14,EEP,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,157
+WO2004107052A1,Embodiment 15,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:EEP = 80:20; total solvent quantity stated as residual.,158
+WO2004107052A1,Embodiment 15,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,159
+WO2004107052A1,Embodiment 15,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,160
+WO2004107052A1,Embodiment 15,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,161
+WO2004107052A1,Embodiment 15,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,162
+WO2004107052A1,Embodiment 15,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,163
+WO2004107052A1,Embodiment 15,EEP,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,164
+WO2004107052A1,Embodiment 16,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:EEP = 70:30; total solvent quantity stated as residual.,165
+WO2004107052A1,Embodiment 16,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,166
+WO2004107052A1,Embodiment 16,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,167
+WO2004107052A1,Embodiment 16,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,168
+WO2004107052A1,Embodiment 16,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,169
+WO2004107052A1,Embodiment 16,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,170
+WO2004107052A1,Embodiment 16,EEP,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,171
+WO2004107052A1,Embodiment 17,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:PGPE = 90:10; total solvent quantity stated as residual.,172
+WO2004107052A1,Embodiment 17,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,173
+WO2004107052A1,Embodiment 17,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,174
+WO2004107052A1,Embodiment 17,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,175
+WO2004107052A1,Embodiment 17,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,176
+WO2004107052A1,Embodiment 17,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,177
+WO2004107052A1,Embodiment 17,PGPE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,178
+WO2004107052A1,Embodiment 18,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:PGPE = 80:20; total solvent quantity stated as residual.,179
+WO2004107052A1,Embodiment 18,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,180
+WO2004107052A1,Embodiment 18,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,181
+WO2004107052A1,Embodiment 18,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,182
+WO2004107052A1,Embodiment 18,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,183
+WO2004107052A1,Embodiment 18,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,184
+WO2004107052A1,Embodiment 18,PGPE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,185
+WO2004107052A1,Embodiment 19,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 1–19; Table 1; Evaluation (1)–(3),,Pending independent validation,Solvent mixture DMC:PGPE = 70:30; total solvent quantity stated as residual.,186
+WO2004107052A1,Embodiment 19,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,187
+WO2004107052A1,Embodiment 19,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,188
+WO2004107052A1,Embodiment 19,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,189
+WO2004107052A1,Embodiment 19,R-08,surfactant,0.03,0.03,wt%,OK,,,,,Pending independent validation,,190
+WO2004107052A1,Embodiment 19,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,191
+WO2004107052A1,Embodiment 19,PGPE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,192
+WO2004107052A1,Embodiment 20,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,193
+WO2004107052A1,Embodiment 20,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,194
+WO2004107052A1,Embodiment 20,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,195
+WO2004107052A1,Embodiment 20,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,196
+WO2004107052A1,Embodiment 20,Megaface F142D,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,197
+WO2004107052A1,Embodiment 20,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,198
+WO2004107052A1,Embodiment 21,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,199
+WO2004107052A1,Embodiment 21,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,200
+WO2004107052A1,Embodiment 21,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,201
+WO2004107052A1,Embodiment 21,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,202
+WO2004107052A1,Embodiment 21,Megaface F142D,surfactant,2,2.0,,OK,,,,,Pending independent validation,,203
+WO2004107052A1,Embodiment 21,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,204
+WO2004107052A1,Embodiment 22,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,205
+WO2004107052A1,Embodiment 22,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,206
+WO2004107052A1,Embodiment 22,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,207
+WO2004107052A1,Embodiment 22,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,208
+WO2004107052A1,Embodiment 22,F172,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,209
+WO2004107052A1,Embodiment 22,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,210
+WO2004107052A1,Embodiment 23,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,211
+WO2004107052A1,Embodiment 23,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,212
+WO2004107052A1,Embodiment 23,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,213
+WO2004107052A1,Embodiment 23,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,214
+WO2004107052A1,Embodiment 23,F172,surfactant,2,2.0,,OK,,,,,Pending independent validation,,215
+WO2004107052A1,Embodiment 23,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,216
+WO2004107052A1,Embodiment 24,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,217
+WO2004107052A1,Embodiment 24,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,218
+WO2004107052A1,Embodiment 24,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,219
+WO2004107052A1,Embodiment 24,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,220
+WO2004107052A1,Embodiment 24,F-172D,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,221
+WO2004107052A1,Embodiment 24,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,222
+WO2004107052A1,Embodiment 25,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,223
+WO2004107052A1,Embodiment 25,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,224
+WO2004107052A1,Embodiment 25,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,225
+WO2004107052A1,Embodiment 25,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,226
+WO2004107052A1,Embodiment 25,F-172D,surfactant,2,2.0,,OK,,,,,Pending independent validation,,227
+WO2004107052A1,Embodiment 25,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,228
+WO2004107052A1,Embodiment 26,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,229
+WO2004107052A1,Embodiment 26,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,230
+WO2004107052A1,Embodiment 26,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,231
+WO2004107052A1,Embodiment 26,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,232
+WO2004107052A1,Embodiment 26,F177-P,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,233
+WO2004107052A1,Embodiment 26,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,234
+WO2004107052A1,Embodiment 27,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,235
+WO2004107052A1,Embodiment 27,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,236
+WO2004107052A1,Embodiment 27,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,237
+WO2004107052A1,Embodiment 27,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,238
+WO2004107052A1,Embodiment 27,F177-P,surfactant,2,2.0,,OK,,,,,Pending independent validation,,239
+WO2004107052A1,Embodiment 27,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,240
+WO2004107052A1,Embodiment 28,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,241
+WO2004107052A1,Embodiment 28,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,242
+WO2004107052A1,Embodiment 28,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,243
+WO2004107052A1,Embodiment 28,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,244
+WO2004107052A1,Embodiment 28,R-08,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,245
+WO2004107052A1,Embodiment 28,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,246
+WO2004107052A1,Embodiment 29,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,247
+WO2004107052A1,Embodiment 29,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,248
+WO2004107052A1,Embodiment 29,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,249
+WO2004107052A1,Embodiment 29,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,250
+WO2004107052A1,Embodiment 29,R-08,surfactant,2,2.0,,OK,,,,,Pending independent validation,,251
+WO2004107052A1,Embodiment 29,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,252
+WO2004107052A1,Embodiment 30,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,253
+WO2004107052A1,Embodiment 30,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,254
+WO2004107052A1,Embodiment 30,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,255
+WO2004107052A1,Embodiment 30,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,256
+WO2004107052A1,Embodiment 30,F-470,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,257
+WO2004107052A1,Embodiment 30,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,258
+WO2004107052A1,Embodiment 31,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,259
+WO2004107052A1,Embodiment 31,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,260
+WO2004107052A1,Embodiment 31,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,261
+WO2004107052A1,Embodiment 31,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,262
+WO2004107052A1,Embodiment 31,F-470,surfactant,2,2.0,,OK,,,,,Pending independent validation,,263
+WO2004107052A1,Embodiment 31,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,264
+WO2004107052A1,Embodiment 32,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,265
+WO2004107052A1,Embodiment 32,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,266
+WO2004107052A1,Embodiment 32,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,267
+WO2004107052A1,Embodiment 32,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,268
+WO2004107052A1,Embodiment 32,F-471,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,269
+WO2004107052A1,Embodiment 32,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,270
+WO2004107052A1,Embodiment 33,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,271
+WO2004107052A1,Embodiment 33,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,272
+WO2004107052A1,Embodiment 33,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,273
+WO2004107052A1,Embodiment 33,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,274
+WO2004107052A1,Embodiment 33,F-471,surfactant,2,2.0,,OK,,,,,Pending independent validation,,275
+WO2004107052A1,Embodiment 33,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,276
+WO2004107052A1,Embodiment 34,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,277
+WO2004107052A1,Embodiment 34,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,278
+WO2004107052A1,Embodiment 34,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,279
+WO2004107052A1,Embodiment 34,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,280
+WO2004107052A1,Embodiment 34,F-475,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,281
+WO2004107052A1,Embodiment 34,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,282
+WO2004107052A1,Embodiment 35,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,283
+WO2004107052A1,Embodiment 35,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,284
+WO2004107052A1,Embodiment 35,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,285
+WO2004107052A1,Embodiment 35,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,286
+WO2004107052A1,Embodiment 35,F-475,surfactant,2,2.0,,OK,,,,,Pending independent validation,,287
+WO2004107052A1,Embodiment 35,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,288
+WO2004107052A1,Embodiment 36,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,289
+WO2004107052A1,Embodiment 36,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,290
+WO2004107052A1,Embodiment 36,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,291
+WO2004107052A1,Embodiment 36,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,292
+WO2004107052A1,Embodiment 36,FC-170C,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,293
+WO2004107052A1,Embodiment 36,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,294
+WO2004107052A1,Embodiment 37,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,295
+WO2004107052A1,Embodiment 37,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,296
+WO2004107052A1,Embodiment 37,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,297
+WO2004107052A1,Embodiment 37,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,298
+WO2004107052A1,Embodiment 37,FC-170C,surfactant,2,2.0,,OK,,,,,Pending independent validation,,299
+WO2004107052A1,Embodiment 37,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,300
+WO2004107052A1,Embodiment 38,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,301
+WO2004107052A1,Embodiment 38,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,302
+WO2004107052A1,Embodiment 38,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,303
+WO2004107052A1,Embodiment 38,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,304
+WO2004107052A1,Embodiment 38,FC-430,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,305
+WO2004107052A1,Embodiment 38,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,306
+WO2004107052A1,Embodiment 39,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,307
+WO2004107052A1,Embodiment 39,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,308
+WO2004107052A1,Embodiment 39,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,309
+WO2004107052A1,Embodiment 39,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,310
+WO2004107052A1,Embodiment 39,FC-430,surfactant,2,2.0,,OK,,,,,Pending independent validation,,311
+WO2004107052A1,Embodiment 39,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,312
+WO2004107052A1,Embodiment 40,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,313
+WO2004107052A1,Embodiment 40,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,314
+WO2004107052A1,Embodiment 40,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,315
+WO2004107052A1,Embodiment 40,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,316
+WO2004107052A1,Embodiment 40,FC-431,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,317
+WO2004107052A1,Embodiment 40,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,318
+WO2004107052A1,Embodiment 41,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,319
+WO2004107052A1,Embodiment 41,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,320
+WO2004107052A1,Embodiment 41,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,321
+WO2004107052A1,Embodiment 41,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,322
+WO2004107052A1,Embodiment 41,FC-431,surfactant,2,2.0,,OK,,,,,Pending independent validation,,323
+WO2004107052A1,Embodiment 41,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,324
+WO2004107052A1,Embodiment 42,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,325
+WO2004107052A1,Embodiment 42,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,326
+WO2004107052A1,Embodiment 42,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,327
+WO2004107052A1,Embodiment 42,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,328
+WO2004107052A1,Embodiment 42,BYK306,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,329
+WO2004107052A1,Embodiment 42,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,330
+WO2004107052A1,Embodiment 43,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,331
+WO2004107052A1,Embodiment 43,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,332
+WO2004107052A1,Embodiment 43,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,333
+WO2004107052A1,Embodiment 43,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,334
+WO2004107052A1,Embodiment 43,BYK306,surfactant,2,2.0,,OK,,,,,Pending independent validation,,335
+WO2004107052A1,Embodiment 43,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,336
+WO2004107052A1,Embodiment 44,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,337
+WO2004107052A1,Embodiment 44,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,338
+WO2004107052A1,Embodiment 44,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,339
+WO2004107052A1,Embodiment 44,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,340
+WO2004107052A1,Embodiment 44,BYK307,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,341
+WO2004107052A1,Embodiment 44,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,342
+WO2004107052A1,Embodiment 45,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,343
+WO2004107052A1,Embodiment 45,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,344
+WO2004107052A1,Embodiment 45,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,345
+WO2004107052A1,Embodiment 45,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,346
+WO2004107052A1,Embodiment 45,BYK307,surfactant,2,2.0,,OK,,,,,Pending independent validation,,347
+WO2004107052A1,Embodiment 45,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,348
+WO2004107052A1,Embodiment 46,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,349
+WO2004107052A1,Embodiment 46,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,350
+WO2004107052A1,Embodiment 46,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,351
+WO2004107052A1,Embodiment 46,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,352
+WO2004107052A1,Embodiment 46,BYK310,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,353
+WO2004107052A1,Embodiment 46,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,354
+WO2004107052A1,Embodiment 47,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,355
+WO2004107052A1,Embodiment 47,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,356
+WO2004107052A1,Embodiment 47,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,357
+WO2004107052A1,Embodiment 47,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,358
+WO2004107052A1,Embodiment 47,BYK310,surfactant,2,2.0,,OK,,,,,Pending independent validation,,359
+WO2004107052A1,Embodiment 47,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,360
+WO2004107052A1,Embodiment 48,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,361
+WO2004107052A1,Embodiment 48,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,362
+WO2004107052A1,Embodiment 48,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,363
+WO2004107052A1,Embodiment 48,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,364
+WO2004107052A1,Embodiment 48,BYK331,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,365
+WO2004107052A1,Embodiment 48,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,366
+WO2004107052A1,Embodiment 49,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,367
+WO2004107052A1,Embodiment 49,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,368
+WO2004107052A1,Embodiment 49,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,369
+WO2004107052A1,Embodiment 49,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,370
+WO2004107052A1,Embodiment 49,BYK331,surfactant,2,2.0,,OK,,,,,Pending independent validation,,371
+WO2004107052A1,Embodiment 49,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,372
+WO2004107052A1,Embodiment 50,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,373
+WO2004107052A1,Embodiment 50,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,374
+WO2004107052A1,Embodiment 50,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,375
+WO2004107052A1,Embodiment 50,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,376
+WO2004107052A1,Embodiment 50,BYK333,surfactant,0.01,0.01,,OK,,,,,Pending independent validation,,377
+WO2004107052A1,Embodiment 50,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,378
+WO2004107052A1,Embodiment 51,Acrylic binder resin,resin,10,10.0,wt%,OK,Spinless coating on Cr glass; prebake 90°C for 2 min; viscosity ~4 cps,Uniformity: Good; Edge profile: Good; Coating defects: Good,Embodiments 20–51; Table 2; Evaluation (1)–(3),,Pending independent validation,Surfactant content unit not specified in Table 2; DMC solvent quantity stated as residual.,379
+WO2004107052A1,Embodiment 51,Dipentaerythritol penta/hexa acrylate (DPHA),crosslinker,10,10.0,wt%,OK,,,,,Pending independent validation,,380
+WO2004107052A1,Embodiment 51,Irgacure 907,photoinitiator,5,5.0,wt%,OK,,,,,Pending independent validation,,381
+WO2004107052A1,Embodiment 51,(3-glycidoxypropyl)trimethoxysilane,additive,0.05,0.05,wt%,OK,,,,,Pending independent validation,,382
+WO2004107052A1,Embodiment 51,BYK333,surfactant,2,2.0,,OK,,,,,Pending independent validation,,383
+WO2004107052A1,Embodiment 51,DMC,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,384
+US20020068237A1,Example 1,"Butylated melamine resin (MW ~8,000; 60% solution in xylol/butanol 50:50)",resin,167,167.0,parts by mass,OK,Roll coating on epoxy-primed aluminum; dry film thickness 20 µm; visible light ≥480 nm at 300 mJ/cm²; cure 110°C for 15 min; methanol development,Pencil hardness H; high solvent resistance; excellent pattern coating,Example 1; [0152]–[0154],,Pending independent validation,"Resin supplied as 60% solution in xylol/butanol (50:50 by weight); 167 parts refer to the resin solution, not dry resin.",385
+US20020068237A1,Example 1,Cyracure UVI-6990,photoinitiator,1,1.0,parts by mass,OK,,,,,Pending independent validation,,386
+US20020068237A1,Example 1,cis-3-(p-toluenesulfonyloxy)-2-pinanol,additive,1,1.0,parts by mass,OK,,,,,Pending independent validation,,387
+US20020068237A1,Example 1,Benzopyran condensed ring compound (Figure C00014),additive,1,1.0,parts by mass,OK,,,,,Pending independent validation,,388
+US20020068237A1,Example 2,Nikalac MS-25 (melamine resin; 70% nonvolatile),resin,100,100.0,parts by mass,OK,Roll coating on surface-treated steel; dry film thickness 10 µm; visible light ≥480 nm at 400 mJ/cm²; cure 120°C for 10 min; methanol development,Pencil hardness F; excellent pattern coating,Example 2; [0155]–[0157],,Pending independent validation,Resin nonvolatile content 70%; photosensitizer Figure C00015 has a diethylamino substituent.,389
+US20020068237A1,Example 2,CI-2855,photoinitiator,2,2.0,parts by mass,OK,,,,,Pending independent validation,,390
+US20020068237A1,Example 2,cis-1-phenyl-2-p-toluenesulfonyloxy-1-cyclohexanol,additive,1,1.0,parts by mass,OK,,,,,Pending independent validation,,391
+US20020068237A1,Example 2,Benzopyran condensed ring compound (Figure C00015),additive,1,1.0,parts by mass,OK,,,,,Pending independent validation,,392
+US20020068237A1,Example 2,Titanium dioxide,additive,20,20.0,parts by mass,OK,,,,,Pending independent validation,,393
+US20020068237A1,Example 3,Phthalkyd 235-50 (alkyd resin; 50% nonvolatile; oil length 35),resin,140,140.0,parts by mass,OK,Spray coating on primer-treated aluminum; dry film thickness 30 µm; visible light ≥480 nm at 600 mJ/cm²; cure 110°C for 20 min; methanol development,Pencil hardness H; excellent pattern coating,Example 3; [0158]–[0160],,Pending independent validation,Alkyd resin nonvolatile content 50%; photosensitizer Figure C00016 has two methyl substituents.,394
+US20020068237A1,Example 3,"Butylated melamine resin (MW ~5,000)",resin,55,55.0,parts by mass,OK,,,,,Pending independent validation,,395
+US20020068237A1,Example 3,DAICAT-11,photoinitiator,1,1.0,parts by mass,OK,,,,,Pending independent validation,,396
+US20020068237A1,Example 3,"1,4-di-p-toluenesulfonyloxy cyclohexane",additive,1,1.0,parts by mass,OK,,,,,Pending independent validation,,397
+US20020068237A1,Example 3,Benzopyran condensed ring compound (Figure C00016),additive,1,1.0,parts by mass,OK,,,,,Pending independent validation,,398
+US20020068237A1,Example 3,Calcium carbonate,additive,10,10.0,parts by mass,OK,,,,,Pending independent validation,,399
+US20020068237A1,Example 4,Acrylic resin varnish (styrene/n-butyl methacrylate/n-butyl acrylate/hydroxybutyl acrylate copolymer; 60% nonvolatile),resin,117,117.0,parts by mass,OK,Roll coating on glass; dry film thickness 5 µm; visible light ≥480 nm at 200 mJ/cm²; cure 100°C for 15 min; methanol development,Pencil hardness H; excellent pattern coating,Example 4; [0161]–[0163],,Pending independent validation,"Acrylic resin MW ~8,000 and hydroxyl value 100 mg KOH/g; melamine resin varnish 55% nonvolatile and MW ~8,000.",400
+US20020068237A1,Example 4,"Melamine resin varnish (55% nonvolatile; MW ~8,000)",resin,55,55.0,parts by mass,OK,,,,,Pending independent validation,,401
+US20020068237A1,Example 4,DAICAT-11,photoinitiator,46143,,parts by mass,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,402
+US20020068237A1,Example 4,"1,3-di-p-toluenesulfonyloxy cyclohexane",additive,46143,,parts by mass,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,403
+US20020068237A1,Example 4,Benzopyran condensed ring compound (Figure C00017),additive,1,1.0,parts by mass,OK,,,,,Pending independent validation,,404
+US20020068237A1,Example 5,Acrylic resin varnish (styrene/methyl methacrylate/n-butyl acrylate/hydroxyethyl acrylate/acrylic acid copolymer; 55% nonvolatile),resin,127,127.0,parts by mass,OK,Spray coating on polycarbonate; dry film thickness 20 µm; visible light ≥480 nm at 400 mJ/cm²; cure 100°C for 15 min; development with 1.5% aqueous sodium carbonate,Pencil hardness H; excellent pattern coating,Example 5; [0164]–[0166],,Pending independent validation,"Acrylic resin MW ~10,000; hydroxyl value 85 mg KOH/g; acid value 40 mg KOH/g; Nikalac MS-35 nonvolatile content 35%.",405
+US20020068237A1,Example 5,Nikalac MS-35 (melamine resin; 35% nonvolatile),resin,86,86.0,parts by mass,OK,,,,,Pending independent validation,,406
+US20020068237A1,Example 5,CI-2855,photoinitiator,0.5,0.5,parts by mass,OK,,,,,Pending independent validation,,407
+US20020068237A1,Example 5,"1,4-di-p-toluenesulfonyloxy cyclohexane",additive,1,1.0,parts by mass,OK,,,,,Pending independent validation,,408
+US20020068237A1,Example 5,Benzopyran condensed ring compound (Figure C00018),additive,1,1.0,parts by mass,OK,,,,,Pending independent validation,,409
+US20020068237A1,Example 6,Water-soluble acrylic resin (emulsion type; 50% nonvolatile),resin,150,150.0,parts by mass,OK,Roll coating on surface-treated steel; dry film thickness 20 µm; visible light ≥480 nm at 600 mJ/cm²; cure 120°C for 15 min; development with 1.5% aqueous sodium carbonate,Pencil hardness 2H; high chemical resistance; excellent pattern coating,Example 6; [0167]–[0169],,Pending independent validation,"Acrylic resin MW ~20,000; hydroxyl value 60 mg KOH/g; acid value 45 mg KOH/g; patent describes composition as organic solvent-based despite water-soluble resin.",410
+US20020068237A1,Example 6,Cymel 303 (water-soluble melamine resin),resin,25,25.0,parts by mass,OK,,,,,Pending independent validation,,411
+US20020068237A1,Example 6,CI-2758,photoinitiator,1,1.0,parts by mass,OK,,,,,Pending independent validation,,412
+US20020068237A1,Example 6,"1,4-di-p-toluenesulfonyloxy cyclohexane",additive,0.5,0.5,parts by mass,OK,,,,,Pending independent validation,,413
+US20020068237A1,Example 6,Benzopyran condensed ring compound (Figure C00019),additive,1,1.0,parts by mass,OK,,,,,Pending independent validation,,414
+US20080241753A1,Example 1,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; electron beam 70 kV; two-layer method (420 nm lower layer),L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 2; [0151]–[0162],,Pending independent validation,Solvent quantity unspecified; film thickness discrepancy between prose and Table 2.,415
+US20080241753A1,Example 1,PAG1,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,416
+US20080241753A1,Example 1,Chemical Formula (1),crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,417
+US20080241753A1,Example 1,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,418
+US20080241753A1,Example 1,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,419
+US20080241753A1,Example 1,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,420
+US20080241753A1,Example 2,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; electron beam 70 kV; single-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 2; [0163]–[0167],,Pending independent validation,Solvent quantity unspecified; film thickness discrepancy between prose and Table 2.,421
+US20080241753A1,Example 2,PAG1,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,422
+US20080241753A1,Example 2,Chemical Formula (1),crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,423
+US20080241753A1,Example 2,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,424
+US20080241753A1,Example 2,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,425
+US20080241753A1,Example 2,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,426
+US20080241753A1,Example 3,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; two-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 2; [0168]–[0171],,Pending independent validation,PM/PE ratio 3/7; solvent quantity unspecified.,427
+US20080241753A1,Example 3,PAG1,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,428
+US20080241753A1,Example 3,Chemical Formula (2),crosslinker,46088,,parts by mass,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,429
+US20080241753A1,Example 3,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,430
+US20080241753A1,Example 3,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,431
+US20080241753A1,Example 3,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,432
+US20080241753A1,Example 3,PE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,433
+US20080241753A1,Example 4,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; single-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 2; [0168]–[0171],,Pending independent validation,PM/PE ratio 3/7; solvent quantity unspecified.,434
+US20080241753A1,Example 4,PAG1,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,435
+US20080241753A1,Example 4,Chemical Formula (2),crosslinker,46088,,parts by mass,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,436
+US20080241753A1,Example 4,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,437
+US20080241753A1,Example 4,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,438
+US20080241753A1,Example 4,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,439
+US20080241753A1,Example 4,PE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,440
+US20080241753A1,Example 5,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; two-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 2; [0168]–[0171],,Pending independent validation,Solvent quantity unspecified.,441
+US20080241753A1,Example 5,PAG1,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,442
+US20080241753A1,Example 5,Chemical Formula (3),crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,443
+US20080241753A1,Example 5,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,444
+US20080241753A1,Example 5,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,445
+US20080241753A1,Example 5,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,446
+US20080241753A1,Example 6,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; single-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 2; [0168]–[0171],,Pending independent validation,Solvent quantity unspecified.,447
+US20080241753A1,Example 6,PAG1,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,448
+US20080241753A1,Example 6,Chemical Formula (3),crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,449
+US20080241753A1,Example 6,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,450
+US20080241753A1,Example 6,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,451
+US20080241753A1,Example 6,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,452
+US20080241753A1,Example 7,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; two-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 2; [0168]–[0171],,Pending independent validation,Solvent quantity unspecified.,453
+US20080241753A1,Example 7,PAG2,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,454
+US20080241753A1,Example 7,Chemical Formula (1),crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,455
+US20080241753A1,Example 7,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,456
+US20080241753A1,Example 7,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,457
+US20080241753A1,Example 7,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,458
+US20080241753A1,Example 8,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; single-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 2; [0168]–[0171],,Pending independent validation,Solvent quantity unspecified.,459
+US20080241753A1,Example 8,PAG2,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,460
+US20080241753A1,Example 8,Chemical Formula (1),crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,461
+US20080241753A1,Example 8,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,462
+US20080241753A1,Example 8,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,463
+US20080241753A1,Example 8,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,464
+US20080241753A1,Example 9,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; two-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 2; [0168]–[0171],,Pending independent validation,PM/PE ratio 3/7; solvent quantity unspecified.,465
+US20080241753A1,Example 9,PAG2,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,466
+US20080241753A1,Example 9,Chemical Formula (2),crosslinker,46088,,parts by mass,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,467
+US20080241753A1,Example 9,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,468
+US20080241753A1,Example 9,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,469
+US20080241753A1,Example 9,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,470
+US20080241753A1,Example 9,PE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,471
+US20080241753A1,Example 10,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; single-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 2; [0168]–[0171],,Pending independent validation,PM/PE ratio 3/7; solvent quantity unspecified.,472
+US20080241753A1,Example 10,PAG2,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,473
+US20080241753A1,Example 10,Chemical Formula (2),crosslinker,46088,,parts by mass,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,474
+US20080241753A1,Example 10,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,475
+US20080241753A1,Example 10,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,476
+US20080241753A1,Example 10,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,477
+US20080241753A1,Example 10,PE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,478
+US20080241753A1,Example 11,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; two-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 2; [0168]–[0171],,Pending independent validation,Solvent quantity unspecified.,479
+US20080241753A1,Example 11,PAG2,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,480
+US20080241753A1,Example 11,Chemical Formula (3),crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,481
+US20080241753A1,Example 11,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,482
+US20080241753A1,Example 11,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,483
+US20080241753A1,Example 11,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,484
+US20080241753A1,Example 12,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; single-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 2; [0168]–[0171],,Pending independent validation,Solvent quantity unspecified.,485
+US20080241753A1,Example 12,PAG2,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,486
+US20080241753A1,Example 12,Chemical Formula (3),crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,487
+US20080241753A1,Example 12,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,488
+US20080241753A1,Example 12,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,489
+US20080241753A1,Example 12,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,490
+US20080241753A1,Example 13,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; two-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 2; [0168]–[0171],,Pending independent validation,Solvent quantity unspecified.,491
+US20080241753A1,Example 13,PAG3,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,492
+US20080241753A1,Example 13,Chemical Formula (1),crosslinker,12,12.0,parts by mass,OK,,,,,Pending independent validation,,493
+US20080241753A1,Example 13,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,494
+US20080241753A1,Example 13,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,495
+US20080241753A1,Example 13,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,496
+US20080241753A1,Example 14,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; single-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 3; [0168]–[0171],,Pending independent validation,Solvent quantity unspecified.,497
+US20080241753A1,Example 14,PAG3,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,498
+US20080241753A1,Example 14,Chemical Formula (1),crosslinker,12,12.0,parts by mass,OK,,,,,Pending independent validation,,499
+US20080241753A1,Example 14,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,500
+US20080241753A1,Example 14,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,501
+US20080241753A1,Example 14,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,502
+US20080241753A1,Example 15,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; two-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 3; [0168]–[0171],,Pending independent validation,PM/PE ratio 3/7; solvent quantity unspecified.,503
+US20080241753A1,Example 15,PAG3,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,504
+US20080241753A1,Example 15,Chemical Formula (2),crosslinker,46088,,parts by mass,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,505
+US20080241753A1,Example 15,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,506
+US20080241753A1,Example 15,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,507
+US20080241753A1,Example 15,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,508
+US20080241753A1,Example 15,PE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,509
+US20080241753A1,Example 16,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; single-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 3; [0168]–[0171],,Pending independent validation,PM/PE ratio 3/7; solvent quantity unspecified.,510
+US20080241753A1,Example 16,PAG3,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,511
+US20080241753A1,Example 16,Chemical Formula (2),crosslinker,46088,,parts by mass,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,512
+US20080241753A1,Example 16,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,513
+US20080241753A1,Example 16,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,514
+US20080241753A1,Example 16,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,515
+US20080241753A1,Example 16,PE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,516
+US20080241753A1,Example 17,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; two-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 3; [0168]–[0171],,Pending independent validation,Solvent quantity unspecified.,517
+US20080241753A1,Example 17,PAG3,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,518
+US20080241753A1,Example 17,Chemical Formula (3),crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,519
+US20080241753A1,Example 17,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,520
+US20080241753A1,Example 17,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,521
+US20080241753A1,Example 17,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,522
+US20080241753A1,Example 18,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; single-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 3; [0168]–[0171],,Pending independent validation,Solvent quantity unspecified.,523
+US20080241753A1,Example 18,PAG3,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,524
+US20080241753A1,Example 18,Chemical Formula (3),crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,525
+US20080241753A1,Example 18,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,526
+US20080241753A1,Example 18,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,527
+US20080241753A1,Example 18,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,528
+US20080241753A1,Example 19,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; two-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 3; [0168]–[0171],,Pending independent validation,PAG3/PAG4 ratio 95/5; PM/PE ratio 3/7; solvent quantity unspecified.,529
+US20080241753A1,Example 19,PAG3:PAG4 = 95:5,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,530
+US20080241753A1,Example 19,Chemical Formula (1),crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,531
+US20080241753A1,Example 19,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,532
+US20080241753A1,Example 19,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,533
+US20080241753A1,Example 19,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,534
+US20080241753A1,Example 19,PE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,535
+US20080241753A1,Example 20,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; single-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 3; [0168]–[0171],,Pending independent validation,PAG3/PAG4 ratio 95/5; PM/PE ratio 3/7; solvent quantity unspecified.,536
+US20080241753A1,Example 20,PAG3:PAG4 = 95:5,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,537
+US20080241753A1,Example 20,Chemical Formula (1),crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,538
+US20080241753A1,Example 20,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,539
+US20080241753A1,Example 20,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,540
+US20080241753A1,Example 20,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,541
+US20080241753A1,Example 20,PE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,542
+US20080241753A1,Example 21,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; two-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 3; [0168]–[0171],,Pending independent validation,PAG3/PAG4 ratio 95/5; PM/PE ratio 3/7; solvent quantity unspecified.,543
+US20080241753A1,Example 21,PAG3:PAG4 = 95:5,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,544
+US20080241753A1,Example 21,Chemical Formula (2),crosslinker,46088,,parts by mass,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,545
+US20080241753A1,Example 21,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,546
+US20080241753A1,Example 21,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,547
+US20080241753A1,Example 21,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,548
+US20080241753A1,Example 21,PE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,549
+US20080241753A1,Example 22,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; single-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 3; [0168]–[0171],,Pending independent validation,PAG3/PAG4 ratio 95/5; PM/PE ratio 3/7; solvent quantity unspecified.,550
+US20080241753A1,Example 22,PAG3:PAG4 = 95:5,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,551
+US20080241753A1,Example 22,Chemical Formula (2),crosslinker,46088,,parts by mass,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,552
+US20080241753A1,Example 22,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,553
+US20080241753A1,Example 22,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,554
+US20080241753A1,Example 22,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,555
+US20080241753A1,Example 22,PE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,556
+US20080241753A1,Example 23,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; two-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 3; [0168]–[0171],,Pending independent validation,PAG3/PAG4 ratio 95/5; PM/PE ratio 3/7; solvent quantity unspecified.,557
+US20080241753A1,Example 23,PAG3:PAG4 = 95:5,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,558
+US20080241753A1,Example 23,Chemical Formula (3),crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,559
+US20080241753A1,Example 23,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,560
+US20080241753A1,Example 23,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,561
+US20080241753A1,Example 23,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,562
+US20080241753A1,Example 23,PE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,563
+US20080241753A1,Example 24,Resin 1,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; single-layer method,L/S: 50 nm; Iso-Line: 70 nm; no thickness loss,Table 1; Table 3; [0168]–[0171],,Pending independent validation,PAG3/PAG4 ratio 95/5; PM/PE ratio 3/7; solvent quantity unspecified.,564
+US20080241753A1,Example 24,PAG3:PAG4 = 95:5,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,565
+US20080241753A1,Example 24,Chemical Formula (3),crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,566
+US20080241753A1,Example 24,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,567
+US20080241753A1,Example 24,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,568
+US20080241753A1,Example 24,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,569
+US20080241753A1,Example 24,PE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,570
+US20080241753A1,Comparative Example 1,Resin 2,resin,100,100.0,parts by mass,OK,8-inch silicon wafer; PAB 90°C/90 s; PEB 110°C/90 s; single-layer method,Unusable due to excessive thickness loss; resolution possible,Table 1; Table 3; [0168]–[0171],,Pending independent validation,PM/PE ratio 3/7; solvent quantity unspecified.,571
+US20080241753A1,Comparative Example 1,PAG3,pag,10,10.0,parts by mass,OK,,,,,Pending independent validation,,572
+US20080241753A1,Comparative Example 1,Chemical Formula (2),crosslinker,46088,,parts by mass,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,573
+US20080241753A1,Comparative Example 1,Trioctylamine,additive,0.8,0.8,parts by mass,OK,,,,,Pending independent validation,,574
+US20080241753A1,Comparative Example 1,Salicylic acid,additive,0.32,0.32,parts by mass,OK,,,,,Pending independent validation,,575
+US20080241753A1,Comparative Example 1,PM,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,576
+US20080241753A1,Comparative Example 1,PE,solvent,,,,MISSING_QUANTITY,,,,,Needs source verification,,577
+US7432034B2,Example 1,Resin (29),resin,727,727.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; electron beam 50 keV; PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 6.0 µC/cm²; resolution 0.11 µm; rectangular profile; LER 4.5 nm,Example 1; Tables 1–2,,Pending independent validation,Mw 9200; x/y 85/15; Mw/Mn 1.2 in Table 1.,578
+US7432034B2,Example 1,MM-1,crosslinker,0.10,0.1,g,OK,,,,,Pending independent validation,,579
+US7432034B2,Example 1,CL-9,crosslinker,0.10,0.1,g,OK,,,,,Pending independent validation,,580
+US7432034B2,Example 1,I-1,pag,0.07,0.07,g,OK,,,,,Pending independent validation,,581
+US7432034B2,Example 1,D-1,additive,3,3.0,g,OK,,,,,Pending independent validation,,582
+US7432034B2,Example 1,PGMEA,solvent,46149,7.5,g,Recovered from previously documented example; source recheck required,,,,,Needs source verification,,583
+US7432034B2,Example 1,PGME,solvent,46143,1.5,g,Recovered from previously documented example; source recheck required,,,,,Needs source verification,,584
+US7432034B2,Example 1,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,585
+US7432034B2,Example 2,Resin (2),resin,697,697.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; electron beam 50 keV; PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 5.5 µC/cm²; resolution 0.11 µm; rectangular profile; LER 4.8 nm,Tables 1–2; Examples 2–12,,Pending independent validation,Mw 5000; Mw/Mn 1.15.,586
+US7432034B2,Example 2,MM-2,crosslinker,0.20,0.2,g,OK,,,,,Pending independent validation,,587
+US7432034B2,Example 2,CL-1,crosslinker,0.04,0.04,g,OK,,,,,Pending independent validation,,588
+US7432034B2,Example 2,I-3,pag,0.06,0.06,g,OK,,,,,Pending independent validation,,589
+US7432034B2,Example 2,D-2,additive,3,3.0,g,OK,,,,,Pending independent validation,,590
+US7432034B2,Example 2,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,591
+US7432034B2,Example 2,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,592
+US7432034B2,Example 2,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,593
+US7432034B2,Example 3,Resin (1),resin,656,656.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; electron beam 50 keV; PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 4.8 µC/cm²; resolution 0.11 µm; rectangular profile; LER 5.5 nm,Tables 1–2; Examples 2–12,,Pending independent validation,Mw 2500; Mw/Mn 1.10.,594
+US7432034B2,Example 3,MM-3,crosslinker,0.18,0.18,g,OK,,,,,Pending independent validation,,595
+US7432034B2,Example 3,CL-4,crosslinker,0.08,0.08,g,OK,,,,,Pending independent validation,,596
+US7432034B2,Example 3,II-1,pag,0.08,0.08,g,OK,,,,,Pending independent validation,,597
+US7432034B2,Example 3,D-3,additive,4,4.0,g,OK,,,,,Pending independent validation,,598
+US7432034B2,Example 3,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,599
+US7432034B2,Example 3,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,600
+US7432034B2,Example 3,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,601
+US7432034B2,Example 4,Resin (9),resin,717,717.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; electron beam 50 keV; PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 5.2 µC/cm²; resolution 0.10 µm; rectangular profile; LER 5.0 nm,Tables 1–2; Examples 2–12,,Pending independent validation,Mw 8000; Mw/Mn 1.5.,602
+US7432034B2,Example 4,MM-4,crosslinker,0.05,0.05,g,OK,,,,,Pending independent validation,,603
+US7432034B2,Example 4,CL-9,crosslinker,0.15,0.15,g,OK,,,,,Pending independent validation,,604
+US7432034B2,Example 4,III-1,pag,0.08,0.08,g,OK,,,,,Pending independent validation,,605
+US7432034B2,Example 4,D-1,additive,3,3.0,g,OK,,,,,Pending independent validation,,606
+US7432034B2,Example 4,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,607
+US7432034B2,Example 4,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,608
+US7432034B2,Example 4,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,609
+US7432034B2,Example 5,Resin (27),resin,696,696.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; electron beam 50 keV; PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 5.5 µC/cm²; resolution 0.11 µm; rectangular profile; LER 6.0 nm,Tables 1–2; Examples 2–12,,Pending independent validation,Mw 3500; x/y 85/15; Mw/Mn 1.2.,610
+US7432034B2,Example 5,MM-5,crosslinker,0.05,0.05,g,OK,,,,,Pending independent validation,,611
+US7432034B2,Example 5,CL-8,crosslinker,0.15,0.15,g,OK,,,,,Pending independent validation,,612
+US7432034B2,Example 5,PAG3-21,pag,0.10,0.1,g,OK,,,,,Pending independent validation,,613
+US7432034B2,Example 5,D-3,additive,4,4.0,g,OK,,,,,Pending independent validation,,614
+US7432034B2,Example 5,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,615
+US7432034B2,Example 5,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,616
+US7432034B2,Example 5,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,617
+US7432034B2,Example 6,Resin (25),resin,657,657.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; electron beam 50 keV; PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 5.5 µC/cm²; resolution 0.11 µm; somewhat taper profile; LER 4.5 nm,Tables 1–2; Examples 2–12,,Pending independent validation,Mw 5000; x/y 70/30; Mw/Mn 1.35.,618
+US7432034B2,Example 6,MM-1,crosslinker,0.22,0.22,g,OK,,,,,Pending independent validation,,619
+US7432034B2,Example 6,CL-5,crosslinker,0.05,0.05,g,OK,,,,,Pending independent validation,,620
+US7432034B2,Example 6,PAG4-6,pag,0.07,0.07,g,OK,,,,,Pending independent validation,,621
+US7432034B2,Example 6,D-2,additive,3,3.0,g,OK,,,,,Pending independent validation,,622
+US7432034B2,Example 6,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,623
+US7432034B2,Example 6,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,624
+US7432034B2,Example 6,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,625
+US7432034B2,Example 7,Resin (31),resin,616,616.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; electron beam 50 keV; PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 5.5 µC/cm²; resolution 0.09 µm; rectangular profile; LER 5.6 nm,Tables 1–2; Examples 2–12,,Pending independent validation,Mw 8000; x/y 90/10; Mw/Mn 1.1.,626
+US7432034B2,Example 7,MM-4,crosslinker,0.15,0.15,g,OK,,,,,Pending independent validation,,627
+US7432034B2,Example 7,CL-8,crosslinker,0.15,0.15,g,OK,,,,,Pending independent validation,,628
+US7432034B2,Example 7,PAG4-28,pag,0.08,0.08,g,OK,,,,,Pending independent validation,,629
+US7432034B2,Example 7,D-2,additive,4,4.0,g,OK,,,,,Pending independent validation,,630
+US7432034B2,Example 7,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,631
+US7432034B2,Example 7,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,632
+US7432034B2,Example 7,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,633
+US7432034B2,Example 8,Resin (32),resin,698,698.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; electron beam 50 keV; PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 5.0 µC/cm²; resolution 0.11 µm; rectangular profile; LER 6.2 nm,Tables 1–2; Examples 2–12,,Pending independent validation,Mw 7500; x/y 90/10; Mw/Mn 1.7.,634
+US7432034B2,Example 8,MM-5,crosslinker,0.07,0.07,g,OK,,,,,Pending independent validation,,635
+US7432034B2,Example 8,CL-9,crosslinker,0.18,0.18,g,OK,,,,,Pending independent validation,,636
+US7432034B2,Example 8,PAG4-36,pag,0.05,0.05,g,OK,,,,,Pending independent validation,,637
+US7432034B2,Example 8,D-1,additive,2,2.0,g,OK,,,,,Pending independent validation,,638
+US7432034B2,Example 8,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,639
+US7432034B2,Example 8,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,640
+US7432034B2,Example 8,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,641
+US7432034B2,Example 9,Resin (93),resin,690,690.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; electron beam 50 keV; PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 4.9 µC/cm²; resolution 0.10 µm; rectangular profile; LER 5.3 nm,Tables 1–2; Examples 2–12,,Pending independent validation,Mw 5000; x/y 80/20; Mw/Mn 1.65.,642
+US7432034B2,Example 9,MM-1,crosslinker,0.20,0.2,g,OK,,,,,Pending independent validation,,643
+US7432034B2,Example 9,CL-6,crosslinker,0.05,0.05,g,OK,,,,,Pending independent validation,,644
+US7432034B2,Example 9,J-1,pag,0.10,0.1,g,OK,,,,,Pending independent validation,,645
+US7432034B2,Example 9,D-3,additive,5,5.0,g,OK,,,,,Pending independent validation,,646
+US7432034B2,Example 9,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,647
+US7432034B2,Example 9,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,648
+US7432034B2,Example 9,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,649
+US7432034B2,Example 10,Resin (95),resin,656,656.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; electron beam 50 keV; PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 5.7 µC/cm²; resolution 0.10 µm; rectangular profile; LER 6.1 nm,Tables 1–2; Examples 2–12,,Pending independent validation,Mw 8000; x/y 85/15; Mw/Mn 1.3; crosslinker code C-3 as transcribed in Table 1.,650
+US7432034B2,Example 10,MM-2,crosslinker,0.20,0.2,g,OK,,,,,Pending independent validation,,651
+US7432034B2,Example 10,C-3,crosslinker,0.05,0.05,g,OK,,,,,Pending independent validation,,652
+US7432034B2,Example 10,J-9,pag,0.09,0.09,g,OK,,,,,Pending independent validation,,653
+US7432034B2,Example 10,D-2,additive,4,4.0,g,OK,,,,,Pending independent validation,,654
+US7432034B2,Example 10,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,655
+US7432034B2,Example 10,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,656
+US7432034B2,Example 10,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,657
+US7432034B2,Example 11,Resin (33),resin,676,676.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; electron beam 50 keV; PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 5.3 µC/cm²; resolution 0.10 µm; rectangular profile; LER 4.9 nm,Tables 1–2; Examples 2–12,,Pending independent validation,Mw 8000; x/y 85/15; Mw/Mn 1.7.,658
+US7432034B2,Example 11,MM-3,crosslinker,0.14,0.14,g,OK,,,,,Pending independent validation,,659
+US7432034B2,Example 11,CL-8,crosslinker,0.10,0.1,g,OK,,,,,Pending independent validation,,660
+US7432034B2,Example 11,J-17,pag,0.08,0.08,g,OK,,,,,Pending independent validation,,661
+US7432034B2,Example 11,D-2,additive,4,4.0,g,OK,,,,,Pending independent validation,,662
+US7432034B2,Example 11,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,663
+US7432034B2,Example 11,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,664
+US7432034B2,Example 11,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,665
+US7432034B2,Example 12,Resin (39),resin,717,717.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; electron beam 50 keV; PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 5.6 µC/cm²; resolution 0.11 µm; rectangular profile; LER 5.4 nm,Tables 1–2; Examples 2–12,,Pending independent validation,Mw 15000; x/y 90/10; Mw/Mn 1.2.,666
+US7432034B2,Example 12,MM-4,crosslinker,0.10,0.1,g,OK,,,,,Pending independent validation,,667
+US7432034B2,Example 12,CL-8,crosslinker,0.10,0.1,g,OK,,,,,Pending independent validation,,668
+US7432034B2,Example 12,J-22,pag,0.08,0.08,g,OK,,,,,Pending independent validation,,669
+US7432034B2,Example 12,D-1,additive,3,3.0,g,OK,,,,,Pending independent validation,,670
+US7432034B2,Example 12,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,671
+US7432034B2,Example 12,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,672
+US7432034B2,Example 12,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,673
+US7432034B2,Comparative Example 1,Resin (30),resin,727,727.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; electron beam 50 keV; PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 6.5 µC/cm²; resolution 0.14 µm; somewhat taper profile; LER 10.5 nm,Tables 1–2; Comparative Example 1,,Pending independent validation,Mw 9200; x/y 85/15; Mw/Mn 2.0; no B-2 crosslinker.,674
+US7432034B2,Comparative Example 1,MM-1,crosslinker,0.20,0.2,g,OK,,,,,Pending independent validation,,675
+US7432034B2,Comparative Example 1,I-1,pag,0.07,0.07,g,OK,,,,,Pending independent validation,,676
+US7432034B2,Comparative Example 1,D-1,additive,3,3.0,g,OK,,,,,Pending independent validation,,677
+US7432034B2,Comparative Example 1,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,678
+US7432034B2,Comparative Example 1,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,679
+US7432034B2,Comparative Example 1,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,680
+US7432034B2,Comparative Example 2,Resin (31),resin,727,727.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; electron beam 50 keV; PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 5.5 µC/cm²; resolution 0.15 µm; somewhat taper profile; LER 13.8 nm,Tables 1–2; Comparative Example 2,,Pending independent validation,Mw 9200; x/y 85/15; Mw/Mn 2.0; no B-1 crosslinker.,681
+US7432034B2,Comparative Example 2,CL-9,crosslinker,0.20,0.2,g,OK,,,,,Pending independent validation,,682
+US7432034B2,Comparative Example 2,I-1,pag,0.07,0.07,g,OK,,,,,Pending independent validation,,683
+US7432034B2,Comparative Example 2,D-1,additive,3,3.0,g,OK,,,,,Pending independent validation,,684
+US7432034B2,Comparative Example 2,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,685
+US7432034B2,Comparative Example 2,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,686
+US7432034B2,Comparative Example 2,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,687
+US7432034B2,Example 13,Resin (29),resin,727,727.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; X-ray exposure (gap 20 nm); PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 65 mJ/cm²; resolution 0.09 µm; rectangular profile; LER 6.3 nm,Example 13; Table 3,,Pending independent validation,Same formulation as Example 1; X-ray exposure instead of electron beam.,688
+US7432034B2,Example 13,MM-1,crosslinker,0.10,0.1,g,OK,,,,,Pending independent validation,,689
+US7432034B2,Example 13,CL-9,crosslinker,0.10,0.1,g,OK,,,,,Pending independent validation,,690
+US7432034B2,Example 13,I-1,pag,0.07,0.07,g,OK,,,,,Pending independent validation,,691
+US7432034B2,Example 13,D-1,additive,3,3.0,g,OK,,,,,Pending independent validation,,692
+US7432034B2,Example 13,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,693
+US7432034B2,Example 13,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,694
+US7432034B2,Example 13,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,695
+US7432034B2,Comparative Example 3,Resin (30),resin,727,727.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; X-ray exposure (gap 20 nm); PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 90 mJ/cm²; resolution 0.15 µm; taper profile; LER 13.5 nm,Comparative Example 3; Table 3,,Pending independent validation,Same formulation as Comparative Example 1; X-ray exposure instead of electron beam.,696
+US7432034B2,Comparative Example 3,MM-1,crosslinker,0.20,0.2,g,OK,,,,,Pending independent validation,,697
+US7432034B2,Comparative Example 3,I-1,pag,0.07,0.07,g,OK,,,,,Pending independent validation,,698
+US7432034B2,Comparative Example 3,D-1,additive,3,3.0,g,OK,,,,,Pending independent validation,,699
+US7432034B2,Comparative Example 3,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,700
+US7432034B2,Comparative Example 3,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,701
+US7432034B2,Comparative Example 3,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,702
+US7432034B2,Comparative Example 4,Resin (31),resin,727,727.0,g,OK,6-inch wafer; film 0.30 µm; PAB 110°C/90 s; X-ray exposure (gap 20 nm); PEB 110°C/90 s; 2.38 wt% TMAH/60 s; water rinse/30 s,Sensitivity 105 mJ/cm²; resolution 0.14 µm; taper profile; LER 12.0 nm,Comparative Example 4; Table 3,,Pending independent validation,Same formulation as Comparative Example 2; X-ray exposure instead of electron beam.,703
+US7432034B2,Comparative Example 4,CL-9,crosslinker,0.20,0.2,g,OK,,,,,Pending independent validation,,704
+US7432034B2,Comparative Example 4,I-1,pag,0.07,0.07,g,OK,,,,,Pending independent validation,,705
+US7432034B2,Comparative Example 4,D-1,additive,3,3.0,g,OK,,,,,Pending independent validation,,706
+US7432034B2,Comparative Example 4,PGMEA,solvent,46149,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,707
+US7432034B2,Comparative Example 4,PGME,solvent,46143,,g,DATE_SERIAL_CORRUPTION — original numeric value unknown,,,,,Needs source verification,,708
+US7432034B2,Comparative Example 4,Megafac F176,surfactant,1,1.0,g,OK,,,,,Pending independent validation,,709
+US9017923B2,Example 1-1,Polymer 1,resin,100,100.0,parts by mass,OK,EB 50 keV; film 100 nm; PAB 110°C/90 s; PEB 95°C (Table 1); 2.38 wt% TMAH/30 s,Sensitivity 25.6 µC/cm²; resolution 75 nm; LWR 6.7 nm,Preparation of Negative Resist Composition; Table 1; Evaluation of Electronic Beam Drawing,,Pending independent validation,"Vinyl ferrocene:4-hydroxystyrene = 0.2:0.8; Mw 4600; Mw/Mn 1.66. Evaluation text states PEB 110°C/90 s, whereas Table 1 states 95°C.",710
+US9017923B2,Example 1-1,PAG 1,pag,20,20.0,parts by mass,OK,,,,,Pending independent validation,,711
+US9017923B2,Example 1-1,Amine 1,additive,1.0,1.0,parts by mass,OK,,,,,Pending independent validation,,712
+US9017923B2,Example 1-1,CR 1,crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,713
+US9017923B2,Example 1-1,PGMEA,solvent,2000,2000.0,parts by mass,OK,,,,,Pending independent validation,,714
+US9017923B2,Example 1-2,Polymer 2,resin,100,100.0,parts by mass,OK,EB 50 keV; film 100 nm; PAB 110°C/90 s; PEB 95°C (Table 1); 2.38 wt% TMAH/30 s,Sensitivity 25.6 µC/cm²; resolution 75 nm; LWR 6.8 nm,Preparation of Negative Resist Composition; Table 1; Evaluation of Electronic Beam Drawing,,Pending independent validation,"Vinyl ruthenocene:4-hydroxystyrene = 0.2:0.8; Mw 5100; Mw/Mn 1.69. Evaluation text states PEB 110°C/90 s, whereas Table 1 states 95°C.",715
+US9017923B2,Example 1-2,PAG 1,pag,20,20.0,parts by mass,OK,,,,,Pending independent validation,,716
+US9017923B2,Example 1-2,Amine 1,additive,1.0,1.0,parts by mass,OK,,,,,Pending independent validation,,717
+US9017923B2,Example 1-2,CR 1,crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,718
+US9017923B2,Example 1-2,PGMEA,solvent,1500,1500.0,parts by mass,OK,,,,,Pending independent validation,,719
+US9017923B2,Example 1-2,CyH,solvent,500,500.0,parts by mass,OK,,,,,Pending independent validation,,720
+US9017923B2,Example 1-3,Polymer 3,resin,100,100.0,parts by mass,OK,EB 50 keV; film 100 nm; PAB 110°C/90 s; PEB 95°C (Table 1); 2.38 wt% TMAH/30 s,Sensitivity 26.3 µC/cm²; resolution 75 nm; LWR 6.4 nm,Preparation of Negative Resist Composition; Table 1; Evaluation of Electronic Beam Drawing,,Pending independent validation,Vinyl ferrocene:4-hydroxymethylstyrene:4-hydroxystyrene = 0.2:0.4:0.4; Mw 4600; Mw/Mn 1.66. No crosslinker listed. PEB discrepancy: Table 1 95°C versus evaluation text 110°C.,721
+US9017923B2,Example 1-3,PAG 1,pag,20,20.0,parts by mass,OK,,,,,Pending independent validation,,722
+US9017923B2,Example 1-3,Amine 1,additive,1.0,1.0,parts by mass,OK,,,,,Pending independent validation,,723
+US9017923B2,Example 1-3,PGMEA,solvent,1500,1500.0,parts by mass,OK,,,,,Pending independent validation,,724
+US9017923B2,Example 1-3,CyH,solvent,500,500.0,parts by mass,OK,,,,,Pending independent validation,,725
+US9017923B2,Example 1-4,Polymer 4,resin,100,100.0,parts by mass,OK,EB 50 keV; film 100 nm; PAB 110°C/90 s; PEB 95°C (Table 1); 2.38 wt% TMAH/30 s,Sensitivity 25.0 µC/cm²; resolution 75 nm; LWR 6.1 nm,Preparation of Negative Resist Composition; Table 1; Evaluation of Electronic Beam Drawing,,Pending independent validation,Methyl ferrocene methacrylate:4-hydroxyphenyl methacrylate = 0.25:0.75; Mw 6300; Mw/Mn 1.76. PEB discrepancy: Table 1 95°C versus evaluation text 110°C.,726
+US9017923B2,Example 1-4,PAG 1,pag,20,20.0,parts by mass,OK,,,,,Pending independent validation,,727
+US9017923B2,Example 1-4,Amine 1,additive,1.0,1.0,parts by mass,OK,,,,,Pending independent validation,,728
+US9017923B2,Example 1-4,CR 1,crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,729
+US9017923B2,Example 1-4,PGMEA,solvent,1500,1500.0,parts by mass,OK,,,,,Pending independent validation,,730
+US9017923B2,Example 1-4,CyH,solvent,500,500.0,parts by mass,OK,,,,,Pending independent validation,,731
+US9017923B2,Example 1-5,Polymer 5,resin,100,100.0,parts by mass,OK,EB 50 keV; film 100 nm; PAB 110°C/90 s; PEB 95°C (Table 1); 2.38 wt% TMAH/30 s,Sensitivity 24.3 µC/cm²; resolution 75 nm; LWR 6.3 nm,Preparation of Negative Resist Composition; Table 1; Evaluation of Electronic Beam Drawing,,Pending independent validation,"Methyl ferrocene methacrylate:4-hydroxymethylphenyl methacrylate:4-(1,1,1,3,3,3-hexafluoro-2-hydroxypropyl)styrene = 0.20:0.40:0.40; Mw 6800; Mw/Mn 1.76. No crosslinker listed. PEB discrepancy: 95°C versus 110°C.",732
+US9017923B2,Example 1-5,PAG 1,pag,20,20.0,parts by mass,OK,,,,,Pending independent validation,,733
+US9017923B2,Example 1-5,Amine 1,additive,1.0,1.0,parts by mass,OK,,,,,Pending independent validation,,734
+US9017923B2,Example 1-5,CyH,solvent,500,500.0,parts by mass,OK,,,,,Pending independent validation,,735
+US9017923B2,Example 1-5,CyP,solvent,1800,1800.0,parts by mass,OK,,,,,Pending independent validation,,736
+US9017923B2,Example 1-6,Polymer 6,resin,100,100.0,parts by mass,OK,EB 50 keV; film 100 nm; PAB 110°C/90 s; PEB 95°C (Table 1); 2.38 wt% TMAH/30 s,Sensitivity 23.0 µC/cm²; resolution 70 nm; LWR 5.2 nm,Preparation of Negative Resist Composition; Table 1; Evaluation of Electronic Beam Drawing,,Pending independent validation,Methyl ferrocene methacrylate:4-hydroxyphenyl methacrylate:PAG monomer 1 = 0.25:0.65:0.10; Mw 7300; Mw/Mn 1.74. PAG incorporated into polymer; no separate PAG 1 added. PEB discrepancy: 95°C versus 110°C.,737
+US9017923B2,Example 1-6,Amine 1,additive,1.0,1.0,parts by mass,OK,,,,,Pending independent validation,,738
+US9017923B2,Example 1-6,CR 1,crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,739
+US9017923B2,Example 1-6,CyH,solvent,500,500.0,parts by mass,OK,,,,,Pending independent validation,,740
+US9017923B2,Example 1-6,CyP,solvent,1800,1800.0,parts by mass,OK,,,,,Pending independent validation,,741
+US9017923B2,Comparative Example 1-1,Comparative Polymer 1,resin,100,100.0,parts by mass,OK,EB 50 keV; film 100 nm; PAB 110°C/90 s; PEB 95°C (Table 1); 2.38 wt% TMAH/30 s,Sensitivity 28.5 µC/cm²; resolution 90 nm; LWR 8.9 nm,Comparative Synthesis Example 1; Table 1; Evaluation of Electronic Beam Drawing,,Pending independent validation,4-Hydroxystyrene:styrene = 0.7:0.3; Mw 4500; Mw/Mn 1.55. PEB discrepancy: Table 1 95°C versus evaluation text 110°C.,742
+US9017923B2,Comparative Example 1-1,PAG 1,pag,12,12.0,parts by mass,OK,,,,,Pending independent validation,,743
+US9017923B2,Comparative Example 1-1,Amine 1,additive,1.0,1.0,parts by mass,OK,,,,,Pending independent validation,,744
+US9017923B2,Comparative Example 1-1,CR 1,crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,745
+US9017923B2,Comparative Example 1-1,PGMEA,solvent,2000,2000.0,parts by mass,OK,,,,,Pending independent validation,,746
+US9017923B2,Comparative Example 1-2,Comparative Polymer 2,resin,100,100.0,parts by mass,OK,EB 50 keV; film 100 nm; PAB 110°C/90 s; PEB 95°C (Table 1); 2.38 wt% TMAH/30 s,Sensitivity 33.6 µC/cm²; resolution 90 nm; LWR 8.9 nm,Comparative Synthesis Example 2; Table 1; Evaluation of Electronic Beam Drawing,,Pending independent validation,4-Hydroxystyrene:1-vinyl naphthalene = 0.8:0.2; Mw 5900; Mw/Mn 1.51. PEB discrepancy: Table 1 95°C versus evaluation text 110°C.,747
+US9017923B2,Comparative Example 1-2,PAG 1,pag,12,12.0,parts by mass,OK,,,,,Pending independent validation,,748
+US9017923B2,Comparative Example 1-2,Amine 1,additive,1.0,1.0,parts by mass,OK,,,,,Pending independent validation,,749
+US9017923B2,Comparative Example 1-2,CR 1,crosslinker,10,10.0,parts by mass,OK,,,,,Pending independent validation,,750
+US9017923B2,Comparative Example 1-2,PGMEA,solvent,2000,2000.0,parts by mass,OK,,,,,Pending independent validation,,751
+US20230314945A1,Example 1,Polymer (A)-1,resin,100,100.0,parts by mass,OK,22 nm film; PAB 85°C/60 s; EUV 13.5 nm; PEB 90°C/60 s; 2.38% TMAH at 23°C/10 s,16 nm line width; 32 nm pitch; dose 63 mJ/cm²; LWR (3σ) 3.50 nm. Separate etch evaluation ratio: 0.045.,Table 1; Table 3; Example 1,Akhila (initial extraction),Pending independent validation,Source-extracted draft; check coded chemical structures and numerical table against patent.,752
+US20230314945A1,Example 1,(B)-1,photoacid generator,22,22.0,parts by mass,OK,,,Table 1; Table 3; Example 1,Akhila (initial extraction),Pending independent validation,Source-extracted draft; check coded chemical structures and numerical table against patent.,753
+US20230314945A1,Example 1,(C)-1,crosslinking agent,10,10.0,parts by mass,OK,,,Table 1; Table 3; Example 1,Akhila (initial extraction),Pending independent validation,Source-extracted draft; check coded chemical structures and numerical table against patent.,754
+US20230314945A1,Example 1,(D)-1,photodecomposable base,32,32.0,parts by mass,OK,,,Table 1; Table 3; Example 1,Akhila (initial extraction),Pending independent validation,Source-extracted draft; check coded chemical structures and numerical table against patent.,755
+US20230314945A1,Example 1,Salicylic acid (E)-1,additive,3,3.0,parts by mass,OK,,,Table 1; Table 3; Example 1,Akhila (initial extraction),Pending independent validation,Source-extracted draft; check coded chemical structures and numerical table against patent.,756
+US20230314945A1,Example 1,Propylene glycol monomethyl ether (S)-1,solvent,19200,19200.0,parts by mass,OK,,,Table 1; Table 3; Example 1,Akhila (initial extraction),Pending independent validation,Source-extracted draft; check coded chemical structures and numerical table against patent.,757
+US20230314945A1,Example 1,PGMEA (S)-2,solvent,4800,4800.0,parts by mass,OK,,,Table 1; Table 3; Example 1,Akhila (initial extraction),Pending independent validation,Source-extracted draft; check coded chemical structures and numerical table against patent.,758
+US20070248896A1,Example 3,SU-8 epoxy resin,resin,62.4,62.4,wt%,OK,Prepared under yellow light; debubbled; coated onto copper-seeded silicon; precise bake/exposure values not specified in Example 3.,Related Example 7 adhesion evaluation (not Example 3): die-site shear 49.5g vs 63.6g; random-walk 51.3g vs 61.2g (unmodified vs modified).,Example 3; related Example 7,Akhila (initial extraction),Pending independent validation,GPIMS vs GPTMS discrepancy needs patent/domain review; Example 7 results are separate and should not be attributed to Example 3.,759
+US20070248896A1,Example 3,γ-Butyrolactone,solvent,26.3,26.3,wt%,OK,,,Example 3; related Example 7,Akhila (initial extraction),Pending independent validation,GPIMS vs GPTMS discrepancy needs patent/domain review; Example 7 results are separate and should not be attributed to Example 3.,760
+US20070248896A1,Example 3,Cyracure 6974,cationic photoinitiator,6.3,6.3,wt%,OK,,,Example 3; related Example 7,Akhila (initial extraction),Pending independent validation,GPIMS vs GPTMS discrepancy needs patent/domain review; Example 7 results are separate and should not be attributed to Example 3.,761
+US20070248896A1,Example 3,Dioctyl phthalate (DOP),plasticizer,1,1.0,wt%,OK,,,Example 3; related Example 7,Akhila (initial extraction),Pending independent validation,GPIMS vs GPTMS discrepancy needs patent/domain review; Example 7 results are separate and should not be attributed to Example 3.,762
+US20070248896A1,Example 3,GPIMS (as written in Example 3),adhesion promoter,4,4.0,wt%,OK,,,Example 3; related Example 7,Akhila (initial extraction),Pending independent validation,GPIMS vs GPTMS discrepancy needs patent/domain review; Example 7 results are separate and should not be attributed to Example 3.,763
