@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import sys
+import os
 import warnings
 from pathlib import Path
 
@@ -13,6 +14,34 @@ warnings.filterwarnings("ignore")
 import pandas as pd  # noqa: E402
 import plotly.graph_objects as go  # noqa: E402
 import streamlit as st  # noqa: E402
+from streamlit.delta_generator import DeltaGenerator  # noqa: E402
+
+# Robust page_link wrapper to resolve views regardless of Streamlit root/subpath
+_orig_page_link = DeltaGenerator.page_link
+def _safe_page_link(self, page, *args, **kwargs):
+    if isinstance(page, str) and not (page.startswith("http://") or page.startswith("https://")):
+        base = os.path.basename(page)
+        candidates = [
+            page,
+            f"views/{base}",
+            f"ml_bo/app/views/{base}",
+            os.path.join(os.path.dirname(__file__), "views", base)
+        ]
+        seen = set()
+        for c in candidates:
+            if c in seen:
+                continue
+            seen.add(c)
+            try:
+                return _orig_page_link(self, c, *args, **kwargs)
+            except Exception:
+                continue
+        label = kwargs.get("label", base)
+        icon = kwargs.get("icon", "")
+        return self.markdown(f"{icon} **{label}**")
+    return _orig_page_link(self, page, *args, **kwargs)
+
+DeltaGenerator.page_link = _safe_page_link
 
 # reference palette (dataviz skill references/palette.md); slots 1-3 validate all-pairs in both modes
 LIGHT = dict(surface="#fcfcfb", ink="#0b0b0b", ink2="#52514e", muted="#898781", grid="#e1e0d9",
