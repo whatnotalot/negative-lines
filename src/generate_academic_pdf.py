@@ -7,8 +7,8 @@ import os
 import subprocess
 import shutil
 
-OUTPUT_DIR = "/Users/technano/agy2-projects/2026.10.OSI Hackathon"
-REPO_DOCS_DIR = "/Users/technano/agy2-projects/2026.10.OSI Hackathon/Negative Lines/docs"
+OUTPUT_DIR = "/Users/technano/agy2-projects/20261023_OSI Hackathon"
+REPO_DOCS_DIR = "/Users/technano/agy2-projects/20261023_OSI Hackathon/Negative Lines/docs"
 PDF_NAME = "Negative_Lines_Technical_Report.pdf"
 
 HTML_CONTENT = r"""<!DOCTYPE html>
