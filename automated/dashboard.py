@@ -42,10 +42,27 @@ AMBER = "#B45309"
 
 CSS = f"""
 <style>
+/* Local font definitions from repository .woff2 bundle with font-display: swap */
+@font-face {{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url('app/static/fonts/Inter-400.woff2') format('woff2');
+}}
+
+@font-face {{
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400 600;
+    font-display: swap;
+    src: url('app/static/fonts/JetBrainsMono-400.woff2') format('woff2');
+}}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 html, body, [class*="css"], .stApp {{
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     background-color: #F8FAFC !important;
 }}
 
@@ -510,8 +527,19 @@ def _dataset():
     return X, y_lwr, y_dose, fnames, df
 
 
-@st.cache_data(show_spinner="Running leave-one-out cross-validation…")
+@st.cache_data(show_spinner=False)
 def _loocv():
+    here = os.path.dirname(os.path.abspath(__file__))
+    for cand in [
+        os.path.join(here, "data", "loocv_precomputed.json"),
+        os.path.join(here, "..", "data", "loocv_precomputed.json"),
+    ]:
+        if os.path.exists(cand):
+            try:
+                with open(cand, "r") as f:
+                    return json.load(f)
+            except Exception:
+                pass
     X, y_lwr, y_dose, _, _ = load_ebeam_dataset()
     lwr = GaussianProcessSurrogate().evaluate_leave_one_out(X, y_lwr)
     dose = GaussianProcessSurrogate().evaluate_leave_one_out(X, y_dose)
@@ -521,7 +549,7 @@ def _loocv():
     }
 
 
-@st.cache_data(show_spinner="Simulating Bayesian optimization vs. random search…")
+@st.cache_data(show_spinner=False)
 def _simulation(n_trials: int = 25):
     return run_retrospective_simulation(n_trials=n_trials)
 
@@ -761,11 +789,9 @@ def _tab_whatif(orch, df):
                               df["sensitivity_esize_uc_cm2"].max(), "µC/cm²", ACCENT), use_container_width=True)
 
 
-def _tab_benchmark():
+@st.cache_data(show_spinner=False)
+def _build_benchmark_chart():
     sim = _simulation(25)
-    _section("Retrospective benchmark",
-             "Starting from 3 random formulations, each strategy picks the next experiment from the remaining "
-             "patent examples. Curves show the best LWR found so far, averaged over 25 random starts (band = ±1 SD).")
     steps = sim["steps"]
     d = pd.concat([
         pd.DataFrame({"Experiments": [s + 2 for s in steps], "Mean": sim["bo_mean"], "SD": sim["bo_std"],
@@ -784,10 +810,19 @@ def _tab_benchmark():
         y="Mean:Q", color=color,
         tooltip=["Strategy", "Experiments", alt.Tooltip("Mean:Q", format=".2f"), alt.Tooltip("SD:Q", format=".2f")])
     rule = alt.Chart(pd.DataFrame({"y": [4.5]})).mark_rule(strokeDash=[4, 4], color=RED).encode(y="y:Q")
+    return (band + line + rule).properties(height=360)
+
+
+def _tab_benchmark():
+    sim = _simulation(25)
+    _section("Retrospective benchmark",
+             "Starting from 3 random formulations, each strategy picks the next experiment from the remaining "
+             "patent examples. Curves show the best LWR found so far, averaged over 25 random starts (band = ±1 SD).")
+    steps = sim["steps"]
 
     left, right = st.columns([2.1, 1], gap="large")
     with left:
-        st.altair_chart((band + line + rule).properties(height=360), use_container_width=True)
+        st.altair_chart(_build_benchmark_chart(), use_container_width=True)
     with right:
         k = min(2, len(steps) - 1)
         bo_k, rd_k = sim["bo_mean"][k], sim["rand_mean"][k]
